@@ -16,9 +16,8 @@
 const int Code::TEST = 42;
 const int Code::RAND = 43;
 
-Code::Code(bool b, int errt) {
+Code::Code(bool b) {
     input = b;
-    errorType = errt;
 }
 
 bool Code::setandmesAnc(const vector<unsigned> &b, unsigned anc) {
@@ -37,17 +36,6 @@ void Code::hadamardAllCodeBits() {
 void Code::hadamardCodeBits(const vector<unsigned>& b){
     for (int i = 0; b[i] < getCS(); i++) {
         c = apply(c, gt.H,{b[i]});
-    }
-}
-
-void Code::randError() {
-    for (unsigned i = 0; i < getCS(); i++) {
-        if (abs(rand()) % 1000 < randX)
-            c = apply(c, gt.X,{i});
-        if (abs(rand()) % 1000 < randY)
-            c = apply(c, gt.Z,{i});
-        if (abs(rand()) % 1000 < randZ)
-            c = apply(c, gt.Y,{i});
     }
 }
 

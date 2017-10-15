@@ -23,9 +23,9 @@ private:
     int errorType;
     //For random error this these mean likeliness in per mille
     //For const any non zero number will trigger an error 
-    unsigned x;
-    unsigned y;
-    unsigned z;
+    unsigned x = 0;
+    unsigned y = 0;
+    unsigned z = 0;
     unsigned bit;
     unsigned codesize;
 public:
@@ -38,8 +38,14 @@ public:
         this->codesize = codesize;
         this->errorType = errt;
     }
-    runError(ket c);
-    runErrorOneBit(ket c, unsigned index);
+    void runError(ket &c);
+    void runErrorOneBit(ket &c, unsigned index);
+
+    void setError(unsigned x, unsigned y, unsigned z) {
+        this->x = x;
+        this->y = y;
+        this->z = z;
+    }
 };
 
 #endif /* ERROR_H */

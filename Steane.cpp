@@ -72,23 +72,6 @@ void Steane::decode() {
     c = apply(c, gt.H,{2});
 }
 
-void Steane::testError() {
-    testErrorId = testErrorId % 29; //Restart after 29
-    if (testErrorId < getCS())
-        c = apply(c, gt.X,{testErrorId});
-    else if (testErrorId < getCS()*2)
-        c = apply(c, gt.Z,{testErrorId % getCS()});
-    else if (testErrorId < getCS()*3) {
-        c = apply(c, gt.X,{testErrorId % getCS()});
-        c = apply(c, gt.Z,{testErrorId % getCS()});
-    } else if (testErrorId < getCS()*4) {
-        c = apply(c, gt.X,{testErrorId % getCS()});
-        c = apply(c, gt.Z,{getCS() - testErrorId % getCS()});
-    } else if (testErrorId < getCS()*5) {
-        c = apply(c, gt.Y,{testErrorId % getCS()});
-    }
-}
-
 void Steane::errorCorrection(bool *a) {
     switch (a[0]*4 + a[1] *2 + a[2]) {
         case 4:

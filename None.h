@@ -22,19 +22,18 @@ class None : public Code {
 public:
     static const unsigned CS;
 
-    None(bool b, int errt) : Code(b, errt) {
+    None(bool b) : Code(b) {
 
     }
 
-    bool run();
-    string getDescriptor();
+    bool run() override;
+    string getDescriptor() override;
 protected:
-    void encode(bool b);
+    void encode(bool b) override;
 
-    unsigned getCS() {
+    unsigned getCS() override {
         return None::CS;
     }
-    void testError();
 private:
 };
 

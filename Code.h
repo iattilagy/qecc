@@ -15,7 +15,10 @@
 #define CODE_H
 
 #include "qpp.h"
+#include "Error.h"
 #include <iostream>
+#include <queue>
+#include <atomic>
 
 using namespace qpp;
 using namespace std;
@@ -25,18 +28,14 @@ public:
     static const int TEST;
     static const int RAND;
 
-    Code(bool b, int errt);
+    Code(bool b);
+    atomic_int *errorCounter;
+    atomic_int *threadCounter;
 
     virtual bool run() = 0;
 
-    void setTestErr(unsigned id) {
-        testErrorId = id;
-    }
-
-    void setRandErr(int x, int y, int z) {
-        randX = x;
-        randY = y;
-        randZ = z;
+    void addError(Error *e) {
+        errorlist.push(e);
     }
 
     bool getOK() {
@@ -45,11 +44,7 @@ public:
     virtual string getDescriptor() = 0;
 protected:
     ket c;
-    int errorType;
-    unsigned testErrorId;
-    int randX;
-    int randY;
-    int randZ;
+    queue<Error *> errorlist;
     bool input;
     bool result;
     bool ok;
@@ -59,15 +54,13 @@ protected:
     bool getMes(unsigned i);
 
     void error() {
-        if (errorType == TEST)
-            testError();
-        else if (errorType == RAND)
-            randError();
-
-        //Default to no error              
+        while (!errorlist.empty()) {
+            Error *e = errorlist.front();
+            e->runError(c);
+            delete e;
+            errorlist.pop();
+        }
     }
-    virtual void testError() = 0;
-    virtual void randError();
     virtual void encode(bool b) = 0;
     virtual unsigned getCS() = 0;
 };

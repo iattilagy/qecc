@@ -13,6 +13,8 @@
 #include "Code.h"
 #include "Code5.h"
 #include "None.h"
+#include "Runner.h"
+#include "Test.h"
 #include <iostream>
 #include <unistd.h>
 
@@ -20,16 +22,6 @@ using namespace std;
 
 volatile int numthreads = 0;
 volatile int errRun = 0;
-
-void *runCode(void *c) {
-    Code *code = ((Code*) c);
-    code->run();
-    cout << code->getDescriptor();
-    if (!code->getOK())
-        errRun++;
-    delete code;
-    numthreads--;
-}
 
 void printHelp() {
     cout << endl;
@@ -55,7 +47,7 @@ void printHelp() {
  */
 int main(int argc, char** argv) {
     int counter = 0;
-    int max_numthreads = 1;
+    int max_numthreads = 10;
     int num_of_runs = 1000;
     bool shor = false;
     bool steane = false;
@@ -71,6 +63,8 @@ int main(int argc, char** argv) {
         switch (c) {
             case 'j':
                 max_numthreads = atoi(optarg);
+                if (max_numthreads < 2)
+                    exit(3);
                 break;
             case 'n':
                 num_of_runs = atoi(optarg);
@@ -106,56 +100,32 @@ int main(int argc, char** argv) {
     }
 
     cout << "CONFIG\t" << (test ? "TEST\t" : "RAND\t");
-    cout << "RUNS " << num_of_runs << "\t";
+    if (!test)
+        cout << "RUNS " << num_of_runs << "\t";
     cout << "THREADS " << max_numthreads << "\t";
     if (!test)
         cout << "X " << x << "‰ Y " << y << "‰ Z" << z << "‰";
     cout << endl;
 
-    while (shor || steane || code5 || none) {
-        while (counter < num_of_runs) {
-            pthread_t t;
-            if (numthreads < max_numthreads) {
-                Code *code;
-                int errt = test ? Code::TEST : Code::RAND;
-                bool input = test ? counter % 2 : rand() % 2;
-                if (shor)
-                    code = new Shor(input, errt);
-                else if (steane)
-                    code = new Steane(input, errt);
-                else if (code5)
-                    code = new Code5(input, errt);
-                else if (none)
-                    code = new None(input, errt);
 
-                code->setRandErr(x, y, z);
-                code->setTestErr(counter / 2);
-                pthread_create(&t, NULL, runCode, code);
-                numthreads++;
-                counter++;
-            }
-            usleep(25);
-        }
-        while (numthreads != 0) {
-            usleep(50);
-        }
-        if (shor)
-            cout << "SHOR\tBER\t";
-        else if (steane)
-            cout << "STEANE\tBER\t";
-        else if (code5)
-            cout << "5QUBIT\tBER\t";
-        else if (none)
-            cout << "NONE\tBER\t";
+    Runner *r = new Runner(max_numthreads);
+    //Run Shor test with 0
+    Test *t = new Test(r);
+    t->shorTest(0);
+    t->shorTest(1);
+    r->run();
+    cout << "SHOR\tBER\t" << r->getBER()*100 << "%" << endl;
+    t->steaneTest(0);
+    t->steaneTest(1);
+    r->run();
+    cout << "STEANE\tBER\t" << r->getBER()*100 << "%" << endl;
+    t->code5Test(0);
+    t->code5Test(1);
+    r->run();
+    cout << "5QUBIT\tBER\t" << r->getBER()*100 << "%" << endl;
 
-        cout << (float) errRun * 100 / num_of_runs << " %\n";
-        errRun = 0;
-        counter = 0;
-        if (shor) shor = false;
-        else if (steane) steane = false;
-        else if (code5) code5 = false;
-        else if (none) none = false;
-    }
+    delete t;
+    delete r;
 
     return 0;
 }

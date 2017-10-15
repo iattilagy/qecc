@@ -26,15 +26,14 @@ public:
     static const unsigned CS;
     typedef Code super;
 
-    Shor(bool b, int errt) : Code(b, errt) {
+    Shor(bool b) : Code(b) {
     }
-    bool run();
-    string getDescriptor();
+    bool run() override;
+    string getDescriptor() override;
 protected:
-    void testError();
-    void encode(bool b);
+    void encode(bool b) override;
 
-    unsigned getCS() {
+    unsigned getCS() override {
         return Shor::CS;
     }
 private:

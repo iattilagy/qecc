@@ -28,10 +28,6 @@ void None::encode(bool b) {
     c = mket({b});
 }
 
-void None::testError() {
-    //Do nothing
-}
-
 string None::getDescriptor() {
     ostringstream de;
     de << "NONE\t";

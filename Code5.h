@@ -25,15 +25,15 @@ class Code5 : public Code {
 public:
     static const unsigned CS;
 
-    Code5(bool b, int errt) : Code(b, errt) {
+    Code5(bool b) : Code(b) {
 
     }
-    bool run();
-    string getDescriptor();
+    bool run() override;
+    string getDescriptor() override;
 protected:
-    void encode(bool b);
+    void encode(bool b) override;
 
-    unsigned getCS() {
+    unsigned getCS() override {
         return Code5::CS;
     }
     void testError();

@@ -25,17 +25,16 @@ class Steane : public Code {
 public:
     static const int CS;
 
-    Steane(bool b, int errt) : Code(b, errt) {
+    Steane(bool b) : Code(b) {
     }
-    bool run();
-    string getDescriptor();
+    bool run() override;
+    string getDescriptor() override;
 protected:
-    void encode(bool b);
+    void encode(bool b) override;
 
-    unsigned getCS() {
+    unsigned getCS() override {
         return Steane::CS;
     }
-    void testError();
 private:
     bool xflip[3];
     bool zflip[3];

@@ -62,27 +62,6 @@ void Shor::errorCorrection(bool *a, const vector<unsigned> &b) {
 
 //Test errors should NOT cause bit flip
 
-void Shor::testError() {
-    testErrorId = testErrorId % 34; //restart after 34
-    if (testErrorId < 9)
-        c = apply(c, gt.X,{testErrorId});
-    else if (testErrorId < 18)
-        c = apply(c, gt.Z,{testErrorId % 9});
-    else if (testErrorId < 21) {
-        c = apply(c, gt.X,{testErrorId % 3});
-        c = apply(c, gt.X,{testErrorId % 3 + 3});
-        c = apply(c, gt.X,{testErrorId % 3 + 6});
-    } else if (testErrorId < 30) {
-        c = apply(c, gt.X,{testErrorId - 21});
-        c = apply(c, gt.Z,{testErrorId - 21});
-    } else {
-        c = apply(c, gt.X,{testErrorId % 3});
-        c = apply(c, gt.X,{testErrorId % 3 + 3});
-        c = apply(c, gt.X,{testErrorId % 3 + 6});
-        c = apply(c, gt.Z,{(testErrorId % 3)*3});
-    }
-}
-
 bool Shor::run() {
     encode(input);
     

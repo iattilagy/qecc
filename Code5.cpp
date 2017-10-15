@@ -65,19 +65,6 @@ void Code5::decode() {
     c = apply(c, gt.H,{4});
 }
 
-void Code5::testError() {
-    if (testErrorId < getCS())
-        c = apply(c, gt.X,{testErrorId});
-    else if (testErrorId < getCS()*2)
-        c = apply(c, gt.Z,{testErrorId % getCS()});
-    else if (testErrorId < getCS()*3) {
-        c = apply(c, gt.X,{testErrorId % getCS()});
-        c = apply(c, gt.Z,{testErrorId % getCS()});
-    } else if (testErrorId < getCS()*4) {
-        c = apply(c, gt.Y,{testErrorId % getCS()});
-    }
-}
-
 void Code5::errorCorrection(bool* a) {
     unsigned char ec = 0;
     ec += flip[0];
