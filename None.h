@@ -27,7 +27,7 @@ public:
     }
 
     bool run() override;
-    string getDescriptor() override;
+    std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
 

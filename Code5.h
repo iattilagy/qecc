@@ -19,7 +19,6 @@
 #include <iostream>
 
 using namespace qpp;
-using namespace std;
 
 class Code5 : public Code {
 public:
@@ -29,7 +28,7 @@ public:
 
     }
     bool run() override;
-    string getDescriptor() override;
+    std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
 

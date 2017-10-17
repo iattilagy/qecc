@@ -15,13 +15,13 @@
 
 const int Steane::CS = 7;
 
-string Steane::getDescriptor() {
-    ostringstream de;
+std::string Steane::getDescriptor() {
+    std::ostringstream de;
     de << "STEANE\t";
     de << xflip[0] << xflip[1] << xflip [2] << "\t";
     de << zflip[0] << zflip[1] << zflip [2] << "\t";
     de << input << "->" << result << "\t";
-    de << ((input == result) ? "OK" : "ERROR") << endl;
+    de << ((input == result) ? "OK" : "ERROR") << std::endl;
     return de.str();
 }
 

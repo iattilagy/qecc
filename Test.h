@@ -15,8 +15,9 @@
 #define TEST_H
 
 #include "Runner.h"
+#include "Runable.h"
 
-class Test {
+class Test : public Runable {
 public:
     static const int shorruns;
     static const int steaneruns;
@@ -26,11 +27,20 @@ public:
     void steaneTest(bool input);
     void code5Test(bool input);
 
-    Test(Runner *r) {
-        runner = r;
+    void initalize() override;
+
+    std::string getResult() override {
+        if ((int) (runner->getBER()*10000) == 0) {
+            return "TESTS SUCCESFULL";
+        } else {
+            return "SOME TESTS FAILED";
+        }
+    }
+
+    Test(int type, int maxnumthreads) : Runable(type, maxnumthreads) {
+
     }
 private:
-    Runner *runner;
 };
 
 #endif /* TEST_H */

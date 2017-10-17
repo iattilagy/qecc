@@ -19,7 +19,7 @@
 void *runCode(void *c) {
     Code *code = ((Code*) c);
     code->run();
-    cout << code->getDescriptor();
+    std::cout << code->getDescriptor();
     if (!code->getOK())
         code->errorCounter->fetch_add(1, std::memory_order_relaxed);
     code->threadCounter->fetch_sub(1, std::memory_order_relaxed);
@@ -28,7 +28,7 @@ void *runCode(void *c) {
 
 Runner::Runner(unsigned t) {
     maxnumthreads = t;
-    codes = new queue<Code *>;
+    codes = new std::queue<Code *>;
 }
 
 void Runner::addCode(Code* c) {

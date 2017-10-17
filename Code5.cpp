@@ -15,12 +15,12 @@
 
 const unsigned Code5::CS = 5;
 
-string Code5::getDescriptor() {
-    ostringstream de;
+std::string Code5::getDescriptor() {
+    std::ostringstream de;
     de << "5QUBIT\t";
     de << flip[0] << flip[1] << flip [2] << flip[4] << "\t";
     de << input << "->" << result << "\t";
-    de << ((input == result) ? "OK" : "ERROR") << endl;
+    de << ((input == result) ? "OK" : "ERROR") << std::endl;
     return de.str();
 }
 

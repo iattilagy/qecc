@@ -17,6 +17,7 @@
 #include "Test.h"
 #include <iostream>
 #include <unistd.h>
+#include "Single.h"
 
 using namespace std;
 
@@ -47,7 +48,7 @@ void printHelp() {
  */
 int main(int argc, char** argv) {
     int counter = 0;
-    int max_numthreads = 10;
+    int max_numthreads = 2;
     int num_of_runs = 1000;
     bool shor = false;
     bool steane = false;
@@ -108,24 +109,24 @@ int main(int argc, char** argv) {
     cout << endl;
 
 
-    Runner *r = new Runner(max_numthreads);
-    //Run Shor test with 0
-    Test *t = new Test(r);
-    t->shorTest(0);
-    t->shorTest(1);
-    r->run();
-    cout << "SHOR\tBER\t" << r->getBER()*100 << "%" << endl;
-    t->steaneTest(0);
-    t->steaneTest(1);
-    r->run();
-    cout << "STEANE\tBER\t" << r->getBER()*100 << "%" << endl;
-    t->code5Test(0);
-    t->code5Test(1);
-    r->run();
-    cout << "5QUBIT\tBER\t" << r->getBER()*100 << "%" << endl;
-
+    Test *t = new Test(Runable::SHOR, max_numthreads);
+    t->run();
+    cout << "SHOR\t" << t->getResult() << endl;
+    t->setCodeType(Runable::STEANE);
+    t->run();
+    cout << "STEANE\t" << t->getResult() << endl;
+    t->setCodeType(Runable::CODE5);
+    t->run();
+    cout << "5QUBIT\t" << t->getResult() << endl;
     delete t;
-    delete r;
+
+    Error *e = new Error(Steane::CS, Error::RAND);
+    e->setError(100, 0, 0);
+    Single *s = new Single(Runable::STEANE, max_numthreads, e, 100);
+    s->run();
+    cout << "SINGLE STEANE\t" << s->getResult() << endl;
+    delete s;
+    delete e;
 
     return 0;
 }

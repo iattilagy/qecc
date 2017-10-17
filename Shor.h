@@ -19,7 +19,6 @@
 #include <iostream>
 
 using namespace qpp;
-using namespace std;
 
 class Shor : public Code {
 public:
@@ -29,7 +28,7 @@ public:
     Shor(bool b) : Code(b) {
     }
     bool run() override;
-    string getDescriptor() override;
+    std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
 
@@ -40,7 +39,7 @@ private:
     bool xflip[6];
     bool zflip[2];
     void errorCorrection(bool *a,
-            const vector<unsigned> &b);
+            const std::vector<unsigned> &b);
     void decode();
 };
 

@@ -21,7 +21,6 @@
 #include <atomic>
 
 using namespace qpp;
-using namespace std;
 
 class Code {
 public:
@@ -29,8 +28,8 @@ public:
     static const int RAND;
 
     Code(bool b);
-    atomic_int *errorCounter;
-    atomic_int *threadCounter;
+    std::atomic_int *errorCounter;
+    std::atomic_int *threadCounter;
 
     virtual bool run() = 0;
 
@@ -41,26 +40,24 @@ public:
     bool getOK() {
         return ok;
     }
-    virtual string getDescriptor() = 0;
+    virtual std::string getDescriptor() = 0;
+
+    void disableErrorDeletion() {
+        deleteError = false;
+    }
 protected:
     ket c;
-    queue<Error *> errorlist;
+    std::queue<Error *> errorlist;
     bool input;
+    bool deleteError;
     bool result;
     bool ok;
-    bool setandmesAnc(const vector<unsigned> &b, unsigned anc);
+    bool setandmesAnc(const std::vector<unsigned> &b, unsigned anc);
     void hadamardAllCodeBits();
-    void hadamardCodeBits(const vector<unsigned> &b);
+    void hadamardCodeBits(const std::vector<unsigned> &b);
     bool getMes(unsigned i);
 
-    void error() {
-        while (!errorlist.empty()) {
-            Error *e = errorlist.front();
-            e->runError(c);
-            delete e;
-            errorlist.pop();
-        }
-    }
+    void error();
     virtual void encode(bool b) = 0;
     virtual unsigned getCS() = 0;
 };

@@ -19,7 +19,6 @@
 #include <iostream>
 
 using namespace qpp;
-using namespace std;
 
 class Steane : public Code {
 public:
@@ -28,7 +27,7 @@ public:
     Steane(bool b) : Code(b) {
     }
     bool run() override;
-    string getDescriptor() override;
+    std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
 

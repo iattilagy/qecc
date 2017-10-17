@@ -20,8 +20,8 @@ void Shor::encode(bool b) {
     c = kron(c, mket({0, 0, 0, 0, 0, 0, 0, 0}));
 }
 
-string Shor::getDescriptor() {
-    ostringstream de;
+std::string Shor::getDescriptor() {
+    std::ostringstream de;
     de << "SHOR\t";
     for (int i = 0; i < 6; i++) {
         de << xflip[i];
@@ -31,7 +31,7 @@ string Shor::getDescriptor() {
     de << zflip[1] << "\t";
 
     de << input << "->" << result << "\t";
-    de << ((input == result) ? "OK" : "ERROR") << endl;
+    de << ((input == result) ? "OK" : "ERROR") << std::endl;
     return de.str();
 }
 
@@ -51,7 +51,7 @@ void Shor::decode() {
     c = apply(c, gt.CNOT,{0, 6});
 }
 
-void Shor::errorCorrection(bool *a, const vector<unsigned> &b) {
+void Shor::errorCorrection(bool *a, const std::vector<unsigned> &b) {
     if (a[0] && a[1])
         c = apply(c, gt.X,{b[0]});
     else if (a[0] && !a[1])

@@ -18,9 +18,10 @@ const int Code::RAND = 43;
 
 Code::Code(bool b) {
     input = b;
+    deleteError = true;
 }
 
-bool Code::setandmesAnc(const vector<unsigned> &b, unsigned anc) {
+bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned anc) {
     for (int i = 0; b[i] < getCS(); i++) {
         c = apply(c, gt.CNOT,{b[i], anc});
     }
@@ -33,7 +34,7 @@ void Code::hadamardAllCodeBits() {
     }
 }
 
-void Code::hadamardCodeBits(const vector<unsigned>& b){
+void Code::hadamardCodeBits(const std::vector<unsigned>& b) {
     for (int i = 0; b[i] < getCS(); i++) {
         c = apply(c, gt.H,{b[i]});
     }
@@ -42,4 +43,14 @@ void Code::hadamardCodeBits(const vector<unsigned>& b){
 bool Code::getMes(unsigned i) {
     auto measured = measure(c, gt.X,{i});
     return !std::get<0>(measured);
+}
+
+void Code::error() {
+    while (!errorlist.empty()) {
+        Error *e = errorlist.front();
+        e->runError(c);
+        if (deleteError)
+            delete e;
+        errorlist.pop();
+    }
 }

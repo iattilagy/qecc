@@ -128,7 +128,7 @@ void Test::code5Test(bool input) {
     //Add one without error
     s = new Code5(input);
     runner->addCode(s);
-    for (int i = 0; i < Test::shorruns; i++) {
+    for (int i = 0; i < Test::code5runs; i++) {
         s = new Code5(input);
         if (i < Code5::CS) {
             Error *e;
@@ -155,5 +155,18 @@ void Test::code5Test(bool input) {
             s->addError(e);
         }
         runner->addCode(s);
+    }
+}
+
+void Test::initalize() {
+    if (getCodeType() == Runable::SHOR) {
+        shorTest(0);
+        shorTest(1);
+    } else if (getCodeType() == Runable::STEANE) {
+        steaneTest(0);
+        steaneTest(1);
+    } else if (getCodeType() == Runable::CODE5) {
+        code5Test(0);
+        code5Test(1);
     }
 }

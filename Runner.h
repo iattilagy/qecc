@@ -16,8 +16,6 @@
 
 #include "Code.h"
 
-using namespace std;
-
 //This would be run by pthread so not a member
 void *runCode(void *c);
 
@@ -33,8 +31,8 @@ public:
 
     //Runner is stopped if stop is true, and all the threads are done
     void reset() {
-        errorCounter.store(0, memory_order_relaxed);
-        runCounter.store(0, memory_order_relaxed);
+        errorCounter.store(0, std::memory_order_relaxed);
+        runCounter.store(0, std::memory_order_relaxed);
     }
 
     float getBER() {
@@ -42,11 +40,11 @@ public:
                 / runCounter.load(std::memory_order_relaxed);
     }
 private:
-    queue<Code *> *codes;
-    atomic_int threadCounter;
-    atomic_int errorCounter;
-    atomic_int runCounter;
-    atomic_bool stop;
+    std::queue<Code *> *codes;
+    std::atomic_int threadCounter;
+    std::atomic_int errorCounter;
+    std::atomic_int runCounter;
+    std::atomic_bool stop;
     unsigned maxnumthreads;
 };
 

@@ -28,11 +28,11 @@ void None::encode(bool b) {
     c = mket({b});
 }
 
-string None::getDescriptor() {
-    ostringstream de;
+std::string None::getDescriptor() {
+    std::ostringstream de;
     de << "NONE\t";
     de << input << "->" << result << "\t";
-    de << ((input == result) ? "OK" : "ERROR") << endl;
+    de << ((input == result) ? "OK" : "ERROR") << std::endl;
     return de.str();
 }
 

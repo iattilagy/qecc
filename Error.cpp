@@ -24,7 +24,7 @@ void Error::runError(ket &c) {
             runErrorOneBit(c, i);
         }
     } else {
-        throw string("class Error: bit cannot be more than codesize!!!");
+        throw std::string("class Error: bit cannot be more than codesize!!!");
     }
 }
 

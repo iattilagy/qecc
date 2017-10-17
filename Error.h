@@ -16,7 +16,6 @@
 
 #include "qpp.h"
 using namespace qpp;
-using namespace std;
 
 class Error {
 private:
@@ -32,6 +31,12 @@ public:
     static const int CONST;
     static const int RAND;
     //bit==codesize means all bits
+
+    Error(unsigned codesize, int errt) {
+        this->bit = codesize;
+        this->codesize = codesize;
+        this->errorType = errt;
+    }
 
     Error(unsigned bit, unsigned codesize, int errt) {
         this->bit = bit;
