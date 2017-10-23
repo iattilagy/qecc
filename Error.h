@@ -43,8 +43,8 @@ public:
         this->codesize = codesize;
         this->errorType = errt;
     }
-    void runError(ket &c);
-    void runErrorOneBit(ket &c, unsigned index);
+    void runError(ket &c, cmat &d, bool &m);
+    void runErrorOneBit(ket &c, cmat &d, bool &m, unsigned index);
 
     void setError(unsigned x, unsigned y, unsigned z) {
         this->x = x;

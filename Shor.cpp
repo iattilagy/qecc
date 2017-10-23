@@ -16,8 +16,10 @@
 const unsigned Shor::CS = 9;
 
 void Shor::encode(bool b) {
-    c = codes.codeword(Codes::Type::NINE_QUBIT_SHOR, b);
-    c = kron(c, mket({0, 0, 0, 0, 0, 0, 0, 0}));
+    *c = codes.codeword(Codes::Type::NINE_QUBIT_SHOR, b);
+    if (mixed) {
+        convertToMixed();
+    }
 }
 
 std::string Shor::getDescriptor() {
@@ -36,44 +38,44 @@ std::string Shor::getDescriptor() {
 }
 
 void Shor::decode() {
-    c = apply(c, gt.CNOT,{0, 1});
-    c = apply(c, gt.CNOT,{0, 2});
-    c = apply(c, gt.CNOT,{3, 4});
-    c = apply(c, gt.CNOT,{3, 5});
-    c = apply(c, gt.CNOT,{6, 7});
-    c = apply(c, gt.CNOT,{6, 8});
+    applyCGT(gt.CNOT,{0, 1});
+    applyCGT(gt.CNOT,{0, 2});
+    applyCGT(gt.CNOT,{3, 4});
+    applyCGT(gt.CNOT,{3, 5});
+    applyCGT(gt.CNOT,{6, 7});
+    applyCGT(gt.CNOT,{6, 8});
 
-    c = apply(c, gt.H,{0});
-    c = apply(c, gt.H,{3});
-    c = apply(c, gt.H,{6});
+    applyGT(gt.H, 0);
+    applyGT(gt.H, 3);
+    applyGT(gt.H, 6);
 
-    c = apply(c, gt.CNOT,{0, 3});
-    c = apply(c, gt.CNOT,{0, 6});
+    applyCGT(gt.CNOT,{0, 3});
+    applyCGT(gt.CNOT,{0, 6});
 }
 
 void Shor::errorCorrection(bool *a, const std::vector<unsigned> &b) {
     if (a[0] && a[1])
-        c = apply(c, gt.X,{b[0]});
+        applyGT(gt.X, b[0]);
     else if (a[0] && !a[1])
-        c = apply(c, gt.X,{b[1]});
+        applyGT(gt.X, b[1]);
     else if (!a[0] && a[1])
-        c = apply(c, gt.X,{b[2]});
+        applyGT(gt.X, b[2]);
 }
 
 //Test errors should NOT cause bit flip
 
 bool Shor::run() {
     encode(input);
-    
+
     error();
 
     //X error correction
-    xflip[0] = setandmesAnc({0, 1, CS}, 9);
-    xflip[1] = setandmesAnc({0, 2, CS}, 10);
-    xflip[2] = setandmesAnc({3, 4, CS}, 11);
-    xflip[3] = setandmesAnc({3, 5, CS}, 12);
-    xflip[4] = setandmesAnc({6, 7, CS}, 13);
-    xflip[5] = setandmesAnc({6, 8, CS}, 14);
+    xflip[0] = setandmesAnc({0, 1, CS}, CS);
+    xflip[1] = setandmesAnc({0, 2, CS}, CS);
+    xflip[2] = setandmesAnc({3, 4, CS}, CS);
+    xflip[3] = setandmesAnc({3, 5, CS}, CS);
+    xflip[4] = setandmesAnc({6, 7, CS}, CS);
+    xflip[5] = setandmesAnc({6, 8, CS}, CS);
 
     //errorCorrection's 1st arg is a bool array
     //with 2 bools!!!
@@ -83,8 +85,8 @@ bool Shor::run() {
 
     //Z error correction
     hadamardAllCodeBits();
-    zflip[0] = setandmesAnc({0, 1, 2, 3, 4, 5, CS}, 15);
-    zflip[1] = setandmesAnc({0, 1, 2, 6, 7, 8, CS}, 16);
+    zflip[0] = setandmesAnc({0, 1, 2, 3, 4, 5, CS}, CS);
+    zflip[1] = setandmesAnc({0, 1, 2, 6, 7, 8, CS}, CS);
     errorCorrection(zflip,{0, 3, 6});
     hadamardAllCodeBits();
 

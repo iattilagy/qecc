@@ -25,7 +25,7 @@ bool None::run() {
 }
 
 void None::encode(bool b) {
-    c = mket({b});
+    *c = mket({b});
 }
 
 std::string None::getDescriptor() {

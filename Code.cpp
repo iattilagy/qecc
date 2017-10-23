@@ -19,36 +19,54 @@ const int Code::RAND = 43;
 Code::Code(bool b) {
     input = b;
     deleteError = true;
+    mixed = false;
+    c = new ket();
 }
 
-bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned anc) {
-    for (int i = 0; b[i] < getCS(); i++) {
-        c = apply(c, gt.CNOT,{b[i], anc});
+bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned CS) {
+    if (!mixed) {
+        ket temp = kron(*c, mket({0}));
+        for (int i = 0; b[i] < CS; i++) {
+            temp = apply(temp, gt.CNOT,{b[i], CS});
+        }
+        auto measured = measure(temp, gt.X,{CS});
+        return !std::get<0>(measured);
+    } else {
+        cmat temp = kron(*d, mket({0}) * mket({0}).adjoint());
+        for (int i = 0; b[i] < CS; i++) {
+            temp = apply(temp, gt.CNOT,{b[i], CS});
+        }
+        auto measured = measure(temp, gt.X,{CS});
+        return !std::get<0>(measured);
     }
-    return getMes(anc);
 }
 
 void Code::hadamardAllCodeBits() {
     for (unsigned i = 0; i < getCS(); i++) {
-        c = apply(c, gt.H,{i});
+        applyGT(gt.H,{i});
     }
 }
 
 void Code::hadamardCodeBits(const std::vector<unsigned>& b) {
     for (int i = 0; b[i] < getCS(); i++) {
-        c = apply(c, gt.H,{b[i]});
+        applyGT(gt.H,{b[i]});
     }
 }
 
 bool Code::getMes(unsigned i) {
-    auto measured = measure(c, gt.X,{i});
-    return !std::get<0>(measured);
+    if (!mixed) {
+        auto measured = measure(*c, gt.X,{i});
+        return !std::get<0>(measured);
+    } else {
+        auto measured = measure(*d, gt.X,{i});
+        return !std::get<0>(measured);
+    }
 }
 
 void Code::error() {
     while (!errorlist.empty()) {
         Error *e = errorlist.front();
-        e->runError(c);
+        e->runError(*c, *d, mixed);
         if (deleteError)
             delete e;
         errorlist.pop();

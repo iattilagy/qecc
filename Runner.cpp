@@ -48,7 +48,7 @@ void Runner::run() {
             runCounter.fetch_add(1, std::memory_order_relaxed);
             threadCounter.fetch_add(1, std::memory_order_relaxed);
         }
-        usleep(50);
+        usleep(20);
     }
     while (threadCounter.load(std::memory_order_relaxed)) {
         usleep(100);

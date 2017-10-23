@@ -18,51 +18,45 @@ const unsigned Code5::CS = 5;
 std::string Code5::getDescriptor() {
     std::ostringstream de;
     de << "5QUBIT\t";
-    de << flip[0] << flip[1] << flip [2] << flip[4] << "\t";
+    de << flip[0] << flip[1] << flip [2] << flip[3] << "\t";
     de << input << "->" << result << "\t";
     de << ((input == result) ? "OK" : "ERROR") << std::endl;
     return de.str();
 }
 
 void Code5::encode(bool b) {
-    if (input)
-        c = mket({1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
-    else
-        c = mket({0, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+    *c = mket({b ? 1u : 0u, 0, 0, 0, 0});
+    if (mixed) {
+        convertToMixed();
+    }
 
-    c = apply(c, gt.H,{1});
-    c = apply(c, gt.H,{2});
-    c = apply(c, gt.H,{3});
-    c = apply(c, gt.H,{4});
+    hadamardCodeBits({1, 2, 3, 4, getCS()});
 
-    c = apply(c, gt.CNOT,{4, 0});
-    c = apply(c, gt.CNOT,{3, 0});
-    c = apply(c, gt.CNOT,{2, 0});
-    c = apply(c, gt.CNOT,{1, 0});
+    applyCGT(gt.CNOT,{4, 0});
+    applyCGT(gt.CNOT,{3, 0});
+    applyCGT(gt.CNOT,{2, 0});
+    applyCGT(gt.CNOT,{1, 0});
 
-    c = apply(c, gt.CZ,{4, 3});
-    c = apply(c, gt.CZ,{3, 2});
-    c = apply(c, gt.CZ,{2, 1});
-    c = apply(c, gt.CZ,{1, 0});
-    c = apply(c, gt.CZ,{0, 4});
+    applyCGT(gt.CZ,{4, 3});
+    applyCGT(gt.CZ,{3, 2});
+    applyCGT(gt.CZ,{2, 1});
+    applyCGT(gt.CZ,{1, 0});
+    applyCGT(gt.CZ,{0, 4});
 }
 
 void Code5::decode() {
-    c = apply(c, gt.CZ,{0, 4});
-    c = apply(c, gt.CZ,{1, 0});
-    c = apply(c, gt.CZ,{2, 1});
-    c = apply(c, gt.CZ,{3, 2});
-    c = apply(c, gt.CZ,{4, 3});
+    applyCGT(gt.CZ,{0, 4});
+    applyCGT(gt.CZ,{1, 0});
+    applyCGT(gt.CZ,{2, 1});
+    applyCGT(gt.CZ,{3, 2});
+    applyCGT(gt.CZ,{4, 3});
 
-    c = apply(c, gt.CNOT,{1, 0});
-    c = apply(c, gt.CNOT,{2, 0});
-    c = apply(c, gt.CNOT,{3, 0});
-    c = apply(c, gt.CNOT,{4, 0});
+    applyCGT(gt.CNOT,{1, 0});
+    applyCGT(gt.CNOT,{2, 0});
+    applyCGT(gt.CNOT,{3, 0});
+    applyCGT(gt.CNOT,{4, 0});
 
-    c = apply(c, gt.H,{1});
-    c = apply(c, gt.H,{2});
-    c = apply(c, gt.H,{3});
-    c = apply(c, gt.H,{4});
+    hadamardCodeBits({1, 2, 3, 4, CS});
 }
 
 void Code5::errorCorrection(bool* a) {
@@ -77,54 +71,54 @@ void Code5::errorCorrection(bool* a) {
 
     switch (ec) {
         case 1:
-            c = apply(c, gt.X,{0});
+            applyGT(gt.X, 0);
             break;
         case 2:
-            c = apply(c, gt.Z,{2});
+            applyGT(gt.Z, 2);
             break;
         case 3:
-            c = apply(c, gt.X,{4});
+            applyGT(gt.X, 4);
             break;
         case 4:
-            c = apply(c, gt.Z,{4});
+            applyGT(gt.Z, 4);
             break;
         case 5:
-            c = apply(c, gt.Z,{1});
+            applyGT(gt.Z, 1);
             break;
         case 6:
-            c = apply(c, gt.X,{3});
+            applyGT(gt.X, 3);
             break;
         case 7:
-            c = apply(c, gt.X,{4});
-            c = apply(c, gt.Z,{4});
+            applyGT(gt.X, 4);
+            applyGT(gt.Z, 4);
             break;
         case 8:
-            c = apply(c, gt.X,{1});
+            applyGT(gt.X, 1);
             break;
         case 9:
-            c = apply(c, gt.Z,{3});
+            applyGT(gt.Z, 3);
             break;
         case 10:
-            c = apply(c, gt.Z,{0});
+            applyGT(gt.Z, 0);
             break;
         case 11:
-            c = apply(c, gt.X,{0});
-            c = apply(c, gt.Z,{0});
+            applyGT(gt.X, 0);
+            applyGT(gt.Z, 0);
             break;
         case 12:
-            c = apply(c, gt.X,{2});
+            applyGT(gt.X, 2);
             break;
         case 13:
-            c = apply(c, gt.X,{1});
-            c = apply(c, gt.Z,{1});
+            applyGT(gt.X, 1);
+            applyGT(gt.Z, 1);
             break;
         case 14:
-            c = apply(c, gt.X,{2});
-            c = apply(c, gt.Z,{2});
+            applyGT(gt.X, 2);
+            applyGT(gt.Z, 2);
             break;
         case 15:
-            c = apply(c, gt.X,{3});
-            c = apply(c, gt.Z,{3});
+            applyGT(gt.X, 3);
+            applyGT(gt.Z, 3);
             break;
     }
 }
@@ -135,19 +129,19 @@ bool Code5::run() {
     error();
 
     hadamardCodeBits({0, 3, CS});
-    flip[0] = setandmesAnc({0, 1, 2, 3, CS}, 6);
+    flip[0] = setandmesAnc({0, 1, 2, 3, CS}, CS);
     hadamardCodeBits({0, 3, CS});
 
     hadamardCodeBits({1, 4, CS});
-    flip[1] = setandmesAnc({1, 2, 3, 4, CS}, 7);
+    flip[1] = setandmesAnc({1, 2, 3, 4, CS}, CS);
     hadamardCodeBits({1, 4, CS});
 
     hadamardCodeBits({0, 2, CS});
-    flip[2] = setandmesAnc({0, 2, 3, 4, CS}, 8);
+    flip[2] = setandmesAnc({0, 2, 3, 4, CS}, CS);
     hadamardCodeBits({0, 2, CS});
 
     hadamardCodeBits({1, 3, CS});
-    flip[3] = setandmesAnc({0, 1, 3, 4, CS}, 9);
+    flip[3] = setandmesAnc({0, 1, 3, 4, CS}, CS);
     hadamardCodeBits({1, 3, CS});
 
     errorCorrection(flip);

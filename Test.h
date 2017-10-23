@@ -29,6 +29,10 @@ public:
 
     void initalize() override;
 
+    void testMixed() {
+        mixed = true;
+    }
+
     std::string getResult() override {
         if ((int) (runner->getBER()*10000) == 0) {
             return "TESTS SUCCESFULL";
@@ -38,9 +42,10 @@ public:
     }
 
     Test(int type, int maxnumthreads) : Runable(type, maxnumthreads) {
-
+        mixed = false;
     }
 private:
+    bool mixed;
 };
 
 #endif /* TEST_H */

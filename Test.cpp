@@ -25,8 +25,10 @@ void Test::shorTest(bool input) {
     //Add one without any error
     s = new Shor(input);
     runner->addCode(s);
+    if (mixed) s->setMixed();
     for (int i = 0; i < Test::shorruns; i++) {
         s = new Shor(input);
+        if (mixed) s->setMixed();
         if (i < Shor::CS) {
             Error *e;
             e = new Error(i % Shor::CS, Shor::CS, Error::CONST);
@@ -85,8 +87,10 @@ void Test::steaneTest(bool input) {
     //Add one without error
     s = new Steane(input);
     runner->addCode(s);
+    if (mixed) s->setMixed();
     for (int i = 0; i < Test::shorruns; i++) {
         s = new Steane(input);
+        if (mixed) s->setMixed();
         if (i < Steane::CS) {
             Error *e;
             e = new Error(i % Steane::CS, Steane::CS, Error::CONST);
@@ -128,8 +132,10 @@ void Test::code5Test(bool input) {
     //Add one without error
     s = new Code5(input);
     runner->addCode(s);
+    if (mixed) s->setMixed();
     for (int i = 0; i < Test::code5runs; i++) {
         s = new Code5(input);
+        if (mixed) s->setMixed();
         if (i < Code5::CS) {
             Error *e;
             e = new Error(i % Code5::CS, Code5::CS, Error::CONST);

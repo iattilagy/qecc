@@ -26,74 +26,74 @@ std::string Steane::getDescriptor() {
 }
 
 void Steane::encode(bool b) {
-    if (b)
-        c = mket({0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
-    else
-        c = mket({0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+    *c = mket({0, 0, 0, b ? 1u : 0u, 0, 0, 0});
+    if (mixed) {
+        convertToMixed();
+    }
 
-    c = apply(c, gt.H,{0});
-    c = apply(c, gt.H,{1});
-    c = apply(c, gt.H,{2});
+    applyGT(gt.H,{0});
+    applyGT(gt.H,{1});
+    applyGT(gt.H,{2});
 
-    c = apply(c, gt.CNOT,{3, 4});
-    c = apply(c, gt.CNOT,{3, 5});
+    applyCGT(gt.CNOT,{3, 4});
+    applyCGT(gt.CNOT,{3, 5});
 
-    c = apply(c, gt.CNOT,{1, 3});
-    c = apply(c, gt.CNOT,{1, 5});
-    c = apply(c, gt.CNOT,{1, 6});
+    applyCGT(gt.CNOT,{1, 3});
+    applyCGT(gt.CNOT,{1, 5});
+    applyCGT(gt.CNOT,{1, 6});
 
-    c = apply(c, gt.CNOT,{2, 3});
-    c = apply(c, gt.CNOT,{2, 4});
-    c = apply(c, gt.CNOT,{2, 6});
+    applyCGT(gt.CNOT,{2, 3});
+    applyCGT(gt.CNOT,{2, 4});
+    applyCGT(gt.CNOT,{2, 6});
 
-    c = apply(c, gt.CNOT,{0, 4});
-    c = apply(c, gt.CNOT,{0, 5});
-    c = apply(c, gt.CNOT,{0, 6});
+    applyCGT(gt.CNOT,{0, 4});
+    applyCGT(gt.CNOT,{0, 5});
+    applyCGT(gt.CNOT,{0, 6});
 }
 
 void Steane::decode() {
-    c = apply(c, gt.CNOT,{0, 4});
-    c = apply(c, gt.CNOT,{0, 5});
-    c = apply(c, gt.CNOT,{0, 6});
+    applyCGT(gt.CNOT,{0, 4});
+    applyCGT(gt.CNOT,{0, 5});
+    applyCGT(gt.CNOT,{0, 6});
 
-    c = apply(c, gt.CNOT,{1, 3});
-    c = apply(c, gt.CNOT,{1, 5});
-    c = apply(c, gt.CNOT,{1, 6});
+    applyCGT(gt.CNOT,{1, 3});
+    applyCGT(gt.CNOT,{1, 5});
+    applyCGT(gt.CNOT,{1, 6});
 
-    c = apply(c, gt.CNOT,{2, 3});
-    c = apply(c, gt.CNOT,{2, 4});
-    c = apply(c, gt.CNOT,{2, 6});
+    applyCGT(gt.CNOT,{2, 3});
+    applyCGT(gt.CNOT,{2, 4});
+    applyCGT(gt.CNOT,{2, 6});
 
-    c = apply(c, gt.CNOT,{3, 4});
-    c = apply(c, gt.CNOT,{3, 5});
+    applyCGT(gt.CNOT,{3, 4});
+    applyCGT(gt.CNOT,{3, 5});
 
-    c = apply(c, gt.H,{0});
-    c = apply(c, gt.H,{1});
-    c = apply(c, gt.H,{2});
+    applyGT(gt.H,{0});
+    applyGT(gt.H,{1});
+    applyGT(gt.H,{2});
 }
 
 void Steane::errorCorrection(bool *a) {
-    switch (a[0]*4 + a[1] *2 + a[2]) {
+    switch (a[0]*4 + a[1]*2 + a[2]) {
         case 4:
-            c = apply(c, gt.X,{0});
+            applyGT(gt.X,{0});
             break;
         case 2:
-            c = apply(c, gt.X,{1});
+            applyGT(gt.X,{1});
             break;
         case 1:
-            c = apply(c, gt.X,{2});
+            applyGT(gt.X,{2});
             break;
         case 3:
-            c = apply(c, gt.X,{3});
+            applyGT(gt.X,{3});
             break;
         case 5:
-            c = apply(c, gt.X,{4});
+            applyGT(gt.X,{4});
             break;
         case 6:
-            c = apply(c, gt.X,{5});
+            applyGT(gt.X,{5});
             break;
         case 7:
-            c = apply(c, gt.X,{6});
+            applyGT(gt.X,{6});
             break;
     }
 }
@@ -103,15 +103,15 @@ bool Steane::run() {
 
     error();
 
-    xflip [0] = setandmesAnc({0, 4, 5, 6}, 7);
-    xflip [1] = setandmesAnc({1, 3, 5, 6}, 8);
-    xflip [2] = setandmesAnc({2, 3, 4, 6}, 9);
+    xflip [0] = setandmesAnc({0, 4, 5, 6, CS}, CS);
+    xflip [1] = setandmesAnc({1, 3, 5, 6, CS}, CS);
+    xflip [2] = setandmesAnc({2, 3, 4, 6, CS}, CS);
     errorCorrection(xflip);
 
     hadamardAllCodeBits();
-    zflip [0] = setandmesAnc({0, 4, 5, 6}, 10);
-    zflip [1] = setandmesAnc({1, 3, 5, 6}, 11);
-    zflip [2] = setandmesAnc({2, 3, 4, 6}, 12);
+    zflip [0] = setandmesAnc({0, 4, 5, 6, CS}, CS);
+    zflip [1] = setandmesAnc({1, 3, 5, 6, CS}, CS);
+    zflip [2] = setandmesAnc({2, 3, 4, 6, CS}, CS);
     errorCorrection(zflip);
     hadamardAllCodeBits();
 

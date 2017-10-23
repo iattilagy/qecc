@@ -23,6 +23,7 @@
 using namespace qpp;
 
 class Code {
+    friend class Error;
 public:
     static const int TEST;
     static const int RAND;
@@ -45,14 +46,27 @@ public:
     void disableErrorDeletion() {
         deleteError = false;
     }
+
+    void convertToMixed() {
+        d = new cmat();
+        d->noalias() = (*c) * c->transpose().conjugate();
+        mixed = true;
+        delete c;
+    }
+
+    void setMixed() {
+        mixed = true;
+    }
 protected:
-    ket c;
+    ket *c;
+    cmat *d;
+    bool mixed;
     std::queue<Error *> errorlist;
     bool input;
     bool deleteError;
     bool result;
     bool ok;
-    bool setandmesAnc(const std::vector<unsigned> &b, unsigned anc);
+    bool setandmesAnc(const std::vector<unsigned> &b, unsigned CS);
     void hadamardAllCodeBits();
     void hadamardCodeBits(const std::vector<unsigned> &b);
     bool getMes(unsigned i);
@@ -60,6 +74,22 @@ protected:
     void error();
     virtual void encode(bool b) = 0;
     virtual unsigned getCS() = 0;
+
+    void applyGT(const cmat gate, unsigned b) {
+        if (!mixed) {
+            *c = apply(*c, gate,{b});
+        } else {
+            *d = apply(*d, gate,{b});
+        }
+    }
+
+    void applyCGT(const cmat gate, const std::vector<unsigned>&b) {
+        if (!mixed) {
+            *c = apply(*c, gate,{b[0], b[1]});
+        } else {
+            *d = apply(*d, gate,{b[0], b[1]});
+        }
+    }
 };
 
 #endif /* CODE_H */

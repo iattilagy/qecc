@@ -109,24 +109,25 @@ int main(int argc, char** argv) {
     cout << endl;
 
 
-    Test *t = new Test(Runable::SHOR, max_numthreads);
-    t->run();
-    cout << "SHOR\t" << t->getResult() << endl;
-    t->setCodeType(Runable::STEANE);
+    Test *t = new Test(Runable::STEANE, max_numthreads);
+    t->testMixed();
     t->run();
     cout << "STEANE\t" << t->getResult() << endl;
+    t->setCodeType(Runable::SHOR);
+    t->run();
+    cout << "SHOR\t" << t->getResult() << endl;
     t->setCodeType(Runable::CODE5);
     t->run();
     cout << "5QUBIT\t" << t->getResult() << endl;
     delete t;
 
-    Error *e = new Error(Steane::CS, Error::RAND);
+    /*Error *e = new Error(Steane::CS, Error::RAND);
     e->setError(100, 0, 0);
     Single *s = new Single(Runable::STEANE, max_numthreads, e, 100);
     s->run();
     cout << "SINGLE STEANE\t" << s->getResult() << endl;
     delete s;
-    delete e;
+    delete e;*/
 
     return 0;
 }
