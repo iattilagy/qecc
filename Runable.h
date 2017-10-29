@@ -21,8 +21,10 @@ public:
     static const int SHOR;
     static const int STEANE;
     static const int CODE5;
+    static const int NONE;
+    static const int BITFLIP;
 
-    Runable(int type, int maxnumthreads) {
+    Runable(int type, unsigned maxnumthreads) {
         codetype = type;
         runner = new Runner(maxnumthreads);
     }

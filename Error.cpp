@@ -12,54 +12,55 @@
  */
 
 #include "Error.h"
+#include "Code.h"
 
 const int Error::CONST = 42;
 const int Error::RAND = 43;
+const int Error::ADC = 44;
 
-void Error::runError(ket &c, cmat &d, bool &m) {
-    if (bit < codesize) {
-        runErrorOneBit(c, d, m, bit);
-    } else if (bit == codesize) {
-        for (unsigned i = 0; i < codesize; i++) {
-            runErrorOneBit(c, d, m, i);
+void Error::runError(Code *code) {
+    if (errorType == Error::CONST || errorType == Error::RAND) {
+        if (!all) {
+            runErrorOneBit(code, bit);
+        } else {
+            for (unsigned i = 0; i < code->getCS(); i++) {
+                runErrorOneBit(code, i);
+            }
         }
-    } else {
-        throw std::string("class Error: bit cannot be more than codesize!!!");
+    } else if (errorType == Error::ADC) {
+        std::vector<cmat> channel;
+        cmat E0, E1;
+        E0.resize(2, 2);
+        E1.resize(2, 2);
+        E0 << 1, 0, 0, sqrt(1 - adcg);
+        E1 << 0, sqrt(adcg), 0, 0;
+        channel.push_back(E0);
+        channel.push_back(E1);
+        if (!code->mixed)
+            code->convertToMixed();
+
+        for (idx i = 0; i < code->getCS(); i++) {
+            *code->d = apply(*code->d, channel, {
+                i
+            });
+        }
     }
 }
 
-void Error::runErrorOneBit(ket &c, cmat &d, bool &m, unsigned index) {
-    if (!m) {
-        if (errorType == Error::RAND) {
-            if (abs(rand()) % 1000 < x)
-                c = apply(c, gt.X,{index});
-            if (abs(rand()) % 1000 < y)
-                c = apply(c, gt.Z,{index});
-            if (abs(rand()) % 1000 < z)
-                c = apply(c, gt.Y,{index});
-        } else if (errorType == Error::CONST) {
-            if (x)
-                c = apply(c, gt.X,{index});
-            if (y)
-                c = apply(c, gt.Y,{index});
-            if (z)
-                c = apply(c, gt.Z,{index});
-        }
-    } else {
-        if (errorType == Error::RAND) {
-            if (abs(rand()) % 1000 < x)
-                d = apply(d, gt.X,{index});
-            if (abs(rand()) % 1000 < y)
-                d = apply(d, gt.Z,{index});
-            if (abs(rand()) % 1000 < z)
-                d = apply(d, gt.Y,{index});
-        } else if (errorType == Error::CONST) {
-            if (x)
-                d = apply(d, gt.X,{index});
-            if (y)
-                d = apply(d, gt.Y,{index});
-            if (z)
-                d = apply(d, gt.Z,{index});
-        }
+void Error::runErrorOneBit(Code *code, unsigned index) {
+    if (errorType == Error::RAND) {
+        if (abs(rand()) % 1000 < x)
+            code->applyGT(gt.X, index);
+        if (abs(rand()) % 1000 < y)
+            code->applyGT(gt.Y, index);
+        if (abs(rand()) % 1000 < z)
+            code->applyGT(gt.Z, index);
+    } else if (errorType == Error::CONST) {
+        if (x)
+            code->applyGT(gt.X, index);
+        if (y)
+            code->applyGT(gt.Y, index);
+        if (z)
+            code->applyGT(gt.Z, index);
     }
 }

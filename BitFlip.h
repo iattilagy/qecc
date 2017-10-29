@@ -5,14 +5,14 @@
  */
 
 /* 
- * File:   Code5.h
+ * File:   BitFlip.h
  * Author: attila
  *
- * Created on September 24, 2017, 2:40 PM
+ * Created on October 23, 2017, 4:07 PM
  */
 
-#ifndef CODE5_H
-#define CODE5_H
+#ifndef BITFLIP_H
+#define BITFLIP_H
 
 #include "qpp.h"
 #include "Code.h"
@@ -20,11 +20,11 @@
 
 using namespace qpp;
 
-class Code5 : public Code {
+class BitFlip : public Code {
 public:
     static const unsigned CS;
 
-    Code5(bool b) : Code(b) {
+    BitFlip(bool b) : Code(b) {
 
     }
     bool run() override;
@@ -33,14 +33,14 @@ protected:
     void encode(bool b) override;
 
     unsigned getCS() override {
-        return Code5::CS;
+        return BitFlip::CS;
     }
     void testError();
 private:
-    bool flip[4];
+    bool flip[2];
     void errorCorrection();
     void decode();
 };
 
-#endif /* CODE5_H */
+#endif /* BITFLIP_H */
 

@@ -29,6 +29,7 @@ public:
     static const int RAND;
 
     Code(bool b);
+    virtual ~Code();
     std::atomic_int *errorCounter;
     std::atomic_int *threadCounter;
 

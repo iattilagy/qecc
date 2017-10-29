@@ -16,6 +16,8 @@
 const int Runable::SHOR = 100;
 const int Runable::STEANE = 101;
 const int Runable::CODE5 = 102;
+const int Runable::NONE = 103;
+const int Runable::BITFLIP = 104;
 
 Runable::~Runable() {
     delete runner;

@@ -59,7 +59,7 @@ void Code5::decode() {
     hadamardCodeBits({1, 2, 3, 4, CS});
 }
 
-void Code5::errorCorrection(bool* a) {
+void Code5::errorCorrection() {
     unsigned char ec = 0;
     ec += flip[0];
     ec <<= 1;
@@ -144,7 +144,7 @@ bool Code5::run() {
     flip[3] = setandmesAnc({0, 1, 3, 4, CS}, CS);
     hadamardCodeBits({1, 3, CS});
 
-    errorCorrection(flip);
+    errorCorrection();
 
     decode();
     result = getMes(0);

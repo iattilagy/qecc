@@ -18,6 +18,7 @@
 #include <iostream>
 #include <unistd.h>
 #include "Single.h"
+#include "Network.h"
 
 using namespace std;
 
@@ -30,15 +31,12 @@ void printHelp() {
     cout << " qecc [options]" << endl;
     cout << endl;
     cout << "Options:" << endl;
-    cout << "\t-j <n>\t use n threads" << endl;
-    cout << "\t-n <m>\t run m times" << endl;
-    cout << "\t-s\t run Shor code" << endl;
-    cout << "\t-7\t run Steane code" << endl;
-    cout << "\t-5\t run 5 qubit code" << endl;
-    cout << "\t-1\t run non coded" << endl;
+    cout << "\t-j <n>\t use n threads (default 2)" << endl;
+    cout << "\t-n <m>\t run m times (default 100)" << endl;
     cout << "\t-t\t run inbuilt tests (all must be OK)" << endl;
-    cout << "\t-x,-y,-z <per mille> probability of X, Y, Z erros" << endl;
-    cout << "\t\t ineffective in test mode!" << endl;
+    cout << "\t-f\t specify network file name" << endl;
+    cout << "\t-c\t specify code possible values" << endl;
+    cout << "\t\tshor steane 5qubit bitflip none" << endl;
     cout << endl;
     cout << "\t-h print this help page" << endl;
 }
@@ -47,49 +45,48 @@ void printHelp() {
  * 
  */
 int main(int argc, char** argv) {
-    int counter = 0;
     int max_numthreads = 2;
-    int num_of_runs = 1000;
-    bool shor = false;
-    bool steane = false;
-    bool code5 = false;
-    bool none = false;
-    int x = 0, y = 0, z = 0;
+    int num_of_runs = 100;
     bool test = false;
+    string filename = "";
+    string codetype = "";
+    int type = 0;
 
     srand(time(NULL));
 
     int c;
-    while ((c = getopt(argc, argv, "hj:n:s751x:y:z:t")) != -1) {
+    while ((c = getopt(argc, argv, "hj:n:tf:c:")) != -1) {
         switch (c) {
             case 'j':
                 max_numthreads = atoi(optarg);
-                if (max_numthreads < 2)
+                if (max_numthreads < 1) {
+                    cout << "Number of threads should "
+                            << "be greater than 1 exiting...";
                     exit(3);
+                }
                 break;
             case 'n':
                 num_of_runs = atoi(optarg);
                 break;
-            case 's':
-                shor = true;
+            case 'f':
+                filename = optarg;
                 break;
-            case '7':
-                steane = true;
-                break;
-            case '5':
-                code5 = true;
-                break;
-            case '1':
-                none = true;
-                break;
-            case 'x':
-                x = atoi(optarg);
-                break;
-            case 'y':
-                x = atoi(optarg);
-                break;
-            case 'z':
-                z = atoi(optarg);
+            case 'c':
+                codetype = optarg;
+                if (codetype.compare("shor") == 0) {
+                    type = Runable::SHOR;
+                } else if (codetype.compare("steane") == 0) {
+                    type = Runable::STEANE;
+                } else if (codetype.compare("5qubit") == 0) {
+                    type = Runable::CODE5;
+                } else if (codetype.compare("bitflip") == 0) {
+                    type = Runable::BITFLIP;
+                } else if (codetype.compare("none") == 0) {
+                    type = Runable::NONE;
+                } else {
+                    cout << "Bad codetype exiting..." << endl;
+                    exit(5);
+                }
                 break;
             case 't':
                 test = true;
@@ -100,34 +97,26 @@ int main(int argc, char** argv) {
         }
     }
 
-    cout << "CONFIG\t" << (test ? "TEST\t" : "RAND\t");
-    if (!test)
-        cout << "RUNS " << num_of_runs << "\t";
-    cout << "THREADS " << max_numthreads << "\t";
-    if (!test)
-        cout << "X " << x << "‰ Y " << y << "‰ Z" << z << "‰";
-    cout << endl;
+    if (test) {
+        Test *t = new Test(0, max_numthreads);
+        t->runAllTests();
+        delete t;
+        return 0;
+    }
 
+    if (filename.compare("") != 0) {
+        if (!type) {
+            cout << "Specify code for network mode" << endl;
+            exit(4);
+        }
+        Network * n = new Network(type,
+                max_numthreads, filename, num_of_runs);
+        n->runAll();
+        delete n;
+        return 0;
+    }
 
-    Test *t = new Test(Runable::STEANE, max_numthreads);
-    t->testMixed();
-    t->run();
-    cout << "STEANE\t" << t->getResult() << endl;
-    t->setCodeType(Runable::SHOR);
-    t->run();
-    cout << "SHOR\t" << t->getResult() << endl;
-    t->setCodeType(Runable::CODE5);
-    t->run();
-    cout << "5QUBIT\t" << t->getResult() << endl;
-    delete t;
-
-    /*Error *e = new Error(Steane::CS, Error::RAND);
-    e->setError(100, 0, 0);
-    Single *s = new Single(Runable::STEANE, max_numthreads, e, 100);
-    s->run();
-    cout << "SINGLE STEANE\t" << s->getResult() << endl;
-    delete s;
-    delete e;*/
+    cout << "Run either in test mode or with filename..." << endl;
 
     return 0;
 }

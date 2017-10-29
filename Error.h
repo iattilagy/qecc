@@ -17,6 +17,8 @@
 #include "qpp.h"
 using namespace qpp;
 
+class Code;
+
 class Error {
 private:
     int errorType;
@@ -25,31 +27,42 @@ private:
     unsigned x = 0;
     unsigned y = 0;
     unsigned z = 0;
+    double adcg = 0;
     unsigned bit;
-    unsigned codesize;
+    bool all;
 public:
     static const int CONST;
     static const int RAND;
+    static const int ADC;
     //bit==codesize means all bits
 
-    Error(unsigned codesize, int errt) {
-        this->bit = codesize;
-        this->codesize = codesize;
+    Error(int errt) {
+        this->all = true;
         this->errorType = errt;
     }
 
-    Error(unsigned bit, unsigned codesize, int errt) {
+    Error(unsigned bit, int errt) {
         this->bit = bit;
-        this->codesize = codesize;
+        this->all = false;
         this->errorType = errt;
     }
-    void runError(ket &c, cmat &d, bool &m);
-    void runErrorOneBit(ket &c, cmat &d, bool &m, unsigned index);
+    void runError(Code *code);
+    void runErrorOneBit(Code *code, unsigned index);
 
     void setError(unsigned x, unsigned y, unsigned z) {
         this->x = x;
         this->y = y;
         this->z = z;
+    }
+
+    std::string getError() {
+        std::ostringstream de;
+        de << x << " " << y << " " << z;
+        return de.str();
+    }
+
+    void setError(double adcg) {
+        this->adcg = adcg;
     }
 };
 

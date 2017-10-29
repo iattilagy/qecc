@@ -23,6 +23,14 @@ Code::Code(bool b) {
     c = new ket();
 }
 
+Code::~Code() {
+    if (!mixed) {
+        delete c;
+    } else {
+        delete d;
+    }
+}
+
 bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned CS) {
     if (!mixed) {
         ket temp = kron(*c, mket({0}));
@@ -32,7 +40,8 @@ bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned CS) {
         auto measured = measure(temp, gt.X,{CS});
         return !std::get<0>(measured);
     } else {
-        cmat temp = kron(*d, mket({0}) * mket({0}).adjoint());
+        cmat temp;
+        temp.noalias() = kron(*d, mket({0}) * mket({0}).adjoint());
         for (int i = 0; b[i] < CS; i++) {
             temp = apply(temp, gt.CNOT,{b[i], CS});
         }
@@ -66,7 +75,7 @@ bool Code::getMes(unsigned i) {
 void Code::error() {
     while (!errorlist.empty()) {
         Error *e = errorlist.front();
-        e->runError(*c, *d, mixed);
+        e->runError(this);
         if (deleteError)
             delete e;
         errorlist.pop();

@@ -22,10 +22,12 @@ public:
     static const int shorruns;
     static const int steaneruns;
     static const int code5runs;
+    static const int bitflipruns;
 
     void shorTest(bool input);
     void steaneTest(bool input);
     void code5Test(bool input);
+    void bitFlipTest(bool input);
 
     void initalize() override;
 
@@ -40,6 +42,8 @@ public:
             return "SOME TESTS FAILED";
         }
     }
+    
+    void runAllTests();
 
     Test(int type, int maxnumthreads) : Runable(type, maxnumthreads) {
         mixed = false;

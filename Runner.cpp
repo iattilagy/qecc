@@ -16,19 +16,21 @@
 #include "Runner.h"
 #include <unistd.h>
 
+using namespace std;
+
 void *runCode(void *c) {
     Code *code = ((Code*) c);
     code->run();
-    std::cout << code->getDescriptor();
+    cout << code->getDescriptor();
     if (!code->getOK())
-        code->errorCounter->fetch_add(1, std::memory_order_relaxed);
-    code->threadCounter->fetch_sub(1, std::memory_order_relaxed);
+        code->errorCounter->fetch_add(1, memory_order_relaxed);
+    code->threadCounter->fetch_sub(1, memory_order_relaxed);
     delete code;
 }
 
 Runner::Runner(unsigned t) {
     maxnumthreads = t;
-    codes = new std::queue<Code *>;
+    codes = new queue<Code *>;
 }
 
 void Runner::addCode(Code* c) {
@@ -39,18 +41,18 @@ void Runner::addCode(Code* c) {
 
 void Runner::run() {
     reset();
-    while (!codes->empty()) {
-        if (!codes->empty() && threadCounter.load(std::memory_order_relaxed)
+     while (!codes->empty()) {
+        if (!codes->empty() && threadCounter.load(memory_order_relaxed)
                 < maxnumthreads) {
+            runCounter.fetch_add(1, memory_order_relaxed);
+            threadCounter.fetch_add(1, memory_order_relaxed);
             pthread_t t;
             pthread_create(&t, NULL, runCode, codes->front());
             codes->pop();
-            runCounter.fetch_add(1, std::memory_order_relaxed);
-            threadCounter.fetch_add(1, std::memory_order_relaxed);
         }
         usleep(20);
     }
-    while (threadCounter.load(std::memory_order_relaxed)) {
+    while (threadCounter.load(memory_order_relaxed)) {
         usleep(100);
     }
 }

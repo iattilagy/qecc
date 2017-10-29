@@ -16,6 +16,8 @@
 #include "Code5.h"
 #include "Steane.h"
 #include "Shor.h"
+#include "None.h"
+#include "BitFlip.h"
 
 std::string Single::getResult() {
     std::ostringstream de;
@@ -33,6 +35,10 @@ void Single::initalize() {
             c = new Steane(i % 2);
         } else if (getCodeType() == Runable::CODE5) {
             c = new Code5(i % 2);
+        } else if (getCodeType() == Runable::NONE) {
+            c = new None(i % 2);
+        } else if (getCodeType() == Runable::BITFLIP) {
+            c = new BitFlip(i % 2);
         }
         c->addError(e);
         c->disableErrorDeletion();

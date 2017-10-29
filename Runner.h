@@ -31,8 +31,9 @@ public:
 
     //Runner is stopped if stop is true, and all the threads are done
     void reset() {
-        errorCounter.store(0, std::memory_order_relaxed);
-        runCounter.store(0, std::memory_order_relaxed);
+        errorCounter.store(0);
+        runCounter.store(0);
+        threadCounter.store(0);
     }
 
     float getBER() {

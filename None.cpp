@@ -26,6 +26,8 @@ bool None::run() {
 
 void None::encode(bool b) {
     *c = mket({b});
+    if (mixed)
+        convertToMixed();
 }
 
 std::string None::getDescriptor() {
