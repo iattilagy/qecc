@@ -13,9 +13,6 @@
 
 #include "Code.h"
 
-const int Code::TEST = 42;
-const int Code::RAND = 43;
-
 Code::Code(bool b) {
     input = b;
     deleteError = true;

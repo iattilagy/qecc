@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   BitFlip.h
  * Author: attila
@@ -20,14 +14,29 @@
 
 using namespace qpp;
 
+/**
+ * Bit Flip code class
+ */
 class BitFlip : public Code {
 public:
+    /**
+     * Code size for bit flip which is 3
+     */
     static const unsigned CS;
 
     BitFlip(bool b) : Code(b) {
 
     }
+    
     bool run() override;
+    
+    /**
+     * Returns descriptor string <br>
+     * Format: <br>
+     * BITFLIP aa i->o OK/ERROR <br>
+     * Where aa is flip array 
+     * @return Log string
+     */
     std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
@@ -35,10 +44,17 @@ protected:
     unsigned getCS() override {
         return BitFlip::CS;
     }
-    void testError();
 private:
+    /**
+     * Stores measured ancillas<br>
+     * 11 -> X error on 1st bit<br>
+     * 10 -> X error on 2nd bit<br>
+     * 01 -> X error on 3rd bit<br>
+     */
     bool flip[2];
+    
     void errorCorrection();
+    
     void decode();
 };
 

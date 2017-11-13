@@ -18,9 +18,19 @@
 #include "Runable.h"
 
 
+/**
+ * Single class runs a single error channel n times
+ */
 class Single : public Runable {
 public:
 
+    /**
+     * Constructor
+     * @param type Code type
+     * @param maxnumthreads Maximum number of threads running
+     * @param e Error to apply
+     * @param n Number of runs
+     */
     Single(int type, int maxnumthreads, Error *e, int n)
     : Runable(type, maxnumthreads) {
         this->e = e;

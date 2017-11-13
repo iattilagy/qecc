@@ -25,6 +25,9 @@ using namespace std;
 volatile int numthreads = 0;
 volatile int errRun = 0;
 
+/**
+ * Print help for qecc
+ */
 void printHelp() {
     cout << endl;
     cout << "Usage:" << endl;
@@ -41,8 +44,11 @@ void printHelp() {
     cout << "\t-h print this help page" << endl;
 }
 
-/*
- * 
+/**
+ * Main function of qecc
+ * @param argc
+ * @param argv
+ * @return 
  */
 int main(int argc, char** argv) {
     int max_numthreads = 2;
@@ -116,6 +122,11 @@ int main(int argc, char** argv) {
         return 0;
     }
 
+    Error *e = new Error(Error::ADC);
+    e->setError(0.1);
+    Single *s = new Single(Runable::NONE, max_numthreads, e, 10000);
+    s->run();
+    cout << s->getResult() << endl;
     cout << "Run either in test mode or with filename..." << endl;
 
     return 0;

@@ -5,50 +5,36 @@
  */
 
 /* 
- * File:   None.h
+ * File:   Aad4.h
  * Author: attila
  *
- * Created on September 24, 2017, 7:18 PM
+ * Created on October 23, 2017, 3:03 PM
  */
 
-#ifndef NONE_H
-#define NONE_H
+#ifndef AAD4_H
+#define AAD4_H
 
 #include "qpp.h"
 #include "Code.h"
-#include <iostream>
 
-/**
- * Code class using no coding
- */
-class None : public Code {
+class Aad4 : public Code {
 public:
-    /**
-     * Code size for None is 1
-     */
     static const unsigned CS;
 
-    None(bool b) : Code(b) {
+    Aad4(bool b) : Code(b) {
 
     }
-
     bool run() override;
-    
-    /**
-     * Returns a descriptor string<br>
-     * Format:<br>
-     * <i>NONE i->o ERROR/OK</i>
-     * @return Log string
-     */
     std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
 
     unsigned getCS() override {
-        return None::CS;
+        return Aad4::CS;
     }
 private:
+    bool flip[2];
 };
 
-#endif /* NONE_H */
+#endif /* AAD4_H */
 

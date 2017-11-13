@@ -18,6 +18,7 @@
 #include "Shor.h"
 #include "None.h"
 #include "BitFlip.h"
+#include "Aad4.h"
 
 std::string Single::getResult() {
     std::ostringstream de;
@@ -39,6 +40,8 @@ void Single::initalize() {
             c = new None(i % 2);
         } else if (getCodeType() == Runable::BITFLIP) {
             c = new BitFlip(i % 2);
+        } else if (getCodeType() == Runable::AAD4) {
+            c = new Aad4(i % 2);
         }
         c->addError(e);
         c->disableErrorDeletion();
