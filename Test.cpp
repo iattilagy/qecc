@@ -123,7 +123,7 @@ void Test::steaneTest(bool input) {
             e = new Error(i % Steane::CS, Error::CONST);
             e->setError(1, 0, 0);
             s->addError(e);
-            e = new Error(Steane::CS - i % Steane::CS, Error::CONST);
+            e = new Error(Steane::CS - (i % Steane::CS +1), Error::CONST);
             e->setError(0, 0, 1);
             s->addError(e);
         }
@@ -174,7 +174,8 @@ void Test::bitFlipTest(bool input) {
     runner->addCode(s);
     if (mixed) s->setMixed();
     for (int i = 0; i < Test::bitflipruns; i++) {
-        s = new BitFlip(input);
+        s = new BitFlip(input);    
+        if (mixed) s->setMixed();
         Error *e;
         e = new Error(i % BitFlip::CS, Error::CONST);
         e->setError(1, 0, 0);
@@ -193,6 +194,9 @@ void Test::initalize() {
     } else if (getCodeType() == Runable::CODE5) {
         code5Test(0);
         code5Test(1);
+    } else if (getCodeType() == Runable::BITFLIP){
+        bitFlipTest(0);
+        bitFlipTest(1);
     }
 }
 

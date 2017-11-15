@@ -13,6 +13,8 @@
 
 #include "Code.h"
 
+using namespace std;
+
 Code::Code(bool b) {
     input = b;
     deleteError = true;
@@ -35,7 +37,7 @@ bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned CS) {
             temp = apply(temp, gt.CNOT,{b[i], CS});
         }
         auto measured = measure(temp, gt.X,{CS});
-        return !std::get<0>(measured);
+        return !get<0>(measured);
     } else {
         cmat temp;
         temp.noalias() = kron(*d, mket({0}) * mket({0}).adjoint());
@@ -43,7 +45,7 @@ bool Code::setandmesAnc(const std::vector<unsigned> &b, unsigned CS) {
             temp = apply(temp, gt.CNOT,{b[i], CS});
         }
         auto measured = measure(temp, gt.X,{CS});
-        return !std::get<0>(measured);
+        return !get<0>(measured);
     }
 }
 
@@ -62,10 +64,10 @@ void Code::hadamardCodeBits(const std::vector<unsigned>& b) {
 bool Code::getMes(unsigned i) {
     if (!mixed) {
         auto measured = measure(*c, gt.X,{i});
-        return !std::get<0>(measured);
+        return !get<0>(measured);
     } else {
         auto measured = measure(*d, gt.X,{i});
-        return !std::get<0>(measured);
+        return !get<0>(measured);
     }
 }
 
