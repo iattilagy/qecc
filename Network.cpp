@@ -53,12 +53,29 @@ list<Channel *>* Network::getChannel(list<Node *> nodes, int tId, int rId) {
 
 void Network::runAll() {
     parseFile();
+
     for (typename list<Node *>::const_iterator i = nodes.begin(),
             end = nodes.end(); i != end; ++i) {
+        //If i is dummy don't run this pair
+        if ((*i)->isDummy()) {
+            continue;
+        }
         for (typename list<Node *>::const_iterator j = next(i),
                 end = nodes.end(); j != end; ++j) {
+            //If j is dummy don't run this pair
+            if ((*j)->isDummy()) {
+                continue;
+            }
             currentPair[0] = (*i)->getId();
             currentPair[1] = (*j)->getId();
+            run();
+            cout << (*i)->getName() << "->" << (*j)->getName() << "\t";
+            cout << "BER\t";
+            cout << runner->getBER() *100 << "%" << std::endl;
+
+            //Reverse
+            currentPair[1] = (*i)->getId();
+            currentPair[0] = (*j)->getId();
             run();
             cout << (*i)->getName() << "->" << (*j)->getName() << "\t";
             cout << "BER\t";
@@ -81,7 +98,7 @@ void Network::initalize() {
             c = new None(i % 2);
         } else if (getCodeType() == Runable::BITFLIP) {
             c = new BitFlip(i % 2);
-        }  else if (getCodeType() == Runable::AAD4) {
+        } else if (getCodeType() == Runable::AAD4) {
             c = new Aad4(i % 2);
         }
         for (typename list<Channel *>::const_iterator i = clist->begin(),
@@ -115,6 +132,14 @@ void Network::parseFile() {
             infile >> name;
             replaceX(name);
             n = new Node(name);
+            nodes.push_back(n);
+        } else if (key.compare("dummy") == 0) {
+            Node *n;
+            string name;
+            infile >> name;
+            replaceX(name);
+            n = new Node(name);
+            n->makeDummy();
             nodes.push_back(n);
         } else if (key.compare("channel") == 0) {
             Channel *c;

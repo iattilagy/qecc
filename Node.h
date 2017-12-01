@@ -28,6 +28,7 @@ public:
      * @param n Name of the node
      */
     Node(std::string n) : id(++s_id), name(n) {
+        dummy = false;
     }
 
     /**
@@ -45,11 +46,29 @@ public:
     std::string getName() {
         return name;
     }
+
+    /**
+     * Makes this node a dummy node
+     */
+    void makeDummy() {
+        dummy = true;
+    }
+
+    /**
+     * Returns true if this is a dummy node
+     */
+    bool isDummy() {
+        return dummy;
+    }
 private:
     /**
      * Unique id of this instance
      */
     int id;
+    /**
+     * True if dummy node
+     */
+    bool dummy;
     /**
      * Name if the node
      */
