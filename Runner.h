@@ -39,7 +39,7 @@ public:
      * @param c Pointer to the code to be added
      */
     void addCode(Code *c);
-    
+
     /**
      * Runs codes in code list
      */
@@ -59,8 +59,15 @@ public:
      * @return Bit error rate 
      */
     float getBER() {
-        return (float) errorCounter.load(std::memory_order_relaxed) 
+        return (float) errorCounter.load(std::memory_order_relaxed)
                 / runCounter.load(std::memory_order_relaxed);
+    }
+
+    /**
+     * Run codes with ket+, ket- inputs
+     */
+    void plusMinus() {
+        plusminus = true;
     }
 private:
     /**
@@ -79,11 +86,16 @@ private:
      * Counts code runs
      */
     std::atomic_int runCounter;
-   
+
     /**
      * Maximum number of threads to run simultaneously
      */
     unsigned maxnumthreads;
+
+    /**
+     * Run code with ket +, ket - inputs
+     */
+    bool plusminus;
 };
 
 #endif /* RUNNER_H */

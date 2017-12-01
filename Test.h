@@ -82,7 +82,7 @@ public:
             return "SOME TESTS FAILED";
         }
     }
-    
+
     /**
      * Runs all inbuilt tests
      */
@@ -92,7 +92,7 @@ public:
      * @param type Code type
      * @param maxnumthreads Maximum number of threads
      */
-    Test(int type, int maxnumthreads) : Runable(type, maxnumthreads) {
+    Test(int type, int maxnumthreads, bool p) : Runable(type, maxnumthreads, p) {
         mixed = false;
     }
 private:

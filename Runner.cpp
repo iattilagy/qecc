@@ -41,12 +41,14 @@ void Runner::addCode(Code* c) {
 
 void Runner::run() {
     reset();
-     while (!codes->empty()) {
+    while (!codes->empty()) {
         if (!codes->empty() && threadCounter.load(memory_order_relaxed)
                 < maxnumthreads) {
             runCounter.fetch_add(1, memory_order_relaxed);
             threadCounter.fetch_add(1, memory_order_relaxed);
             pthread_t t;
+            if (plusminus)
+                codes->front()->plusMinus();
             pthread_create(&t, NULL, runCode, codes->front());
             codes->pop();
         }

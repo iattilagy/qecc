@@ -29,7 +29,10 @@ void BitFlip::encode(bool b) {
     if (mixed) {
         convertToMixed();
     }
-    
+    if (plusminus) {
+        applyGT(gt.H, 0);
+    }
+
     applyCGT(gt.CNOT,{0, 1});
     applyCGT(gt.CNOT,{0, 2});
 }
@@ -59,6 +62,10 @@ bool BitFlip::run() {
     errorCorrection();
 
     decode();
+
+    if (plusminus) {
+        applyGT(gt.H, 0);
+    }
     result = getMes(0);
     ok = (result == input);
     return result;

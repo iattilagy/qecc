@@ -51,9 +51,12 @@ public:
      * @param type Code type
      * @param maxnumthreads Maximum number of threads running
      */
-    Runable(int type, unsigned maxnumthreads) {
+    Runable(int type, unsigned maxnumthreads, bool p) {
         codetype = type;
         runner = new Runner(maxnumthreads);
+        plusminus = p;
+        if (p)
+            runner->plusMinus();
     }
 
     /**
@@ -100,6 +103,11 @@ private:
      * Stores code type
      */
     int codetype;
+
+    /**
+     * Use ket +, ket - instead ket 0, ket 1
+     */
+    bool plusminus;
 };
 
 #endif /* RUNABLE_H */

@@ -20,6 +20,7 @@
 #include "BitFlip.h"
 #include "Code.h"
 #include "None.h"
+#include "Aad4.h"
 
 using namespace std;
 
@@ -80,6 +81,8 @@ void Network::initalize() {
             c = new None(i % 2);
         } else if (getCodeType() == Runable::BITFLIP) {
             c = new BitFlip(i % 2);
+        }  else if (getCodeType() == Runable::AAD4) {
+            c = new Aad4(i % 2);
         }
         for (typename list<Channel *>::const_iterator i = clist->begin(),
                 end = clist->end(); i != end; ++i) {
@@ -110,6 +113,7 @@ void Network::parseFile() {
             Node *n;
             string name;
             infile >> name;
+            replaceX(name);
             n = new Node(name);
             nodes.push_back(n);
         } else if (key.compare("channel") == 0) {
@@ -119,22 +123,30 @@ void Network::parseFile() {
             string tmp;
             for (int i = 0; i < 2; i++) {
                 infile >> tmp;
+                replaceX(tmp);
                 a[i] = findNode(tmp)->getId();
                 if (!a[i])
                     throw string("Node not defined");
             }
 
             infile >> tmp;
+            replaceX(tmp);
             if (tmp.compare("RAND") == 0) {
-                int err[3];
+                string err[3];
                 e = new Error(Error::RAND);
-                infile >> err[0] >> err[1] >> err[2];
-                e->setError(err[0], err[1], err[2]);
+                infile >> err[0];
+                infile >> err[1];
+                infile >> err[2];
+                replaceX(err[0]);
+                replaceX(err[1]);
+                replaceX(err[2]);
+                e->setError(atoi(err[0].c_str()), atoi(err[1].c_str()), atoi(err[2].c_str()));
             } else if (tmp.compare("ADC") == 0) {
                 e = new Error(Error::ADC);
-                double p;
+                string p;
                 infile >> p;
-                e->setError(p);
+                replaceX(p);
+                e->setError(atof(p.c_str()));
             }
             c = new Channel(a[0], a[1], e);
             channels.push_back(c);

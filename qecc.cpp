@@ -38,6 +38,7 @@ void printHelp() {
     cout << "\t-n <m>\t run m times (default 100)" << endl;
     cout << "\t-t\t run inbuilt tests (all must be OK)" << endl;
     cout << "\t-f\t specify network file name" << endl;
+    cout << "\t-x\t replace xarg in network files" << endl;
     cout << "\t-c\t specify code possible values" << endl;
     cout << "\t\tshor steane 5qubit bitflip none" << endl;
     cout << endl;
@@ -56,12 +57,14 @@ int main(int argc, char** argv) {
     bool test = false;
     string filename = "";
     string codetype = "";
+    string x = "";
     int type = 0;
+    bool p = false;
 
     srand(time(NULL));
 
     int c;
-    while ((c = getopt(argc, argv, "hj:n:tf:c:")) != -1) {
+    while ((c = getopt(argc, argv, "hj:n:tf:c:x:p")) != -1) {
         switch (c) {
             case 'j':
                 max_numthreads = atoi(optarg);
@@ -89,13 +92,21 @@ int main(int argc, char** argv) {
                     type = Runable::BITFLIP;
                 } else if (codetype.compare("none") == 0) {
                     type = Runable::NONE;
-                } else {
+                } else if (codetype.compare("aad4") == 0) {
+                    type = Runable::AAD4;
+                }else {
                     cout << "Bad codetype exiting..." << endl;
                     exit(5);
                 }
                 break;
             case 't':
                 test = true;
+                break;
+            case 'x':
+                x = optarg;
+                break;
+            case 'p':
+                p = true;
                 break;
             case 'h':
                 printHelp();
@@ -104,7 +115,12 @@ int main(int argc, char** argv) {
     }
 
     if (test) {
-        Test *t = new Test(0, max_numthreads);
+        Test *t = new Test(0, max_numthreads, p);
+        t->runAllTests();
+        cout << endl << "**************************"
+                << endl << "Mixed state tests" << endl
+                << "**************************" << endl;
+        t->testMixed();
         t->runAllTests();
         delete t;
         return 0;
@@ -116,15 +132,15 @@ int main(int argc, char** argv) {
             exit(4);
         }
         Network * n = new Network(type,
-                max_numthreads, filename, num_of_runs);
+                max_numthreads, filename, num_of_runs, x, p);
         n->runAll();
         delete n;
         return 0;
     }
 
     Error *e = new Error(Error::ADC);
-    e->setError(0.1);
-    Single *s = new Single(Runable::NONE, max_numthreads, e, 10000);
+    e->setError(0.01);
+    Single *s = new Single(Runable::AAD4, max_numthreads, e, 1000, p);
     s->run();
     cout << s->getResult() << endl;
     cout << "Run either in test mode or with filename..." << endl;

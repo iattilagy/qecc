@@ -25,6 +25,10 @@ void Steane::encode(bool b) {
         convertToMixed();
     }
 
+    if (plusminus) {
+        applyGT(gt.H, 3);
+    }
+
     applyGT(gt.H,{0});
     applyGT(gt.H,{1});
     applyGT(gt.H,{2});
@@ -110,6 +114,10 @@ bool Steane::run() {
     hadamardAllCodeBits();
 
     decode();
+
+    if (plusminus) {
+        applyGT(gt.H, 3);
+    }
     result = getMes(3);
     ok = (result == input);
     return result;

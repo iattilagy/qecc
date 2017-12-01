@@ -34,18 +34,18 @@ public:
      * @param b Input bit 1 or 0
      */
     Code(bool b);
-    
+
     /**
      * Destructor
      */
     virtual ~Code();
-    
+
     /**
      * External error counter provided by Runner class.
      * If an error occurs this is incremented.
      */
     std::atomic_int *errorCounter;
-    
+
     /**
      * Thread counter of Runner class.
      * After run Runner decrements this.
@@ -74,7 +74,7 @@ public:
     bool getOK() {
         return ok;
     }
-    
+
     /**
      * Log of run <br>
      * To be defined in child class <br>
@@ -95,27 +95,19 @@ public:
     }
 
     /**
-     * Convert vector notation to density matrix.
-     * <b>Must be called inside run!</b>
-     * From outside class stays the same but inside it will use density matrix.
-     * This has a performance drawback but needed for some errors for example
-     * amplitude damping.
-     * An amplitude damping Error does this conversion automatically.
-     */
-    void convertToMixed() {
-        d = new cmat();
-        d->noalias() = (*c) * c->transpose().conjugate();
-        mixed = true;
-        delete c;
-    }
-
-    /**
      * Converts vector notation to density matrix.
      * <b>Must be called before run!</b>
      * Useful for testing.
      */
     void setMixed() {
         mixed = true;
+    }
+
+    /**
+     * Run code in ket+, ket- basis
+     */
+    void plusMinus() {
+        plusminus = true;
     }
 protected:
     /**
@@ -151,7 +143,12 @@ protected:
      * True if result is same as input, false otherwise
      */
     bool ok;
-    
+
+    /**
+     * Run code in ket+, ket- basis
+     */
+    bool plusminus;
+
     /**
      * Applies CNOT gates controlled by bits in b on ancilla one-by-one.
      * Than measures ancilla and returns its classical value.
@@ -175,6 +172,8 @@ protected:
      * @return Measured classical value
      */
     bool getMes(unsigned i);
+
+    bool getMesH(unsigned i);
 
     /**
      * Applies errors on c or d
@@ -214,6 +213,23 @@ protected:
             *c = apply(*c, gate,{b[0], b[1]});
         } else {
             *d = apply(*d, gate,{b[0], b[1]});
+        }
+    }
+
+    /**
+     * Convert vector notation to density matrix.
+     * <b>Must be called inside run!</b>
+     * From outside class stays the same but inside it will use density matrix.
+     * This has a performance drawback but needed for some errors for example
+     * amplitude damping.
+     * An amplitude damping Error does this conversion automatically.
+     */
+    void convertToMixed() {
+        if (c) {
+            d = new cmat();
+            d->noalias() = (*c) * c->transpose().conjugate();
+            mixed = true;
+            delete c;
         }
     }
 };

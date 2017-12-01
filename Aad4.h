@@ -28,12 +28,16 @@ public:
     std::string getDescriptor() override;
 protected:
     void encode(bool b) override;
+    void decode();
 
     unsigned getCS() override {
         return Aad4::CS;
     }
+    bool noErrorOp();
+    bool errorOp(bool *f);
+    bool *setandmes2Anc();
 private:
-    bool flip[2];
+    bool flip[5];
 };
 
 #endif /* AAD4_H */

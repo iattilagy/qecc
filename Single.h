@@ -31,8 +31,8 @@ public:
      * @param e Error to apply
      * @param n Number of runs
      */
-    Single(int type, int maxnumthreads, Error *e, int n)
-    : Runable(type, maxnumthreads) {
+    Single(int type, int maxnumthreads, Error *e, int n,bool p)
+    : Runable(type, maxnumthreads, p) {
         this->e = e;
         this->n = n;
     }

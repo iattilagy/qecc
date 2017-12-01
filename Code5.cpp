@@ -23,6 +23,9 @@ void Code5::encode(bool b) {
     if (mixed) {
         convertToMixed();
     }
+    if (plusminus) {
+        applyGT(gt.H, 0);
+    }
 
     hadamardCodeBits({1, 2, 3, 4, getCS()});
 
@@ -141,6 +144,11 @@ bool Code5::run() {
     errorCorrection();
 
     decode();
+
+    if (plusminus) {
+        applyGT(gt.H, 0);
+    }
+
     result = getMes(0);
     ok = (result == input);
     return result;
