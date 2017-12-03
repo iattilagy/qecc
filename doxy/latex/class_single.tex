@@ -1,0 +1,86 @@
+\hypertarget{class_single}{}\section{Single Class Reference}
+\label{class_single}\index{Single@{Single}}
+
+
+{\ttfamily \#include $<$Single.\+h$>$}
+
+
+
+Inheritance diagram for Single\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_single__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_single_ac3a75d9c9c94671ba0246b581982db69}{Single} (int type, int maxnumthreads, \hyperlink{class_error}{Error} $\ast$e, int n)
+\item 
+void \hyperlink{class_single_afa7dc40314a46c75553a1de77ce020e9}{initalize} () override
+\item 
+std\+::string \hyperlink{class_single_adcafbbcea43758d47c2f8b4e0704c8dd}{get\+Result} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_single}{Single} class runs a single error channel n times 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Single@{Single}!Single@{Single}}
+\index{Single@{Single}!Single@{Single}}
+\subsubsection[{\texorpdfstring{Single(int type, int maxnumthreads, Error $\ast$e, int n)}{Single(int type, int maxnumthreads, Error *e, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}Single\+::\+Single (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{int}]{maxnumthreads, }
+\item[{{\bf Error} $\ast$}]{e, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_single_ac3a75d9c9c94671ba0246b581982db69}{}\label{class_single_ac3a75d9c9c94671ba0246b581982db69}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em type} & \hyperlink{class_code}{Code} type \\
+\hline
+{\em maxnumthreads} & Maximum number of threads running \\
+\hline
+{\em e} & \hyperlink{class_error}{Error} to apply \\
+\hline
+{\em n} & Number of runs \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Single@{Single}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Single@{Single}}
+\subsubsection[{\texorpdfstring{get\+Result() override}{getResult() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+::get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_single_adcafbbcea43758d47c2f8b4e0704c8dd}{}\label{class_single_adcafbbcea43758d47c2f8b4e0704c8dd}
+Returns descriptor string. To be defined by child! \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_runable_a761a0c657253223f3dd7cf2c0762c34e}{Runable}.
+
+\index{Single@{Single}!initalize@{initalize}}
+\index{initalize@{initalize}!Single@{Single}}
+\subsubsection[{\texorpdfstring{initalize() override}{initalize() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+::initalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_single_afa7dc40314a46c75553a1de77ce020e9}{}\label{class_single_afa7dc40314a46c75553a1de77ce020e9}
+Initalizes code list. To be defined by child! 
+
+Implements \hyperlink{class_runable_ae45ce89bb273ba5863e8ca0951caef85}{Runable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_single_8h}{Single.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_single_8cpp}{Single.\+cpp}\end{DoxyCompactItemize}

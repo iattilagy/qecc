@@ -1,0 +1,153 @@
+\hypertarget{class_error}{}\section{Error Class Reference}
+\label{class_error}\index{Error@{Error}}
+
+
+{\ttfamily \#include $<$Error.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_error_af749bf9f766e8139c7e26cd2ef6982cf}{Error} (int errt)
+\item 
+\hyperlink{class_error_a754d76d6fd93c4c278f62def18070e0c}{Error} (unsigned bit, int errt)
+\item 
+void \hyperlink{class_error_a54160b22c0c970e5a699a9f9eb3c6544}{run\+Error} (\hyperlink{class_code}{Code} $\ast$code)
+\item 
+void \hyperlink{class_error_a1d0f3af05cddc0b4314ce606e280acd6}{run\+Error\+One\+Bit} (\hyperlink{class_code}{Code} $\ast$code, unsigned index)
+\item 
+void \hyperlink{class_error_a80966bf786c23265085e3f1a521cc56c}{set\+Error} (unsigned x, unsigned y, unsigned z)
+\item 
+std\+::string \hyperlink{class_error_aa2aec02f62fb7e8325c5bb793da64a90}{get\+Error} ()
+\item 
+void \hyperlink{class_error_acc31b7d7ac4345350495021eacf9b7bf}{set\+Error} (double adcg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_error_a0f92db18254bcb69e96363e3cc696453}{C\+O\+N\+ST} = 42
+\item 
+static const int \hyperlink{class_error_aa2dfc83f8a57b08d80000df840fd2103}{R\+A\+ND} = 43
+\item 
+static const int \hyperlink{class_error_a638ef052fbe781ece5b3604e1bbce4ea}{A\+DC} = 44
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to provide errors, friend of \hyperlink{class_code}{Code} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Error@{Error}!Error@{Error}}
+\index{Error@{Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{Error(int errt)}{Error(int errt)}}]{\setlength{\rightskip}{0pt plus 5cm}Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{int}]{errt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_error_af749bf9f766e8139c7e26cd2ef6982cf}{}\label{class_error_af749bf9f766e8139c7e26cd2ef6982cf}
+Constructor, runs on all bits 
+\begin{DoxyParams}{Parameters}
+{\em errt} & Type \\
+\hline
+\end{DoxyParams}
+\index{Error@{Error}!Error@{Error}}
+\index{Error@{Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{Error(unsigned bit, int errt)}{Error(unsigned bit, int errt)}}]{\setlength{\rightskip}{0pt plus 5cm}Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{bit, }
+\item[{int}]{errt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_error_a754d76d6fd93c4c278f62def18070e0c}{}\label{class_error_a754d76d6fd93c4c278f62def18070e0c}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em bit} & Subsystem id to run on \\
+\hline
+{\em errt} & Type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Error@{Error}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{get\+Error()}{getError()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Error\+::get\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_error_aa2aec02f62fb7e8325c5bb793da64a90}{}\label{class_error_aa2aec02f62fb7e8325c5bb793da64a90}
+Returns descriptor string \begin{DoxyReturn}{Returns}
+Descriptor 
+\end{DoxyReturn}
+\index{Error@{Error}!run\+Error@{run\+Error}}
+\index{run\+Error@{run\+Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{run\+Error(\+Code $\ast$code)}{runError(Code *code)}}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+::run\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Code} $\ast$}]{code}
+\end{DoxyParamCaption}
+)}\hypertarget{class_error_a54160b22c0c970e5a699a9f9eb3c6544}{}\label{class_error_a54160b22c0c970e5a699a9f9eb3c6544}
+Run error on code 
+\begin{DoxyParams}{Parameters}
+{\em code} & \hyperlink{class_code}{Code} to run on \\
+\hline
+\end{DoxyParams}
+\index{Error@{Error}!run\+Error\+One\+Bit@{run\+Error\+One\+Bit}}
+\index{run\+Error\+One\+Bit@{run\+Error\+One\+Bit}!Error@{Error}}
+\subsubsection[{\texorpdfstring{run\+Error\+One\+Bit(\+Code $\ast$code, unsigned index)}{runErrorOneBit(Code *code, unsigned index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+::run\+Error\+One\+Bit (
+\begin{DoxyParamCaption}
+\item[{{\bf Code} $\ast$}]{code, }
+\item[{unsigned}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_error_a1d0f3af05cddc0b4314ce606e280acd6}{}\label{class_error_a1d0f3af05cddc0b4314ce606e280acd6}
+Run one bit error on code 
+\begin{DoxyParams}{Parameters}
+{\em code} & \hyperlink{class_code}{Code} instance \\
+\hline
+{\em index} & Bit to run on \\
+\hline
+\end{DoxyParams}
+\index{Error@{Error}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{set\+Error(unsigned x, unsigned y, unsigned z)}{setError(unsigned x, unsigned y, unsigned z)}}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+::set\+Error (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{x, }
+\item[{unsigned}]{y, }
+\item[{unsigned}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_error_a80966bf786c23265085e3f1a521cc56c}{}\label{class_error_a80966bf786c23265085e3f1a521cc56c}
+Sets X, Y, Z effective if C\+O\+N\+ST or R\+A\+ND 
+\begin{DoxyParams}{Parameters}
+{\em x} & X error \\
+\hline
+{\em y} & Y error \\
+\hline
+{\em z} & Z error \\
+\hline
+\end{DoxyParams}
+\index{Error@{Error}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!Error@{Error}}
+\subsubsection[{\texorpdfstring{set\+Error(double adcg)}{setError(double adcg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Error\+::set\+Error (
+\begin{DoxyParamCaption}
+\item[{double}]{adcg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_error_acc31b7d7ac4345350495021eacf9b7bf}{}\label{class_error_acc31b7d7ac4345350495021eacf9b7bf}
+Sets gamma for amplitude damping effective if A\+DC 
+\begin{DoxyParams}{Parameters}
+{\em adcg} & Gamma \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Error@{Error}!A\+DC@{A\+DC}}
+\index{A\+DC@{A\+DC}!Error@{Error}}
+\subsubsection[{\texorpdfstring{A\+DC}{ADC}}]{\setlength{\rightskip}{0pt plus 5cm}const int Error\+::\+A\+DC = 44\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_error_a638ef052fbe781ece5b3604e1bbce4ea}{}\label{class_error_a638ef052fbe781ece5b3604e1bbce4ea}
+A\+DC type int \index{Error@{Error}!C\+O\+N\+ST@{C\+O\+N\+ST}}
+\index{C\+O\+N\+ST@{C\+O\+N\+ST}!Error@{Error}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+ST}{CONST}}]{\setlength{\rightskip}{0pt plus 5cm}const int Error\+::\+C\+O\+N\+ST = 42\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_error_a0f92db18254bcb69e96363e3cc696453}{}\label{class_error_a0f92db18254bcb69e96363e3cc696453}
+C\+O\+N\+ST type int \index{Error@{Error}!R\+A\+ND@{R\+A\+ND}}
+\index{R\+A\+ND@{R\+A\+ND}!Error@{Error}}
+\subsubsection[{\texorpdfstring{R\+A\+ND}{RAND}}]{\setlength{\rightskip}{0pt plus 5cm}const int Error\+::\+R\+A\+ND = 43\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_error_aa2dfc83f8a57b08d80000df840fd2103}{}\label{class_error_aa2dfc83f8a57b08d80000df840fd2103}
+R\+A\+ND type int 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_error_8h}{Error.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_error_8cpp}{Error.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{class_network}{}\section{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+
+
+{\ttfamily \#include $<$Network.\+h$>$}
+
+
+
+Inheritance diagram for Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_network__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_network_ad01dfb3d14e9413aeca09b1214de2277}{Network} (int type, unsigned maxnumthreads, std\+::string filename, int n)
+\item 
+virtual \hyperlink{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}{$\sim$\+Network} ()
+\item 
+void \hyperlink{class_network_aac12b9028bdef1c44984b1c8e111e69d}{initalize} () override
+\item 
+std\+::string \hyperlink{class_network_a8bd2e1e2117b07661a149b7e6debb99d}{get\+Result} () override
+\item 
+void \hyperlink{class_network_a10a99f08c6d2f7f019c83b0899a0c56c}{run\+All} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides parser and \hyperlink{class_runner}{Runner} for network mode 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\subsubsection[{\texorpdfstring{Network(int type, unsigned maxnumthreads, std\+::string filename, int n)}{Network(int type, unsigned maxnumthreads, std::string filename, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}Network\+::\+Network (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{unsigned}]{maxnumthreads, }
+\item[{std\+::string}]{filename, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_network_ad01dfb3d14e9413aeca09b1214de2277}{}\label{class_network_ad01dfb3d14e9413aeca09b1214de2277}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em type} & \hyperlink{class_code}{Code} type \\
+\hline
+{\em maxnumthreads} & Maximum number of threads running \\
+\hline
+{\em filename} & Input file name \\
+\hline
+{\em n} & Number of times to run one transmission \\
+\hline
+\end{DoxyParams}
+\index{Network@{Network}!````~Network@{$\sim$\+Network}}
+\index{````~Network@{$\sim$\+Network}!Network@{Network}}
+\subsubsection[{\texorpdfstring{$\sim$\+Network()}{~Network()}}]{\setlength{\rightskip}{0pt plus 5cm}Network\+::$\sim$\+Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}{}\label{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}
+
+
+\subsection{Member Function Documentation}
+\index{Network@{Network}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Network@{Network}}
+\subsubsection[{\texorpdfstring{get\+Result() override}{getResult() override}}]{\setlength{\rightskip}{0pt plus 5cm}string Network\+::get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_network_a8bd2e1e2117b07661a149b7e6debb99d}{}\label{class_network_a8bd2e1e2117b07661a149b7e6debb99d}
+Returns result string for one transmission \begin{DoxyReturn}{Returns}
+Descriptor string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_runable_a761a0c657253223f3dd7cf2c0762c34e}{Runable}.
+
+\index{Network@{Network}!initalize@{initalize}}
+\index{initalize@{initalize}!Network@{Network}}
+\subsubsection[{\texorpdfstring{initalize() override}{initalize() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+::initalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_network_aac12b9028bdef1c44984b1c8e111e69d}{}\label{class_network_aac12b9028bdef1c44984b1c8e111e69d}
+Initalizes \hyperlink{class_runner}{Runner}, using get \hyperlink{class_channel}{Channel} for one pair. {\bfseries current\+Pair must be set before!} 
+
+Implements \hyperlink{class_runable_ae45ce89bb273ba5863e8ca0951caef85}{Runable}.
+
+\index{Network@{Network}!run\+All@{run\+All}}
+\index{run\+All@{run\+All}!Network@{Network}}
+\subsubsection[{\texorpdfstring{run\+All()}{runAll()}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+::run\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_network_a10a99f08c6d2f7f019c83b0899a0c56c}{}\label{class_network_a10a99f08c6d2f7f019c83b0899a0c56c}
+Runs simulation for each pair of nodes 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_network_8h}{Network.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_network_8cpp}{Network.\+cpp}\end{DoxyCompactItemize}

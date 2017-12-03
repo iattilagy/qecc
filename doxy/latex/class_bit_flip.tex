@@ -1,0 +1,126 @@
+\hypertarget{class_bit_flip}{}\section{Bit\+Flip Class Reference}
+\label{class_bit_flip}\index{Bit\+Flip@{Bit\+Flip}}
+
+
+{\ttfamily \#include $<$Bit\+Flip.\+h$>$}
+
+
+
+Inheritance diagram for Bit\+Flip\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_bit_flip__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bit_flip_ae5135dd8438d0c1f1d2a9d19ed753e32}{Bit\+Flip} (bool b)
+\item 
+bool \hyperlink{class_bit_flip_a3022463e79c6624b2123617d1957d716}{run} () override
+\item 
+std\+::string \hyperlink{class_bit_flip_adc65379e4eeb6eb908318a98c304e16e}{get\+Descriptor} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{class_bit_flip_a8f5442dd93f87ea35fcb0b0bb423bbf0}{CS} = 3
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_bit_flip_a45fdb2512ee2092d0c1f877afda2bb50}{encode} (bool b) override
+\item 
+unsigned \hyperlink{class_bit_flip_ad3c275a5fe1cb5188cb1ab3049fcfd70}{get\+CS} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Bit Flip code class 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Bit\+Flip@{Bit\+Flip}!Bit\+Flip@{Bit\+Flip}}
+\index{Bit\+Flip@{Bit\+Flip}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{Bit\+Flip(bool b)}{BitFlip(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}Bit\+Flip\+::\+Bit\+Flip (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bit_flip_ae5135dd8438d0c1f1d2a9d19ed753e32}{}\label{class_bit_flip_ae5135dd8438d0c1f1d2a9d19ed753e32}
+
+
+\subsection{Member Function Documentation}
+\index{Bit\+Flip@{Bit\+Flip}!encode@{encode}}
+\index{encode@{encode}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{encode(bool b) override}{encode(bool b) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Bit\+Flip\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_bit_flip_a45fdb2512ee2092d0c1f877afda2bb50}{}\label{class_bit_flip_a45fdb2512ee2092d0c1f877afda2bb50}
+Encode input bit 
+\begin{DoxyParams}{Parameters}
+{\em b} & Classical input converted to $\vert$0$>$ or $\vert$1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{Code}.
+
+\index{Bit\+Flip@{Bit\+Flip}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{get\+C\+S() override}{getCS() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Bit\+Flip\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_bit_flip_ad3c275a5fe1cb5188cb1ab3049fcfd70}{}\label{class_bit_flip_ad3c275a5fe1cb5188cb1ab3049fcfd70}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{Code}.
+
+\index{Bit\+Flip@{Bit\+Flip}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() override}{getDescriptor() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Bit\+Flip\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_bit_flip_adc65379e4eeb6eb908318a98c304e16e}{}\label{class_bit_flip_adc65379e4eeb6eb908318a98c304e16e}
+Returns descriptor string ~\newline
+ Format\+: ~\newline
+ B\+I\+T\+F\+L\+IP aa i-\/$>$o O\+K/\+E\+R\+R\+OR ~\newline
+ Where aa is flip array \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{Code}.
+
+\index{Bit\+Flip@{Bit\+Flip}!run@{run}}
+\index{run@{run}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{run() override}{run() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\+Flip\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_bit_flip_a3022463e79c6624b2123617d1957d716}{}\label{class_bit_flip_a3022463e79c6624b2123617d1957d716}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{Code}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Bit\+Flip@{Bit\+Flip}!CS@{CS}}
+\index{CS@{CS}!Bit\+Flip@{Bit\+Flip}}
+\subsubsection[{\texorpdfstring{CS}{CS}}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned Bit\+Flip\+::\+CS = 3\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_bit_flip_a8f5442dd93f87ea35fcb0b0bb423bbf0}{}\label{class_bit_flip_a8f5442dd93f87ea35fcb0b0bb423bbf0}
+\hyperlink{class_code}{Code} size for bit flip which is 3 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_bit_flip_8h}{Bit\+Flip.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_bit_flip_8cpp}{Bit\+Flip.\+cpp}\end{DoxyCompactItemize}

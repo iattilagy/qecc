@@ -1,0 +1,132 @@
+\hypertarget{class_code5}{}\section{Code5 Class Reference}
+\label{class_code5}\index{Code5@{Code5}}
+
+
+{\ttfamily \#include $<$Code5.\+h$>$}
+
+
+
+Inheritance diagram for Code5\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_code5__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_code5_ae98c6fa8281984fdc2f78e7d989a8664}{Code5} (bool b)
+\item 
+bool \hyperlink{class_code5_ad2aec9994037880f38205e739a8f8a4a}{run} () override
+\item 
+std\+::string \hyperlink{class_code5_ab7cd6f3c172a4a0c45bc0fa41a3ff535}{get\+Descriptor} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{class_code5_ac252f1c41568341657456564d0417630}{CS} = 5
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_code5_a17456381dabab2ba1b28bf232376908f}{encode} (bool b) override
+\item 
+unsigned \hyperlink{class_code5_a518d2eb49ea82e92b74458db5477abf6}{get\+CS} () override
+\item 
+void \hyperlink{class_code5_aadf204a584266bdf5bbb860191ed7c2a}{test\+Error} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+5\+Qubit code class 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Code5@{Code5}!Code5@{Code5}}
+\index{Code5@{Code5}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{Code5(bool b)}{Code5(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}Code5\+::\+Code5 (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code5_ae98c6fa8281984fdc2f78e7d989a8664}{}\label{class_code5_ae98c6fa8281984fdc2f78e7d989a8664}
+
+
+\subsection{Member Function Documentation}
+\index{Code5@{Code5}!encode@{encode}}
+\index{encode@{encode}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{encode(bool b) override}{encode(bool b) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Code5\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_code5_a17456381dabab2ba1b28bf232376908f}{}\label{class_code5_a17456381dabab2ba1b28bf232376908f}
+Encode 5qubit code 
+\begin{DoxyParams}{Parameters}
+{\em b} & Input bit \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{Code}.
+
+\index{Code5@{Code5}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{get\+C\+S() override}{getCS() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Code5\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_code5_a518d2eb49ea82e92b74458db5477abf6}{}\label{class_code5_a518d2eb49ea82e92b74458db5477abf6}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{Code}.
+
+\index{Code5@{Code5}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() override}{getDescriptor() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Code5\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_code5_ab7cd6f3c172a4a0c45bc0fa41a3ff535}{}\label{class_code5_ab7cd6f3c172a4a0c45bc0fa41a3ff535}
+Returns descriptor string {\bfseries  Format\+: {\bfseries  {\itshape 5\+Q\+U\+B\+IT aaaa i-\/$>$o O\+K/\+E\+R\+R\+OR} Where aaaa is flip array \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+}}
+
+Implements \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{Code}.
+
+\index{Code5@{Code5}!run@{run}}
+\index{run@{run}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{run() override}{run() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code5\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_code5_ad2aec9994037880f38205e739a8f8a4a}{}\label{class_code5_ad2aec9994037880f38205e739a8f8a4a}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{Code}.
+
+\index{Code5@{Code5}!test\+Error@{test\+Error}}
+\index{test\+Error@{test\+Error}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{test\+Error()}{testError()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code5\+::test\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code5_aadf204a584266bdf5bbb860191ed7c2a}{}\label{class_code5_aadf204a584266bdf5bbb860191ed7c2a}
+
+
+\subsection{Member Data Documentation}
+\index{Code5@{Code5}!CS@{CS}}
+\index{CS@{CS}!Code5@{Code5}}
+\subsubsection[{\texorpdfstring{CS}{CS}}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned Code5\+::\+CS = 5\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_code5_ac252f1c41568341657456564d0417630}{}\label{class_code5_ac252f1c41568341657456564d0417630}
+\hyperlink{class_code}{Code} size for 5\+Qubit is 5 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_code5_8h}{Code5.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_code5_8cpp}{Code5.\+cpp}\end{DoxyCompactItemize}

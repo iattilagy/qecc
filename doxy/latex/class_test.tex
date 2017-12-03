@@ -1,0 +1,182 @@
+\hypertarget{class_test}{}\section{Test Class Reference}
+\label{class_test}\index{Test@{Test}}
+
+
+{\ttfamily \#include $<$Test.\+h$>$}
+
+
+
+Inheritance diagram for Test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_test__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_test_aac2e651b089febf2cd5ab1b5d2874c5a}{shor\+Test} (bool input)
+\item 
+void \hyperlink{class_test_a9bac2c6bc99fbb7f54b79712006956c0}{steane\+Test} (bool input)
+\item 
+void \hyperlink{class_test_a784d32490d6aa0bf8909d6a1cad5ee33}{code5\+Test} (bool input)
+\item 
+void \hyperlink{class_test_a89dd7059b847c8429636007515cd42ac}{bit\+Flip\+Test} (bool input)
+\item 
+void \hyperlink{class_test_a6baf4b2ddf84f198e156bf78c97b865b}{initalize} () override
+\item 
+void \hyperlink{class_test_afd06ee055f93c52fca29ffd2266b5564}{test\+Mixed} ()
+\item 
+std\+::string \hyperlink{class_test_ae53178c2e482ed3a869c742387521a60}{get\+Result} () override
+\item 
+void \hyperlink{class_test_a2616b0b705d644091904f3de58eb46bb}{run\+All\+Tests} ()
+\item 
+\hyperlink{class_test_ab61976fd1ea38385bd4260d433f930c0}{Test} (int type, int maxnumthreads)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_test_af926faddaa7288d10542e78bc1be29f6}{shorruns} = 4 $\ast$ \hyperlink{class_shor_a5c2bb5ad73004577f8781a001eda8b8f}{Shor\+::\+CS} + 6
+\item 
+static const int \hyperlink{class_test_a1f5e5c6be1ad2c4459ad702c254c72a1}{steaneruns} = 5 $\ast$ \hyperlink{class_steane_a3b81ad6daffc03833cea9c333f2cd927}{Steane\+::\+CS}
+\item 
+static const int \hyperlink{class_test_af99add0cf16991621c26ea17bd38d41d}{code5runs} = 4 $\ast$ \hyperlink{class_code5_ac252f1c41568341657456564d0417630}{Code5\+::\+CS}
+\item 
+static const int \hyperlink{class_test_af4a50e78867431da5e5b8cf5110645aa}{bitflipruns} = \hyperlink{class_bit_flip_a8f5442dd93f87ea35fcb0b0bb423bbf0}{Bit\+Flip\+::\+CS}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Runs tests for codes 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Test@{Test}!Test@{Test}}
+\index{Test@{Test}!Test@{Test}}
+\subsubsection[{\texorpdfstring{Test(int type, int maxnumthreads)}{Test(int type, int maxnumthreads)}}]{\setlength{\rightskip}{0pt plus 5cm}Test\+::\+Test (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{int}]{maxnumthreads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_test_ab61976fd1ea38385bd4260d433f930c0}{}\label{class_test_ab61976fd1ea38385bd4260d433f930c0}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \hyperlink{class_code}{Code} type \\
+\hline
+{\em maxnumthreads} & Maximum number of threads \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Test@{Test}!bit\+Flip\+Test@{bit\+Flip\+Test}}
+\index{bit\+Flip\+Test@{bit\+Flip\+Test}!Test@{Test}}
+\subsubsection[{\texorpdfstring{bit\+Flip\+Test(bool input)}{bitFlipTest(bool input)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::bit\+Flip\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{input}
+\end{DoxyParamCaption}
+)}\hypertarget{class_test_a89dd7059b847c8429636007515cd42ac}{}\label{class_test_a89dd7059b847c8429636007515cd42ac}
+Initialize for bit flip 
+\begin{DoxyParams}{Parameters}
+{\em input} & input bit \\
+\hline
+\end{DoxyParams}
+\index{Test@{Test}!code5\+Test@{code5\+Test}}
+\index{code5\+Test@{code5\+Test}!Test@{Test}}
+\subsubsection[{\texorpdfstring{code5\+Test(bool input)}{code5Test(bool input)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::code5\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{input}
+\end{DoxyParamCaption}
+)}\hypertarget{class_test_a784d32490d6aa0bf8909d6a1cad5ee33}{}\label{class_test_a784d32490d6aa0bf8909d6a1cad5ee33}
+Initialize for 5\+Qubit 
+\begin{DoxyParams}{Parameters}
+{\em input} & input bit \\
+\hline
+\end{DoxyParams}
+\index{Test@{Test}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Test@{Test}}
+\subsubsection[{\texorpdfstring{get\+Result() override}{getResult() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Test\+::get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_test_ae53178c2e482ed3a869c742387521a60}{}\label{class_test_ae53178c2e482ed3a869c742387521a60}
+Descriptor string~\newline
+ If all are okay {\bfseries T\+E\+ST S\+U\+C\+C\+E\+S\+F\+U\+LL}~\newline
+ If some failed {\bfseries S\+O\+ME T\+E\+S\+TS F\+A\+I\+L\+ED} \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_runable_a761a0c657253223f3dd7cf2c0762c34e}{Runable}.
+
+\index{Test@{Test}!initalize@{initalize}}
+\index{initalize@{initalize}!Test@{Test}}
+\subsubsection[{\texorpdfstring{initalize() override}{initalize() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::initalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_test_a6baf4b2ddf84f198e156bf78c97b865b}{}\label{class_test_a6baf4b2ddf84f198e156bf78c97b865b}
+Initalizes code list. To be defined by child! 
+
+Implements \hyperlink{class_runable_ae45ce89bb273ba5863e8ca0951caef85}{Runable}.
+
+\index{Test@{Test}!run\+All\+Tests@{run\+All\+Tests}}
+\index{run\+All\+Tests@{run\+All\+Tests}!Test@{Test}}
+\subsubsection[{\texorpdfstring{run\+All\+Tests()}{runAllTests()}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::run\+All\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_test_a2616b0b705d644091904f3de58eb46bb}{}\label{class_test_a2616b0b705d644091904f3de58eb46bb}
+Runs all inbuilt tests \index{Test@{Test}!shor\+Test@{shor\+Test}}
+\index{shor\+Test@{shor\+Test}!Test@{Test}}
+\subsubsection[{\texorpdfstring{shor\+Test(bool input)}{shorTest(bool input)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::shor\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{input}
+\end{DoxyParamCaption}
+)}\hypertarget{class_test_aac2e651b089febf2cd5ab1b5d2874c5a}{}\label{class_test_aac2e651b089febf2cd5ab1b5d2874c5a}
+Initialize for shor 
+\begin{DoxyParams}{Parameters}
+{\em input} & input bit \\
+\hline
+\end{DoxyParams}
+\index{Test@{Test}!steane\+Test@{steane\+Test}}
+\index{steane\+Test@{steane\+Test}!Test@{Test}}
+\subsubsection[{\texorpdfstring{steane\+Test(bool input)}{steaneTest(bool input)}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::steane\+Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{input}
+\end{DoxyParamCaption}
+)}\hypertarget{class_test_a9bac2c6bc99fbb7f54b79712006956c0}{}\label{class_test_a9bac2c6bc99fbb7f54b79712006956c0}
+Initialize for steane 
+\begin{DoxyParams}{Parameters}
+{\em input} & input bit \\
+\hline
+\end{DoxyParams}
+\index{Test@{Test}!test\+Mixed@{test\+Mixed}}
+\index{test\+Mixed@{test\+Mixed}!Test@{Test}}
+\subsubsection[{\texorpdfstring{test\+Mixed()}{testMixed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Test\+::test\+Mixed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_test_afd06ee055f93c52fca29ffd2266b5564}{}\label{class_test_afd06ee055f93c52fca29ffd2266b5564}
+Run tests using density matrix notation 
+
+\subsection{Member Data Documentation}
+\index{Test@{Test}!bitflipruns@{bitflipruns}}
+\index{bitflipruns@{bitflipruns}!Test@{Test}}
+\subsubsection[{\texorpdfstring{bitflipruns}{bitflipruns}}]{\setlength{\rightskip}{0pt plus 5cm}const int Test\+::bitflipruns = {\bf Bit\+Flip\+::\+CS}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_test_af4a50e78867431da5e5b8cf5110645aa}{}\label{class_test_af4a50e78867431da5e5b8cf5110645aa}
+Number of runs for bit flip code \index{Test@{Test}!code5runs@{code5runs}}
+\index{code5runs@{code5runs}!Test@{Test}}
+\subsubsection[{\texorpdfstring{code5runs}{code5runs}}]{\setlength{\rightskip}{0pt plus 5cm}const int Test\+::code5runs = 4 $\ast$ {\bf Code5\+::\+CS}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_test_af99add0cf16991621c26ea17bd38d41d}{}\label{class_test_af99add0cf16991621c26ea17bd38d41d}
+Number of runs for 5\+Qubit code \index{Test@{Test}!shorruns@{shorruns}}
+\index{shorruns@{shorruns}!Test@{Test}}
+\subsubsection[{\texorpdfstring{shorruns}{shorruns}}]{\setlength{\rightskip}{0pt plus 5cm}const int Test\+::shorruns = 4 $\ast$ {\bf Shor\+::\+CS} + 6\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_test_af926faddaa7288d10542e78bc1be29f6}{}\label{class_test_af926faddaa7288d10542e78bc1be29f6}
+Number of runs for \hyperlink{class_shor}{Shor} code \index{Test@{Test}!steaneruns@{steaneruns}}
+\index{steaneruns@{steaneruns}!Test@{Test}}
+\subsubsection[{\texorpdfstring{steaneruns}{steaneruns}}]{\setlength{\rightskip}{0pt plus 5cm}const int Test\+::steaneruns = 5 $\ast$ {\bf Steane\+::\+CS}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_test_a1f5e5c6be1ad2c4459ad702c254c72a1}{}\label{class_test_a1f5e5c6be1ad2c4459ad702c254c72a1}
+Number of runs for steane code 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_test_8h}{Test.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_test_8cpp}{Test.\+cpp}\end{DoxyCompactItemize}

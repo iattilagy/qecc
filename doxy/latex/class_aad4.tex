@@ -1,0 +1,124 @@
+\hypertarget{class_aad4}{}\section{Aad4 Class Reference}
+\label{class_aad4}\index{Aad4@{Aad4}}
+
+
+{\ttfamily \#include $<$Aad4.\+h$>$}
+
+
+
+Inheritance diagram for Aad4\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_aad4__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_aad4_af5a8655a7236239eeaddd65fb04bbf98}{Aad4} (bool b)
+\item 
+bool \hyperlink{class_aad4_a95f5ec483584c48bde0fd96d4d347c34}{run} () override
+\item 
+std\+::string \hyperlink{class_aad4_ad697e56ab152cd1228bd26f73451ec42}{get\+Descriptor} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{class_aad4_a342120f0f5c7fe2240ad1de4bbda3a1b}{CS} = 4
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_aad4_ad3febfa430563be08f78c3b7e8517ff6}{encode} (bool b) override
+\item 
+unsigned \hyperlink{class_aad4_af4cb779e50399fcdca7a2f62282b7e78}{get\+CS} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Aad4@{Aad4}!Aad4@{Aad4}}
+\index{Aad4@{Aad4}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{Aad4(bool b)}{Aad4(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}Aad4\+::\+Aad4 (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_aad4_af5a8655a7236239eeaddd65fb04bbf98}{}\label{class_aad4_af5a8655a7236239eeaddd65fb04bbf98}
+
+
+\subsection{Member Function Documentation}
+\index{Aad4@{Aad4}!encode@{encode}}
+\index{encode@{encode}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{encode(bool b) override}{encode(bool b) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Aad4\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_aad4_ad3febfa430563be08f78c3b7e8517ff6}{}\label{class_aad4_ad3febfa430563be08f78c3b7e8517ff6}
+Encode input bit 
+\begin{DoxyParams}{Parameters}
+{\em b} & Classical input converted to $\vert$0$>$ or $\vert$1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{Code}.
+
+\index{Aad4@{Aad4}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{get\+C\+S() override}{getCS() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Aad4\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_aad4_af4cb779e50399fcdca7a2f62282b7e78}{}\label{class_aad4_af4cb779e50399fcdca7a2f62282b7e78}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{Code}.
+
+\index{Aad4@{Aad4}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() override}{getDescriptor() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Aad4\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_aad4_ad697e56ab152cd1228bd26f73451ec42}{}\label{class_aad4_ad697e56ab152cd1228bd26f73451ec42}
+Log of run ~\newline
+ To be defined in child class ~\newline
+ Contains code type, input, output, ancilla bit measurements ~\newline
+ Format\+:~\newline
+ {\itshape C\+O\+D\+E\+T\+Y\+PE ancillas input-\/$>$result O\+K/\+E\+R\+R\+OR} \begin{DoxyReturn}{Returns}
+log string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{Code}.
+
+\index{Aad4@{Aad4}!run@{run}}
+\index{run@{run}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{run() override}{run() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Aad4\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_aad4_a95f5ec483584c48bde0fd96d4d347c34}{}\label{class_aad4_a95f5ec483584c48bde0fd96d4d347c34}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{Code}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Aad4@{Aad4}!CS@{CS}}
+\index{CS@{CS}!Aad4@{Aad4}}
+\subsubsection[{\texorpdfstring{CS}{CS}}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned Aad4\+::\+CS = 4\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_aad4_a342120f0f5c7fe2240ad1de4bbda3a1b}{}\label{class_aad4_a342120f0f5c7fe2240ad1de4bbda3a1b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_aad4_8h}{Aad4.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_aad4_8cpp}{Aad4.\+cpp}\end{DoxyCompactItemize}

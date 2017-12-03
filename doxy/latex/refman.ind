@@ -1,0 +1,460 @@
+\begin{theindex}
+
+  \item {/home/attila/src/qecc-\/netbeans/qecc/.\+dep.\+inc}, 
+		\hyperpage{53}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Aad4.\+cpp}, 
+		\hyperpage{53}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Aad4.\+h}, 
+		\hyperpage{53}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Bit\+Flip.\+cpp}, 
+		\hyperpage{53}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Bit\+Flip.\+h}, 
+		\hyperpage{53}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Channel.\+cpp}, 
+		\hyperpage{54}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Channel.\+h}, 
+		\hyperpage{54}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Code.\+cpp}, 
+		\hyperpage{54}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Code.\+h}, 
+		\hyperpage{54}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Code5.\+cpp}, 
+		\hyperpage{54}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Code5.\+h}, 
+		\hyperpage{55}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Error.\+cpp}, 
+		\hyperpage{55}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Error.\+h}, 
+		\hyperpage{55}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Network.\+cpp}, 
+		\hyperpage{55}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Network.\+h}, 
+		\hyperpage{55}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Node.\+cpp}, 
+		\hyperpage{56}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Node.\+h}, 
+		\hyperpage{56}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+None.\+cpp}, 
+		\hyperpage{56}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+None.\+h}, 
+		\hyperpage{56}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Runable.\+cpp}, 
+		\hyperpage{57}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Runable.\+h}, 
+		\hyperpage{57}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Runner.\+cpp}, 
+		\hyperpage{58}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Runner.\+h}, 
+		\hyperpage{58}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Shor.\+cpp}, 
+		\hyperpage{59}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Shor.\+h}, 
+		\hyperpage{59}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Single.\+cpp}, 
+		\hyperpage{59}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Single.\+h}, 
+		\hyperpage{59}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Steane.\+cpp}, 
+		\hyperpage{60}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Steane.\+h}, 
+		\hyperpage{60}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Test.\+cpp}, 
+		\hyperpage{60}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/\+Test.\+h}, 
+		\hyperpage{60}
+  \item {/home/attila/src/qecc-\/netbeans/qecc/qecc.\+cpp}, 
+		\hyperpage{56}
+  \item {$\sim$\+Channel}
+    \subitem {Channel}, \hyperpage{15}
+  \item {$\sim$\+Code}
+    \subitem {Code}, \hyperpage{18}
+  \item {$\sim$\+Network}
+    \subitem {Network}, \hyperpage{29}
+  \item {$\sim$\+Runable}
+    \subitem {Runable}, \hyperpage{36}
+  \item {$\sim$\+Runner}
+    \subitem {Runner}, \hyperpage{38}
+
+  \indexspace
+
+  \item {A\+A\+D4}
+    \subitem {Runable}, \hyperpage{37}
+  \item {A\+DC}
+    \subitem {Error}, \hyperpage{27}
+  \item {Aad4}, \hyperpage{7}
+    \subitem {Aad4}, \hyperpage{9}
+    \subitem {CS}, \hyperpage{10}
+    \subitem {encode}, \hyperpage{9}
+    \subitem {get\+CS}, \hyperpage{9}
+    \subitem {get\+Descriptor}, \hyperpage{9}
+    \subitem {run}, \hyperpage{9}
+  \item {add\+Code}
+    \subitem {Runner}, \hyperpage{39}
+  \item {add\+Error}
+    \subitem {Code}, \hyperpage{18}
+  \item {apply\+C\+GT}
+    \subitem {Code}, \hyperpage{18}
+  \item {apply\+GT}
+    \subitem {Code}, \hyperpage{18}
+
+  \indexspace
+
+  \item {B\+I\+T\+F\+L\+IP}
+    \subitem {Runable}, \hyperpage{37}
+  \item {Bit\+Flip}, \hyperpage{10}
+    \subitem {Bit\+Flip}, \hyperpage{12}
+    \subitem {CS}, \hyperpage{13}
+    \subitem {encode}, \hyperpage{12}
+    \subitem {get\+CS}, \hyperpage{12}
+    \subitem {get\+Descriptor}, \hyperpage{12}
+    \subitem {run}, \hyperpage{13}
+  \item {bit\+Flip\+Test}
+    \subitem {Test}, \hyperpage{50}
+  \item {bitflipruns}
+    \subitem {Test}, \hyperpage{51}
+
+  \indexspace
+
+  \item {c}
+    \subitem {Code}, \hyperpage{21}
+  \item {C\+O\+D\+E5}
+    \subitem {Runable}, \hyperpage{37}
+  \item {C\+O\+N\+ST}
+    \subitem {Error}, \hyperpage{27}
+  \item {Channel}, \hyperpage{13}
+    \subitem {$\sim$\+Channel}, \hyperpage{15}
+    \subitem {Channel}, \hyperpage{14}
+    \subitem {debug\+Print}, \hyperpage{15}
+    \subitem {get\+Error}, \hyperpage{15}
+    \subitem {get\+Ids}, \hyperpage{15}
+    \subitem {match\+Id}, \hyperpage{15}
+    \subitem {match\+One\+Get\+Other}, \hyperpage{16}
+  \item {Code}, \hyperpage{16}
+    \subitem {$\sim$\+Code}, \hyperpage{18}
+    \subitem {add\+Error}, \hyperpage{18}
+    \subitem {apply\+C\+GT}, \hyperpage{18}
+    \subitem {apply\+GT}, \hyperpage{18}
+    \subitem {c}, \hyperpage{21}
+    \subitem {Code}, \hyperpage{17}
+    \subitem {convert\+To\+Mixed}, \hyperpage{18}
+    \subitem {d}, \hyperpage{21}
+    \subitem {delete\+Error}, \hyperpage{21}
+    \subitem {disable\+Error\+Deletion}, \hyperpage{18}
+    \subitem {encode}, \hyperpage{19}
+    \subitem {Error}, \hyperpage{21}
+    \subitem {error}, \hyperpage{19}
+    \subitem {error\+Counter}, \hyperpage{21}
+    \subitem {errorlist}, \hyperpage{21}
+    \subitem {get\+CS}, \hyperpage{19}
+    \subitem {get\+Descriptor}, \hyperpage{19}
+    \subitem {get\+Mes}, \hyperpage{19}
+    \subitem {get\+OK}, \hyperpage{20}
+    \subitem {hadamard\+All\+Code\+Bits}, \hyperpage{20}
+    \subitem {hadamard\+Code\+Bits}, \hyperpage{20}
+    \subitem {input}, \hyperpage{21}
+    \subitem {mixed}, \hyperpage{21}
+    \subitem {ok}, \hyperpage{22}
+    \subitem {result}, \hyperpage{22}
+    \subitem {run}, \hyperpage{20}
+    \subitem {set\+Mixed}, \hyperpage{21}
+    \subitem {setandmes\+Anc}, \hyperpage{20}
+    \subitem {thread\+Counter}, \hyperpage{22}
+  \item {Code5}, \hyperpage{22}
+    \subitem {Code5}, \hyperpage{24}
+    \subitem {CS}, \hyperpage{25}
+    \subitem {encode}, \hyperpage{24}
+    \subitem {get\+CS}, \hyperpage{24}
+    \subitem {get\+Descriptor}, \hyperpage{24}
+    \subitem {run}, \hyperpage{25}
+    \subitem {test\+Error}, \hyperpage{25}
+  \item {code5\+Test}
+    \subitem {Test}, \hyperpage{50}
+  \item {code5runs}
+    \subitem {Test}, \hyperpage{51}
+  \item {convert\+To\+Mixed}
+    \subitem {Code}, \hyperpage{18}
+  \item {CS}
+    \subitem {Aad4}, \hyperpage{10}
+    \subitem {Bit\+Flip}, \hyperpage{13}
+    \subitem {Code5}, \hyperpage{25}
+    \subitem {None}, \hyperpage{34}
+    \subitem {Shor}, \hyperpage{42}
+    \subitem {Steane}, \hyperpage{48}
+
+  \indexspace
+
+  \item {d}
+    \subitem {Code}, \hyperpage{21}
+  \item {debug\+Print}
+    \subitem {Channel}, \hyperpage{15}
+  \item {delete\+Error}
+    \subitem {Code}, \hyperpage{21}
+  \item {disable\+Error\+Deletion}
+    \subitem {Code}, \hyperpage{18}
+
+  \indexspace
+
+  \item {encode}
+    \subitem {Aad4}, \hyperpage{9}
+    \subitem {Bit\+Flip}, \hyperpage{12}
+    \subitem {Code}, \hyperpage{19}
+    \subitem {Code5}, \hyperpage{24}
+    \subitem {None}, \hyperpage{33}
+    \subitem {Shor}, \hyperpage{41}
+    \subitem {Steane}, \hyperpage{47}
+  \item {err\+Run}
+    \subitem {qecc.\+cpp}, \hyperpage{57}
+  \item {Error}, \hyperpage{25}
+    \subitem {A\+DC}, \hyperpage{27}
+    \subitem {C\+O\+N\+ST}, \hyperpage{27}
+    \subitem {Code}, \hyperpage{21}
+    \subitem {Error}, \hyperpage{26}
+    \subitem {get\+Error}, \hyperpage{26}
+    \subitem {R\+A\+ND}, \hyperpage{27}
+    \subitem {run\+Error}, \hyperpage{26}
+    \subitem {run\+Error\+One\+Bit}, \hyperpage{27}
+    \subitem {set\+Error}, \hyperpage{27}
+  \item {error}
+    \subitem {Code}, \hyperpage{19}
+  \item {error\+Counter}
+    \subitem {Code}, \hyperpage{21}
+  \item {errorlist}
+    \subitem {Code}, \hyperpage{21}
+
+  \indexspace
+
+  \item {get\+B\+ER}
+    \subitem {Runner}, \hyperpage{39}
+  \item {get\+Code\+Type}
+    \subitem {Runable}, \hyperpage{36}
+  \item {get\+CS}
+    \subitem {Aad4}, \hyperpage{9}
+    \subitem {Bit\+Flip}, \hyperpage{12}
+    \subitem {Code}, \hyperpage{19}
+    \subitem {Code5}, \hyperpage{24}
+    \subitem {None}, \hyperpage{33}
+    \subitem {Shor}, \hyperpage{41}
+    \subitem {Steane}, \hyperpage{47}
+  \item {get\+Descriptor}
+    \subitem {Aad4}, \hyperpage{9}
+    \subitem {Bit\+Flip}, \hyperpage{12}
+    \subitem {Code}, \hyperpage{19}
+    \subitem {Code5}, \hyperpage{24}
+    \subitem {None}, \hyperpage{33}
+    \subitem {Shor}, \hyperpage{42}
+    \subitem {Steane}, \hyperpage{47}
+  \item {get\+Error}
+    \subitem {Channel}, \hyperpage{15}
+    \subitem {Error}, \hyperpage{26}
+  \item {get\+Id}
+    \subitem {Node}, \hyperpage{30}
+  \item {get\+Ids}
+    \subitem {Channel}, \hyperpage{15}
+  \item {get\+Mes}
+    \subitem {Code}, \hyperpage{19}
+  \item {get\+Name}
+    \subitem {Node}, \hyperpage{30}
+  \item {get\+OK}
+    \subitem {Code}, \hyperpage{20}
+  \item {get\+Result}
+    \subitem {Network}, \hyperpage{29}
+    \subitem {Runable}, \hyperpage{36}
+    \subitem {Single}, \hyperpage{45}
+    \subitem {Test}, \hyperpage{50}
+
+  \indexspace
+
+  \item {hadamard\+All\+Code\+Bits}
+    \subitem {Code}, \hyperpage{20}
+  \item {hadamard\+Code\+Bits}
+    \subitem {Code}, \hyperpage{20}
+
+  \indexspace
+
+  \item {initalize}
+    \subitem {Network}, \hyperpage{29}
+    \subitem {Runable}, \hyperpage{36}
+    \subitem {Single}, \hyperpage{45}
+    \subitem {Test}, \hyperpage{51}
+  \item {input}
+    \subitem {Code}, \hyperpage{21}
+
+  \indexspace
+
+  \item {main}
+    \subitem {qecc.\+cpp}, \hyperpage{57}
+  \item {match\+Id}
+    \subitem {Channel}, \hyperpage{15}
+  \item {match\+One\+Get\+Other}
+    \subitem {Channel}, \hyperpage{16}
+  \item {mixed}
+    \subitem {Code}, \hyperpage{21}
+
+  \indexspace
+
+  \item {N\+O\+NE}
+    \subitem {Runable}, \hyperpage{37}
+  \item {Network}, \hyperpage{28}
+    \subitem {$\sim$\+Network}, \hyperpage{29}
+    \subitem {get\+Result}, \hyperpage{29}
+    \subitem {initalize}, \hyperpage{29}
+    \subitem {Network}, \hyperpage{29}
+    \subitem {run\+All}, \hyperpage{29}
+  \item {Node}, \hyperpage{30}
+    \subitem {get\+Id}, \hyperpage{30}
+    \subitem {get\+Name}, \hyperpage{30}
+    \subitem {Node}, \hyperpage{30}
+  \item {None}, \hyperpage{31}
+    \subitem {CS}, \hyperpage{34}
+    \subitem {encode}, \hyperpage{33}
+    \subitem {get\+CS}, \hyperpage{33}
+    \subitem {get\+Descriptor}, \hyperpage{33}
+    \subitem {None}, \hyperpage{33}
+    \subitem {run}, \hyperpage{34}
+  \item {numthreads}
+    \subitem {qecc.\+cpp}, \hyperpage{57}
+
+  \indexspace
+
+  \item {ok}
+    \subitem {Code}, \hyperpage{22}
+
+  \indexspace
+
+  \item {print\+Help}
+    \subitem {qecc.\+cpp}, \hyperpage{57}
+
+  \indexspace
+
+  \item {qecc.\+cpp}
+    \subitem {err\+Run}, \hyperpage{57}
+    \subitem {main}, \hyperpage{57}
+    \subitem {numthreads}, \hyperpage{57}
+    \subitem {print\+Help}, \hyperpage{57}
+
+  \indexspace
+
+  \item {R\+A\+ND}
+    \subitem {Error}, \hyperpage{27}
+  \item {reset}
+    \subitem {Runner}, \hyperpage{39}
+  \item {result}
+    \subitem {Code}, \hyperpage{22}
+  \item {run}
+    \subitem {Aad4}, \hyperpage{9}
+    \subitem {Bit\+Flip}, \hyperpage{13}
+    \subitem {Code}, \hyperpage{20}
+    \subitem {Code5}, \hyperpage{25}
+    \subitem {None}, \hyperpage{34}
+    \subitem {Runable}, \hyperpage{37}
+    \subitem {Runner}, \hyperpage{39}
+    \subitem {Shor}, \hyperpage{42}
+    \subitem {Steane}, \hyperpage{47}
+  \item {run\+All}
+    \subitem {Network}, \hyperpage{29}
+  \item {run\+All\+Tests}
+    \subitem {Test}, \hyperpage{51}
+  \item {run\+Code}
+    \subitem {Runner.\+cpp}, \hyperpage{58}
+    \subitem {Runner.\+h}, \hyperpage{58}
+  \item {run\+Error}
+    \subitem {Error}, \hyperpage{26}
+  \item {run\+Error\+One\+Bit}
+    \subitem {Error}, \hyperpage{27}
+  \item {Runable}, \hyperpage{34}
+    \subitem {$\sim$\+Runable}, \hyperpage{36}
+    \subitem {A\+A\+D4}, \hyperpage{37}
+    \subitem {B\+I\+T\+F\+L\+IP}, \hyperpage{37}
+    \subitem {C\+O\+D\+E5}, \hyperpage{37}
+    \subitem {get\+Code\+Type}, \hyperpage{36}
+    \subitem {get\+Result}, \hyperpage{36}
+    \subitem {initalize}, \hyperpage{36}
+    \subitem {N\+O\+NE}, \hyperpage{37}
+    \subitem {run}, \hyperpage{37}
+    \subitem {Runable}, \hyperpage{36}
+    \subitem {runner}, \hyperpage{37}
+    \subitem {S\+H\+OR}, \hyperpage{37}
+    \subitem {S\+T\+E\+A\+NE}, \hyperpage{38}
+    \subitem {set\+Code\+Type}, \hyperpage{37}
+  \item {Runner}, \hyperpage{38}
+    \subitem {$\sim$\+Runner}, \hyperpage{38}
+    \subitem {add\+Code}, \hyperpage{39}
+    \subitem {get\+B\+ER}, \hyperpage{39}
+    \subitem {reset}, \hyperpage{39}
+    \subitem {run}, \hyperpage{39}
+    \subitem {Runner}, \hyperpage{38}
+  \item {runner}
+    \subitem {Runable}, \hyperpage{37}
+  \item {Runner.\+cpp}
+    \subitem {run\+Code}, \hyperpage{58}
+  \item {Runner.\+h}
+    \subitem {run\+Code}, \hyperpage{58}
+
+  \indexspace
+
+  \item {S\+H\+OR}
+    \subitem {Runable}, \hyperpage{37}
+  \item {S\+T\+E\+A\+NE}
+    \subitem {Runable}, \hyperpage{38}
+  \item {set\+Code\+Type}
+    \subitem {Runable}, \hyperpage{37}
+  \item {set\+Error}
+    \subitem {Error}, \hyperpage{27}
+  \item {set\+Mixed}
+    \subitem {Code}, \hyperpage{21}
+  \item {setandmes\+Anc}
+    \subitem {Code}, \hyperpage{20}
+  \item {Shor}, \hyperpage{39}
+    \subitem {CS}, \hyperpage{42}
+    \subitem {encode}, \hyperpage{41}
+    \subitem {get\+CS}, \hyperpage{41}
+    \subitem {get\+Descriptor}, \hyperpage{42}
+    \subitem {run}, \hyperpage{42}
+    \subitem {Shor}, \hyperpage{41}
+    \subitem {super}, \hyperpage{41}
+  \item {shor\+Test}
+    \subitem {Test}, \hyperpage{51}
+  \item {shorruns}
+    \subitem {Test}, \hyperpage{52}
+  \item {Single}, \hyperpage{43}
+    \subitem {get\+Result}, \hyperpage{45}
+    \subitem {initalize}, \hyperpage{45}
+    \subitem {Single}, \hyperpage{44}
+  \item {Steane}, \hyperpage{45}
+    \subitem {CS}, \hyperpage{48}
+    \subitem {encode}, \hyperpage{47}
+    \subitem {get\+CS}, \hyperpage{47}
+    \subitem {get\+Descriptor}, \hyperpage{47}
+    \subitem {run}, \hyperpage{47}
+    \subitem {Steane}, \hyperpage{47}
+  \item {steane\+Test}
+    \subitem {Test}, \hyperpage{51}
+  \item {steaneruns}
+    \subitem {Test}, \hyperpage{52}
+  \item {super}
+    \subitem {Shor}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Test}, \hyperpage{48}
+    \subitem {bit\+Flip\+Test}, \hyperpage{50}
+    \subitem {bitflipruns}, \hyperpage{51}
+    \subitem {code5\+Test}, \hyperpage{50}
+    \subitem {code5runs}, \hyperpage{51}
+    \subitem {get\+Result}, \hyperpage{50}
+    \subitem {initalize}, \hyperpage{51}
+    \subitem {run\+All\+Tests}, \hyperpage{51}
+    \subitem {shor\+Test}, \hyperpage{51}
+    \subitem {shorruns}, \hyperpage{52}
+    \subitem {steane\+Test}, \hyperpage{51}
+    \subitem {steaneruns}, \hyperpage{52}
+    \subitem {Test}, \hyperpage{50}
+    \subitem {test\+Mixed}, \hyperpage{51}
+  \item {test\+Error}
+    \subitem {Code5}, \hyperpage{25}
+  \item {test\+Mixed}
+    \subitem {Test}, \hyperpage{51}
+  \item {thread\+Counter}
+    \subitem {Code}, \hyperpage{22}
+
+\end{theindex}

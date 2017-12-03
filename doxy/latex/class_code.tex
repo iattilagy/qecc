@@ -1,0 +1,356 @@
+\hypertarget{class_code}{}\section{Code Class Reference}
+\label{class_code}\index{Code@{Code}}
+
+
+{\ttfamily \#include $<$Code.\+h$>$}
+
+
+
+Inheritance diagram for Code\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_code__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_code_ac37d2241363b2bfcd11db0e02d3acad6}{Code} (bool b)
+\item 
+virtual \hyperlink{class_code_ad9a1e323c3ed4d36aeff17faffe1e770}{$\sim$\+Code} ()
+\item 
+virtual bool \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{run} ()=0
+\item 
+void \hyperlink{class_code_a79f6282eeac2d8c2d61bab55ddf2e797}{add\+Error} (\hyperlink{class_error}{Error} $\ast$e)
+\item 
+bool \hyperlink{class_code_a6a7ff74d4db8bc010c750afa1f1743c1}{get\+OK} ()
+\item 
+virtual std\+::string \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{get\+Descriptor} ()=0
+\item 
+void \hyperlink{class_code_a58a0c6a1b046c6d20703d32c6a7fefbc}{disable\+Error\+Deletion} ()
+\item 
+void \hyperlink{class_code_ae26ecba630093dcac2b7c01946678cb0}{convert\+To\+Mixed} ()
+\item 
+void \hyperlink{class_code_a85f5a2e8133b68173334f24d66f4d5a9}{set\+Mixed} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic\+\_\+int $\ast$ \hyperlink{class_code_ab4f00a8ff5a23276a54c7b163b34219a}{error\+Counter}
+\item 
+std\+::atomic\+\_\+int $\ast$ \hyperlink{class_code_a3c6a29ddf07c39bda3e78d05cada42b5}{thread\+Counter}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_code_a30cba39121d9b63fd3344f639fe42487}{setandmes\+Anc} (const std\+::vector$<$ unsigned $>$ \&b, unsigned CS)
+\item 
+void \hyperlink{class_code_ad554df1048f44e7e02404e9670a3d8de}{hadamard\+All\+Code\+Bits} ()
+\item 
+void \hyperlink{class_code_ac67d0cdd389466240874cc124137b6ac}{hadamard\+Code\+Bits} (const std\+::vector$<$ unsigned $>$ \&b)
+\item 
+bool \hyperlink{class_code_ac1116dcd1573b570cfee1a044f4526a9}{get\+Mes} (unsigned i)
+\item 
+void \hyperlink{class_code_af87289ca8b76769d7a572a0d1b324155}{error} ()
+\item 
+virtual void \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{encode} (bool b)=0
+\item 
+virtual unsigned \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{get\+CS} ()=0
+\item 
+void \hyperlink{class_code_a63474ffa6825d0efcfa8a40cac225d4a}{apply\+GT} (const cmat gate, unsigned b)
+\item 
+void \hyperlink{class_code_a3fe9fc7acd3f4c9cc80d5fd39322ca04}{apply\+C\+GT} (const cmat gate, const std\+::vector$<$ unsigned $>$ \&b)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ket $\ast$ \hyperlink{class_code_a01a6ba9da79914bc6980ffddf53ecb24}{c}
+\item 
+cmat $\ast$ \hyperlink{class_code_a92025265fbd17156f2a3dc7a6e5364f6}{d}
+\item 
+bool \hyperlink{class_code_a299e61614fc7ae8e3cbcba232d57d042}{mixed}
+\item 
+std\+::queue$<$ \hyperlink{class_error}{Error} $\ast$ $>$ \hyperlink{class_code_a8eed999145874a4fe25c8a3ad589d225}{errorlist}
+\item 
+bool \hyperlink{class_code_a0bdc22fcdc5b2a78a8ace1aea2d96d34}{input}
+\item 
+bool \hyperlink{class_code_ae448fe74faf959e28ae7a17d13dd4790}{delete\+Error}
+\item 
+bool \hyperlink{class_code_ac65cd5a89311ea1059ba7d3772d812f9}{result}
+\item 
+bool \hyperlink{class_code_a62ce9f737b915662364116664261969a}{ok}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_code_a16d3937baa3679c525821223427be40b}{Error}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_code}{Code} class is provides a way to simulate a code on an erroneous channel ~\newline
+ This is the parent of all specific code classes 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Code@{Code}!Code@{Code}}
+\index{Code@{Code}!Code@{Code}}
+\subsubsection[{\texorpdfstring{Code(bool b)}{Code(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}Code\+::\+Code (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_code_ac37d2241363b2bfcd11db0e02d3acad6}{}\label{class_code_ac37d2241363b2bfcd11db0e02d3acad6}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em b} & Input bit 1 or 0 \\
+\hline
+\end{DoxyParams}
+\index{Code@{Code}!````~Code@{$\sim$\+Code}}
+\index{````~Code@{$\sim$\+Code}!Code@{Code}}
+\subsubsection[{\texorpdfstring{$\sim$\+Code()}{~Code()}}]{\setlength{\rightskip}{0pt plus 5cm}Code\+::$\sim$\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_code_ad9a1e323c3ed4d36aeff17faffe1e770}{}\label{class_code_ad9a1e323c3ed4d36aeff17faffe1e770}
+Destructor 
+
+\subsection{Member Function Documentation}
+\index{Code@{Code}!add\+Error@{add\+Error}}
+\index{add\+Error@{add\+Error}!Code@{Code}}
+\subsubsection[{\texorpdfstring{add\+Error(\+Error $\ast$e)}{addError(Error *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::add\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Error} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_a79f6282eeac2d8c2d61bab55ddf2e797}{}\label{class_code_a79f6282eeac2d8c2d61bab55ddf2e797}
+Add an error to the error list 
+\begin{DoxyParams}{Parameters}
+{\em e} & Pointer to an error to be added \\
+\hline
+\end{DoxyParams}
+\index{Code@{Code}!apply\+C\+GT@{apply\+C\+GT}}
+\index{apply\+C\+GT@{apply\+C\+GT}!Code@{Code}}
+\subsubsection[{\texorpdfstring{apply\+C\+G\+T(const cmat gate, const std\+::vector$<$ unsigned $>$ \&b)}{applyCGT(const cmat gate, const std::vector< unsigned > &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::apply\+C\+GT (
+\begin{DoxyParamCaption}
+\item[{const cmat}]{gate, }
+\item[{const std\+::vector$<$ unsigned $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_code_a3fe9fc7acd3f4c9cc80d5fd39322ca04}{}\label{class_code_a3fe9fc7acd3f4c9cc80d5fd39322ca04}
+Applies a 2 qubit gate 
+\begin{DoxyParams}{Parameters}
+{\em gate} & Matrix of the gate \\
+\hline
+{\em b} & array of two subsystem ids \\
+\hline
+\end{DoxyParams}
+\index{Code@{Code}!apply\+GT@{apply\+GT}}
+\index{apply\+GT@{apply\+GT}!Code@{Code}}
+\subsubsection[{\texorpdfstring{apply\+G\+T(const cmat gate, unsigned b)}{applyGT(const cmat gate, unsigned b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::apply\+GT (
+\begin{DoxyParamCaption}
+\item[{const cmat}]{gate, }
+\item[{unsigned}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_code_a63474ffa6825d0efcfa8a40cac225d4a}{}\label{class_code_a63474ffa6825d0efcfa8a40cac225d4a}
+Applies a single qubit gate 
+\begin{DoxyParams}{Parameters}
+{\em gate} & Matrix of the gate \\
+\hline
+{\em b} & subsystem id \\
+\hline
+\end{DoxyParams}
+\index{Code@{Code}!convert\+To\+Mixed@{convert\+To\+Mixed}}
+\index{convert\+To\+Mixed@{convert\+To\+Mixed}!Code@{Code}}
+\subsubsection[{\texorpdfstring{convert\+To\+Mixed()}{convertToMixed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::convert\+To\+Mixed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_ae26ecba630093dcac2b7c01946678cb0}{}\label{class_code_ae26ecba630093dcac2b7c01946678cb0}
+Convert vector notation to density matrix. {\bfseries Must be called inside run!} From outside class stays the same but inside it will use density matrix. This has a performance drawback but needed for some errors for example amplitude damping. An amplitude damping \hyperlink{class_error}{Error} does this conversion automatically. \index{Code@{Code}!disable\+Error\+Deletion@{disable\+Error\+Deletion}}
+\index{disable\+Error\+Deletion@{disable\+Error\+Deletion}!Code@{Code}}
+\subsubsection[{\texorpdfstring{disable\+Error\+Deletion()}{disableErrorDeletion()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::disable\+Error\+Deletion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_a58a0c6a1b046c6d20703d32c6a7fefbc}{}\label{class_code_a58a0c6a1b046c6d20703d32c6a7fefbc}
+Normally Errors are deleted by run function. If the given \hyperlink{class_error}{Error} instance is being used by multiple \hyperlink{class_code}{Code} instances this will disable deletion of it . \index{Code@{Code}!encode@{encode}}
+\index{encode@{encode}!Code@{Code}}
+\subsubsection[{\texorpdfstring{encode(bool b)=0}{encode(bool b)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Code\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{class_code_a5f90b0f96002c9b999d8ed7bab319906}{}\label{class_code_a5f90b0f96002c9b999d8ed7bab319906}
+Encode input bit 
+\begin{DoxyParams}{Parameters}
+{\em b} & Classical input converted to $\vert$0$>$ or $\vert$1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_code5_a17456381dabab2ba1b28bf232376908f}{Code5}, \hyperlink{class_shor_a77db4d99076a0e581057faae8071574c}{Shor}, \hyperlink{class_none_a5f7b2a6913822dff79ce6d90b7428ecc}{None}, \hyperlink{class_steane_a3c64f20d7329b609984f115cd35651ab}{Steane}, \hyperlink{class_bit_flip_a45fdb2512ee2092d0c1f877afda2bb50}{Bit\+Flip}, and \hyperlink{class_aad4_ad3febfa430563be08f78c3b7e8517ff6}{Aad4}.
+
+\index{Code@{Code}!error@{error}}
+\index{error@{error}!Code@{Code}}
+\subsubsection[{\texorpdfstring{error()}{error()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_af87289ca8b76769d7a572a0d1b324155}{}\label{class_code_af87289ca8b76769d7a572a0d1b324155}
+Applies errors on c or d \index{Code@{Code}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!Code@{Code}}
+\subsubsection[{\texorpdfstring{get\+C\+S()=0}{getCS()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned Code\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{}\label{class_code_a34f52b25d78aeaec3c1fd381f025ad00}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_code5_a518d2eb49ea82e92b74458db5477abf6}{Code5}, \hyperlink{class_shor_a5cfb32ea0c6f73fd9478ce93b7fafb4f}{Shor}, \hyperlink{class_none_a6e8b66f3489dbc5e1b231c27534c484d}{None}, \hyperlink{class_steane_a7b84b86f9d9737890a146e11479683e6}{Steane}, \hyperlink{class_bit_flip_ad3c275a5fe1cb5188cb1ab3049fcfd70}{Bit\+Flip}, and \hyperlink{class_aad4_af4cb779e50399fcdca7a2f62282b7e78}{Aad4}.
+
+\index{Code@{Code}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Code@{Code}}
+\subsubsection[{\texorpdfstring{get\+Descriptor()=0}{getDescriptor()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Code\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{}\label{class_code_a60db2f615a7cff76e3ece1c486b2fd16}
+Log of run ~\newline
+ To be defined in child class ~\newline
+ Contains code type, input, output, ancilla bit measurements ~\newline
+ Format\+:~\newline
+ {\itshape C\+O\+D\+E\+T\+Y\+PE ancillas input-\/$>$result O\+K/\+E\+R\+R\+OR} \begin{DoxyReturn}{Returns}
+log string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_code5_ab7cd6f3c172a4a0c45bc0fa41a3ff535}{Code5}, \hyperlink{class_shor_ad9a43efd28edf5df378d0c6b7dfbb051}{Shor}, \hyperlink{class_none_a0ad5c4d177835a8fc0498d606fefbd79}{None}, \hyperlink{class_steane_a1fb53da78a66d64cd6aad02735fab4c3}{Steane}, \hyperlink{class_bit_flip_adc65379e4eeb6eb908318a98c304e16e}{Bit\+Flip}, and \hyperlink{class_aad4_ad697e56ab152cd1228bd26f73451ec42}{Aad4}.
+
+\index{Code@{Code}!get\+Mes@{get\+Mes}}
+\index{get\+Mes@{get\+Mes}!Code@{Code}}
+\subsubsection[{\texorpdfstring{get\+Mes(unsigned i)}{getMes(unsigned i)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::get\+Mes (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ac1116dcd1573b570cfee1a044f4526a9}{}\label{class_code_ac1116dcd1573b570cfee1a044f4526a9}
+Measures bit 
+\begin{DoxyParams}{Parameters}
+{\em i} & Subsystem id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Measured classical value 
+\end{DoxyReturn}
+\index{Code@{Code}!get\+OK@{get\+OK}}
+\index{get\+OK@{get\+OK}!Code@{Code}}
+\subsubsection[{\texorpdfstring{get\+O\+K()}{getOK()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::get\+OK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_a6a7ff74d4db8bc010c750afa1f1743c1}{}\label{class_code_a6a7ff74d4db8bc010c750afa1f1743c1}
+Check whether transmission was successful \begin{DoxyReturn}{Returns}
+True if input is same as result, false if otherwise 
+\end{DoxyReturn}
+\index{Code@{Code}!hadamard\+All\+Code\+Bits@{hadamard\+All\+Code\+Bits}}
+\index{hadamard\+All\+Code\+Bits@{hadamard\+All\+Code\+Bits}!Code@{Code}}
+\subsubsection[{\texorpdfstring{hadamard\+All\+Code\+Bits()}{hadamardAllCodeBits()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::hadamard\+All\+Code\+Bits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ad554df1048f44e7e02404e9670a3d8de}{}\label{class_code_ad554df1048f44e7e02404e9670a3d8de}
+Hadamard transforms all codebits \index{Code@{Code}!hadamard\+Code\+Bits@{hadamard\+Code\+Bits}}
+\index{hadamard\+Code\+Bits@{hadamard\+Code\+Bits}!Code@{Code}}
+\subsubsection[{\texorpdfstring{hadamard\+Code\+Bits(const std\+::vector$<$ unsigned $>$ \&b)}{hadamardCodeBits(const std::vector< unsigned > &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::hadamard\+Code\+Bits (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ unsigned $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ac67d0cdd389466240874cc124137b6ac}{}\label{class_code_ac67d0cdd389466240874cc124137b6ac}
+Hadamard transforms a set of codebits 
+\begin{DoxyParams}{Parameters}
+{\em b} & Bits to transform \\
+\hline
+\end{DoxyParams}
+\index{Code@{Code}!run@{run}}
+\index{run@{run}!Code@{Code}}
+\subsubsection[{\texorpdfstring{run()=0}{run()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Code\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_code_a5621bbd050948ba1e41f69f451a05990}{}\label{class_code_a5621bbd050948ba1e41f69f451a05990}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_code5_ad2aec9994037880f38205e739a8f8a4a}{Code5}, \hyperlink{class_shor_abe454e38fed6f33d832c3d7fd64627ea}{Shor}, \hyperlink{class_none_aa8386e7d54637a7fd089bb84b5518c9d}{None}, \hyperlink{class_steane_a0d891a1213b62e1b225fab265fab3fc9}{Steane}, \hyperlink{class_bit_flip_a3022463e79c6624b2123617d1957d716}{Bit\+Flip}, and \hyperlink{class_aad4_a95f5ec483584c48bde0fd96d4d347c34}{Aad4}.
+
+\index{Code@{Code}!setandmes\+Anc@{setandmes\+Anc}}
+\index{setandmes\+Anc@{setandmes\+Anc}!Code@{Code}}
+\subsubsection[{\texorpdfstring{setandmes\+Anc(const std\+::vector$<$ unsigned $>$ \&b, unsigned C\+S)}{setandmesAnc(const std::vector< unsigned > &b, unsigned CS)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::setandmes\+Anc (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ unsigned $>$ \&}]{b, }
+\item[{unsigned}]{CS}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a30cba39121d9b63fd3344f639fe42487}{}\label{class_code_a30cba39121d9b63fd3344f639fe42487}
+Applies C\+N\+OT gates controlled by bits in b on ancilla one-\/by-\/one. Than measures ancilla and returns its classical value. 
+\begin{DoxyParams}{Parameters}
+{\em b} & Bits controlling ancilla \\
+\hline
+{\em CS} & \hyperlink{class_code}{Code} size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Classical value of ancilla 
+\end{DoxyReturn}
+\index{Code@{Code}!set\+Mixed@{set\+Mixed}}
+\index{set\+Mixed@{set\+Mixed}!Code@{Code}}
+\subsubsection[{\texorpdfstring{set\+Mixed()}{setMixed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::set\+Mixed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_a85f5a2e8133b68173334f24d66f4d5a9}{}\label{class_code_a85f5a2e8133b68173334f24d66f4d5a9}
+Converts vector notation to density matrix. {\bfseries Must be called before run!} Useful for testing. 
+
+\subsection{Friends And Related Function Documentation}
+\index{Code@{Code}!Error@{Error}}
+\index{Error@{Error}!Code@{Code}}
+\subsubsection[{\texorpdfstring{Error}{Error}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Error}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_code_a16d3937baa3679c525821223427be40b}{}\label{class_code_a16d3937baa3679c525821223427be40b}
+
+
+\subsection{Member Data Documentation}
+\index{Code@{Code}!c@{c}}
+\index{c@{c}!Code@{Code}}
+\subsubsection[{\texorpdfstring{c}{c}}]{\setlength{\rightskip}{0pt plus 5cm}ket$\ast$ Code\+::c\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a01a6ba9da79914bc6980ffddf53ecb24}{}\label{class_code_a01a6ba9da79914bc6980ffddf53ecb24}
+Contains state in vector notation \index{Code@{Code}!d@{d}}
+\index{d@{d}!Code@{Code}}
+\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}cmat$\ast$ Code\+::d\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a92025265fbd17156f2a3dc7a6e5364f6}{}\label{class_code_a92025265fbd17156f2a3dc7a6e5364f6}
+Contains state in density matrix \index{Code@{Code}!delete\+Error@{delete\+Error}}
+\index{delete\+Error@{delete\+Error}!Code@{Code}}
+\subsubsection[{\texorpdfstring{delete\+Error}{deleteError}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::delete\+Error\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ae448fe74faf959e28ae7a17d13dd4790}{}\label{class_code_ae448fe74faf959e28ae7a17d13dd4790}
+Delete Errors on run. True by default. \index{Code@{Code}!error\+Counter@{error\+Counter}}
+\index{error\+Counter@{error\+Counter}!Code@{Code}}
+\subsubsection[{\texorpdfstring{error\+Counter}{errorCounter}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic\+\_\+int$\ast$ Code\+::error\+Counter}\hypertarget{class_code_ab4f00a8ff5a23276a54c7b163b34219a}{}\label{class_code_ab4f00a8ff5a23276a54c7b163b34219a}
+External error counter provided by \hyperlink{class_runner}{Runner} class. If an error occurs this is incremented. \index{Code@{Code}!errorlist@{errorlist}}
+\index{errorlist@{errorlist}!Code@{Code}}
+\subsubsection[{\texorpdfstring{errorlist}{errorlist}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::queue$<${\bf Error} $\ast$$>$ Code\+::errorlist\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a8eed999145874a4fe25c8a3ad589d225}{}\label{class_code_a8eed999145874a4fe25c8a3ad589d225}
+List of errors to be applied \index{Code@{Code}!input@{input}}
+\index{input@{input}!Code@{Code}}
+\subsubsection[{\texorpdfstring{input}{input}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::input\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a0bdc22fcdc5b2a78a8ace1aea2d96d34}{}\label{class_code_a0bdc22fcdc5b2a78a8ace1aea2d96d34}
+Input bit, converted to $\vert$0$>$ or $\vert$1$>$ \index{Code@{Code}!mixed@{mixed}}
+\index{mixed@{mixed}!Code@{Code}}
+\subsubsection[{\texorpdfstring{mixed}{mixed}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::mixed\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a299e61614fc7ae8e3cbcba232d57d042}{}\label{class_code_a299e61614fc7ae8e3cbcba232d57d042}
+True if density matrix is used \index{Code@{Code}!ok@{ok}}
+\index{ok@{ok}!Code@{Code}}
+\subsubsection[{\texorpdfstring{ok}{ok}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::ok\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a62ce9f737b915662364116664261969a}{}\label{class_code_a62ce9f737b915662364116664261969a}
+True if result is same as input, false otherwise \index{Code@{Code}!result@{result}}
+\index{result@{result}!Code@{Code}}
+\subsubsection[{\texorpdfstring{result}{result}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::result\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ac65cd5a89311ea1059ba7d3772d812f9}{}\label{class_code_ac65cd5a89311ea1059ba7d3772d812f9}
+Measured bit, being set by run \index{Code@{Code}!thread\+Counter@{thread\+Counter}}
+\index{thread\+Counter@{thread\+Counter}!Code@{Code}}
+\subsubsection[{\texorpdfstring{thread\+Counter}{threadCounter}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic\+\_\+int$\ast$ Code\+::thread\+Counter}\hypertarget{class_code_a3c6a29ddf07c39bda3e78d05cada42b5}{}\label{class_code_a3c6a29ddf07c39bda3e78d05cada42b5}
+Thread counter of \hyperlink{class_runner}{Runner} class. After run \hyperlink{class_runner}{Runner} decrements this. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_code_8h}{Code.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_code_8cpp}{Code.\+cpp}\end{DoxyCompactItemize}

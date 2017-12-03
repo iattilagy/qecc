@@ -1,0 +1,126 @@
+\hypertarget{class_channel}{}\section{Channel Class Reference}
+\label{class_channel}\index{Channel@{Channel}}
+
+
+{\ttfamily \#include $<$Channel.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_channel_a5c4f341674fed76b66ae766d268c574a}{Channel} (int nodeid0, int nodeid1, \hyperlink{class_error}{Error} $\ast$e)
+\item 
+bool \hyperlink{class_channel_a089e35cdef5be2b10d630c2ef4914dc1}{match\+Id} (int nid0, int nid1)
+\item 
+int \hyperlink{class_channel_a5b81ce0b217813d9b0ec13d5042d297f}{match\+One\+Get\+Other} (int id)
+\item 
+int $\ast$ \hyperlink{class_channel_adae91e67fc9e0d22d47606efe7a704ec}{get\+Ids} ()
+\item 
+std\+::string \hyperlink{class_channel_ac91f51b1333e8b69a936b8cd0d39bb65}{debug\+Print} ()
+\item 
+\hyperlink{class_error}{Error} $\ast$ \hyperlink{class_channel_a4c99f5f2b94cf100a1f91dd9df7eee81}{get\+Error} ()
+\item 
+\hyperlink{class_channel_a5f15ebd302464069f1a9e3f0ded14482}{$\sim$\+Channel} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used by network mode ~\newline
+ Stores two node ids and an error between them 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Channel@{Channel}!Channel@{Channel}}
+\index{Channel@{Channel}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{Channel(int nodeid0, int nodeid1, Error $\ast$e)}{Channel(int nodeid0, int nodeid1, Error *e)}}]{\setlength{\rightskip}{0pt plus 5cm}Channel\+::\+Channel (
+\begin{DoxyParamCaption}
+\item[{int}]{nodeid0, }
+\item[{int}]{nodeid1, }
+\item[{{\bf Error} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_a5c4f341674fed76b66ae766d268c574a}{}\label{class_channel_a5c4f341674fed76b66ae766d268c574a}
+Constuctor 
+\begin{DoxyParams}{Parameters}
+{\em nodeid0} & Id of first node \\
+\hline
+{\em nodeid1} & Id of second node \\
+\hline
+{\em e} & \hyperlink{class_error}{Error} of the channel \\
+\hline
+\end{DoxyParams}
+\index{Channel@{Channel}!````~Channel@{$\sim$\+Channel}}
+\index{````~Channel@{$\sim$\+Channel}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{$\sim$\+Channel()}{~Channel()}}]{\setlength{\rightskip}{0pt plus 5cm}Channel\+::$\sim$\+Channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_a5f15ebd302464069f1a9e3f0ded14482}{}\label{class_channel_a5f15ebd302464069f1a9e3f0ded14482}
+
+
+\subsection{Member Function Documentation}
+\index{Channel@{Channel}!debug\+Print@{debug\+Print}}
+\index{debug\+Print@{debug\+Print}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{debug\+Print()}{debugPrint()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Channel\+::debug\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_ac91f51b1333e8b69a936b8cd0d39bb65}{}\label{class_channel_ac91f51b1333e8b69a936b8cd0d39bb65}
+Print data to string \begin{DoxyReturn}{Returns}
+String which describes the instance 
+\end{DoxyReturn}
+\index{Channel@{Channel}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{get\+Error()}{getError()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error}$\ast$ Channel\+::get\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_a4c99f5f2b94cf100a1f91dd9df7eee81}{}\label{class_channel_a4c99f5f2b94cf100a1f91dd9df7eee81}
+Get \hyperlink{class_error}{Error} \begin{DoxyReturn}{Returns}
+returns pointer to error 
+\end{DoxyReturn}
+\index{Channel@{Channel}!get\+Ids@{get\+Ids}}
+\index{get\+Ids@{get\+Ids}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{get\+Ids()}{getIds()}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Channel\+::get\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_adae91e67fc9e0d22d47606efe7a704ec}{}\label{class_channel_adae91e67fc9e0d22d47606efe7a704ec}
+Get node ids \begin{DoxyReturn}{Returns}
+Array of our the nodeids 
+\end{DoxyReturn}
+\index{Channel@{Channel}!match\+Id@{match\+Id}}
+\index{match\+Id@{match\+Id}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{match\+Id(int nid0, int nid1)}{matchId(int nid0, int nid1)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Channel\+::match\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{nid0, }
+\item[{int}]{nid1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_a089e35cdef5be2b10d630c2ef4914dc1}{}\label{class_channel_a089e35cdef5be2b10d630c2ef4914dc1}
+Check if two ids given is what we have, order does not matter 
+\begin{DoxyParams}{Parameters}
+{\em nid0} & First node id \\
+\hline
+{\em nid1} & Second node id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if our ids match the input 
+\end{DoxyReturn}
+\index{Channel@{Channel}!match\+One\+Get\+Other@{match\+One\+Get\+Other}}
+\index{match\+One\+Get\+Other@{match\+One\+Get\+Other}!Channel@{Channel}}
+\subsubsection[{\texorpdfstring{match\+One\+Get\+Other(int id)}{matchOneGetOther(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}int Channel\+::match\+One\+Get\+Other (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_channel_a5b81ce0b217813d9b0ec13d5042d297f}{}\label{class_channel_a5b81ce0b217813d9b0ec13d5042d297f}
+Check if one of our ids is same as input and return the other or zero if no match 
+\begin{DoxyParams}{Parameters}
+{\em id} & \hyperlink{class_node}{Node} id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of our other node on match 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_channel_8h}{Channel.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,170 @@
+\hypertarget{class_runable}{}\section{Runable Class Reference}
+\label{class_runable}\index{Runable@{Runable}}
+
+
+{\ttfamily \#include $<$Runable.\+h$>$}
+
+
+
+Inheritance diagram for Runable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_runable__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_runable_a5b603803388b888b078dcb0520082d15}{Runable} (int type, unsigned maxnumthreads)
+\item 
+void \hyperlink{class_runable_a766cbda482eeb5c181941f1a1113041c}{run} ()
+\item 
+virtual \hyperlink{class_runable_a6b1e67cab0fb137e26963f6e8d2687d4}{$\sim$\+Runable} ()
+\item 
+virtual void \hyperlink{class_runable_ae45ce89bb273ba5863e8ca0951caef85}{initalize} ()=0
+\item 
+virtual std\+::string \hyperlink{class_runable_a761a0c657253223f3dd7cf2c0762c34e}{get\+Result} ()=0
+\item 
+void \hyperlink{class_runable_a41f4c8d84fa427f05b82bb530d19e454}{set\+Code\+Type} (int t)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_runable_a27f57a3218c5237bdd5c0134db82e3f9}{S\+H\+OR} = 100
+\item 
+static const int \hyperlink{class_runable_a68af748dc3edebef5e1dd7a3e18a1b5f}{S\+T\+E\+A\+NE} = 101
+\item 
+static const int \hyperlink{class_runable_ad3dbc64c086f9e02f45c8e877f5ae898}{C\+O\+D\+E5} = 102
+\item 
+static const int \hyperlink{class_runable_a9dfae104f3c3623e9e39908c1560a7fe}{N\+O\+NE} = 103
+\item 
+static const int \hyperlink{class_runable_a56fc454699fbd4fcbe05bb90c36b80b0}{B\+I\+T\+F\+L\+IP} = 104
+\item 
+static const int \hyperlink{class_runable_a89b302b9a67e49ca32abd77560b58bdb}{A\+A\+D4} = 105
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_runable_a9e9e55d77ae3cf5486fc60bae62f1141}{get\+Code\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_runner}{Runner} $\ast$ \hyperlink{class_runable_ad61073e4e8d33b564701edd7e30a967f}{runner}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_runable}{Runable} provides container for \hyperlink{class_runner}{Runner} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Runable@{Runable}!Runable@{Runable}}
+\index{Runable@{Runable}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{Runable(int type, unsigned maxnumthreads)}{Runable(int type, unsigned maxnumthreads)}}]{\setlength{\rightskip}{0pt plus 5cm}Runable\+::\+Runable (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{unsigned}]{maxnumthreads}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_runable_a5b603803388b888b078dcb0520082d15}{}\label{class_runable_a5b603803388b888b078dcb0520082d15}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em type} & \hyperlink{class_code}{Code} type \\
+\hline
+{\em maxnumthreads} & Maximum number of threads running \\
+\hline
+\end{DoxyParams}
+\index{Runable@{Runable}!````~Runable@{$\sim$\+Runable}}
+\index{````~Runable@{$\sim$\+Runable}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{$\sim$\+Runable()}{~Runable()}}]{\setlength{\rightskip}{0pt plus 5cm}Runable\+::$\sim$\+Runable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_runable_a6b1e67cab0fb137e26963f6e8d2687d4}{}\label{class_runable_a6b1e67cab0fb137e26963f6e8d2687d4}
+
+
+\subsection{Member Function Documentation}
+\index{Runable@{Runable}!get\+Code\+Type@{get\+Code\+Type}}
+\index{get\+Code\+Type@{get\+Code\+Type}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{get\+Code\+Type()}{getCodeType()}}]{\setlength{\rightskip}{0pt plus 5cm}int Runable\+::get\+Code\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_runable_a9e9e55d77ae3cf5486fc60bae62f1141}{}\label{class_runable_a9e9e55d77ae3cf5486fc60bae62f1141}
+\begin{DoxyReturn}{Returns}
+code type 
+\end{DoxyReturn}
+\index{Runable@{Runable}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{get\+Result()=0}{getResult()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Runable\+::get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_runable_a761a0c657253223f3dd7cf2c0762c34e}{}\label{class_runable_a761a0c657253223f3dd7cf2c0762c34e}
+Returns descriptor string. To be defined by child! \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_test_ae53178c2e482ed3a869c742387521a60}{Test}, \hyperlink{class_network_a8bd2e1e2117b07661a149b7e6debb99d}{Network}, and \hyperlink{class_single_adcafbbcea43758d47c2f8b4e0704c8dd}{Single}.
+
+\index{Runable@{Runable}!initalize@{initalize}}
+\index{initalize@{initalize}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{initalize()=0}{initalize()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Runable\+::initalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_runable_ae45ce89bb273ba5863e8ca0951caef85}{}\label{class_runable_ae45ce89bb273ba5863e8ca0951caef85}
+Initalizes code list. To be defined by child! 
+
+Implemented in \hyperlink{class_test_a6baf4b2ddf84f198e156bf78c97b865b}{Test}, \hyperlink{class_network_aac12b9028bdef1c44984b1c8e111e69d}{Network}, and \hyperlink{class_single_afa7dc40314a46c75553a1de77ce020e9}{Single}.
+
+\index{Runable@{Runable}!run@{run}}
+\index{run@{run}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void Runable\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_runable_a766cbda482eeb5c181941f1a1113041c}{}\label{class_runable_a766cbda482eeb5c181941f1a1113041c}
+Runs codes \index{Runable@{Runable}!set\+Code\+Type@{set\+Code\+Type}}
+\index{set\+Code\+Type@{set\+Code\+Type}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{set\+Code\+Type(int t)}{setCodeType(int t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Runable\+::set\+Code\+Type (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_runable_a41f4c8d84fa427f05b82bb530d19e454}{}\label{class_runable_a41f4c8d84fa427f05b82bb530d19e454}
+Sets code type to another 
+\begin{DoxyParams}{Parameters}
+{\em t} & code type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Runable@{Runable}!A\+A\+D4@{A\+A\+D4}}
+\index{A\+A\+D4@{A\+A\+D4}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{A\+A\+D4}{AAD4}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+A\+A\+D4 = 105\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_a89b302b9a67e49ca32abd77560b58bdb}{}\label{class_runable_a89b302b9a67e49ca32abd77560b58bdb}
+4qubit amplitude damping code type int \index{Runable@{Runable}!B\+I\+T\+F\+L\+IP@{B\+I\+T\+F\+L\+IP}}
+\index{B\+I\+T\+F\+L\+IP@{B\+I\+T\+F\+L\+IP}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{B\+I\+T\+F\+L\+IP}{BITFLIP}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+B\+I\+T\+F\+L\+IP = 104\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_a56fc454699fbd4fcbe05bb90c36b80b0}{}\label{class_runable_a56fc454699fbd4fcbe05bb90c36b80b0}
+Bit flip code type int \index{Runable@{Runable}!C\+O\+D\+E5@{C\+O\+D\+E5}}
+\index{C\+O\+D\+E5@{C\+O\+D\+E5}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{C\+O\+D\+E5}{CODE5}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+C\+O\+D\+E5 = 102\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_ad3dbc64c086f9e02f45c8e877f5ae898}{}\label{class_runable_ad3dbc64c086f9e02f45c8e877f5ae898}
+5qubit code type int \index{Runable@{Runable}!N\+O\+NE@{N\+O\+NE}}
+\index{N\+O\+NE@{N\+O\+NE}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{N\+O\+NE}{NONE}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+N\+O\+NE = 103\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_a9dfae104f3c3623e9e39908c1560a7fe}{}\label{class_runable_a9dfae104f3c3623e9e39908c1560a7fe}
+No coding type int \index{Runable@{Runable}!runner@{runner}}
+\index{runner@{runner}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{runner}{runner}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Runner}$\ast$ Runable\+::runner\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_runable_ad61073e4e8d33b564701edd7e30a967f}{}\label{class_runable_ad61073e4e8d33b564701edd7e30a967f}
+\hyperlink{class_runner}{Runner} to provide multithreading \index{Runable@{Runable}!S\+H\+OR@{S\+H\+OR}}
+\index{S\+H\+OR@{S\+H\+OR}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{S\+H\+OR}{SHOR}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+S\+H\+OR = 100\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_a27f57a3218c5237bdd5c0134db82e3f9}{}\label{class_runable_a27f57a3218c5237bdd5c0134db82e3f9}
+\hyperlink{class_shor}{Shor} code type int \index{Runable@{Runable}!S\+T\+E\+A\+NE@{S\+T\+E\+A\+NE}}
+\index{S\+T\+E\+A\+NE@{S\+T\+E\+A\+NE}!Runable@{Runable}}
+\subsubsection[{\texorpdfstring{S\+T\+E\+A\+NE}{STEANE}}]{\setlength{\rightskip}{0pt plus 5cm}const int Runable\+::\+S\+T\+E\+A\+NE = 101\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_runable_a68af748dc3edebef5e1dd7a3e18a1b5f}{}\label{class_runable_a68af748dc3edebef5e1dd7a3e18a1b5f}
+\hyperlink{class_steane}{Steane} code type int 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_runable_8h}{Runable.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_runable_8cpp}{Runable.\+cpp}\end{DoxyCompactItemize}

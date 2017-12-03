@@ -1,0 +1,137 @@
+\hypertarget{class_shor}{}\section{Shor Class Reference}
+\label{class_shor}\index{Shor@{Shor}}
+
+
+{\ttfamily \#include $<$Shor.\+h$>$}
+
+
+
+Inheritance diagram for Shor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_shor__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_code}{Code} \hyperlink{class_shor_a7ea95c357f9d816b3a37176aa4e01781}{super}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shor_ac7cca820563c3eb81c28a8fc736249b6}{Shor} (bool b)
+\item 
+bool \hyperlink{class_shor_abe454e38fed6f33d832c3d7fd64627ea}{run} () override
+\item 
+std\+::string \hyperlink{class_shor_ad9a43efd28edf5df378d0c6b7dfbb051}{get\+Descriptor} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{class_shor_a5c2bb5ad73004577f8781a001eda8b8f}{CS} = 9
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_shor_a77db4d99076a0e581057faae8071574c}{encode} (bool b) override
+\item 
+unsigned \hyperlink{class_shor_a5cfb32ea0c6f73fd9478ce93b7fafb4f}{get\+CS} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_shor}{Shor} code class 
+
+\subsection{Member Typedef Documentation}
+\index{Shor@{Shor}!super@{super}}
+\index{super@{super}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{super}{super}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Code} {\bf Shor\+::super}}\hypertarget{class_shor_a7ea95c357f9d816b3a37176aa4e01781}{}\label{class_shor_a7ea95c357f9d816b3a37176aa4e01781}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Shor@{Shor}!Shor@{Shor}}
+\index{Shor@{Shor}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{Shor(bool b)}{Shor(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}Shor\+::\+Shor (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_shor_ac7cca820563c3eb81c28a8fc736249b6}{}\label{class_shor_ac7cca820563c3eb81c28a8fc736249b6}
+
+
+\subsection{Member Function Documentation}
+\index{Shor@{Shor}!encode@{encode}}
+\index{encode@{encode}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{encode(bool b) override}{encode(bool b) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Shor\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_shor_a77db4d99076a0e581057faae8071574c}{}\label{class_shor_a77db4d99076a0e581057faae8071574c}
+Encode input bit 
+\begin{DoxyParams}{Parameters}
+{\em b} & Classical input converted to $\vert$0$>$ or $\vert$1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{Code}.
+
+\index{Shor@{Shor}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{get\+C\+S() override}{getCS() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Shor\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_shor_a5cfb32ea0c6f73fd9478ce93b7fafb4f}{}\label{class_shor_a5cfb32ea0c6f73fd9478ce93b7fafb4f}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{Code}.
+
+\index{Shor@{Shor}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() override}{getDescriptor() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Shor\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_shor_ad9a43efd28edf5df378d0c6b7dfbb051}{}\label{class_shor_ad9a43efd28edf5df378d0c6b7dfbb051}
+Returns descriptor string ~\newline
+ Format\+: ~\newline
+ {\itshape S\+H\+OR aabbcc zz i-\/$>$o O\+K/\+E\+R\+R\+OR} ~\newline
+ Where aabbcc is xflip, zz is zflip \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{Code}.
+
+\index{Shor@{Shor}!run@{run}}
+\index{run@{run}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{run() override}{run() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Shor\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_shor_abe454e38fed6f33d832c3d7fd64627ea}{}\label{class_shor_abe454e38fed6f33d832c3d7fd64627ea}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{Code}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Shor@{Shor}!CS@{CS}}
+\index{CS@{CS}!Shor@{Shor}}
+\subsubsection[{\texorpdfstring{CS}{CS}}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned Shor\+::\+CS = 9\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_shor_a5c2bb5ad73004577f8781a001eda8b8f}{}\label{class_shor_a5c2bb5ad73004577f8781a001eda8b8f}
+\hyperlink{class_code}{Code} size for \hyperlink{class_shor}{Shor} is 9 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_shor_8h}{Shor.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_shor_8cpp}{Shor.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{class_none}{}\section{None Class Reference}
+\label{class_none}\index{None@{None}}
+
+
+{\ttfamily \#include $<$None.\+h$>$}
+
+
+
+Inheritance diagram for None\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_none__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_none_a57e854dd2b23d85d5476402f85b47ea0}{None} (bool b)
+\item 
+bool \hyperlink{class_none_aa8386e7d54637a7fd089bb84b5518c9d}{run} () override
+\item 
+std\+::string \hyperlink{class_none_a0ad5c4d177835a8fc0498d606fefbd79}{get\+Descriptor} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{class_none_a7fdf95a5c18d00cc4e81e30f5b04a784}{CS} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_none_a5f7b2a6913822dff79ce6d90b7428ecc}{encode} (bool b) override
+\item 
+unsigned \hyperlink{class_none_a6e8b66f3489dbc5e1b231c27534c484d}{get\+CS} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_code}{Code} class using no coding 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{None@{None}!None@{None}}
+\index{None@{None}!None@{None}}
+\subsubsection[{\texorpdfstring{None(bool b)}{None(bool b)}}]{\setlength{\rightskip}{0pt plus 5cm}None\+::\+None (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_none_a57e854dd2b23d85d5476402f85b47ea0}{}\label{class_none_a57e854dd2b23d85d5476402f85b47ea0}
+
+
+\subsection{Member Function Documentation}
+\index{None@{None}!encode@{encode}}
+\index{encode@{encode}!None@{None}}
+\subsubsection[{\texorpdfstring{encode(bool b) override}{encode(bool b) override}}]{\setlength{\rightskip}{0pt plus 5cm}void None\+::encode (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_none_a5f7b2a6913822dff79ce6d90b7428ecc}{}\label{class_none_a5f7b2a6913822dff79ce6d90b7428ecc}
+Encode input bit 
+\begin{DoxyParams}{Parameters}
+{\em b} & Classical input converted to $\vert$0$>$ or $\vert$1$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{Code}.
+
+\index{None@{None}!get\+CS@{get\+CS}}
+\index{get\+CS@{get\+CS}!None@{None}}
+\subsubsection[{\texorpdfstring{get\+C\+S() override}{getCS() override}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned None\+::get\+CS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_none_a6e8b66f3489dbc5e1b231c27534c484d}{}\label{class_none_a6e8b66f3489dbc5e1b231c27534c484d}
+Return code size of a child \begin{DoxyReturn}{Returns}
+code size 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{Code}.
+
+\index{None@{None}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!None@{None}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() override}{getDescriptor() override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string None\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_none_a0ad5c4d177835a8fc0498d606fefbd79}{}\label{class_none_a0ad5c4d177835a8fc0498d606fefbd79}
+Returns a descriptor string~\newline
+ Format\+:~\newline
+ {\itshape N\+O\+NE i-\/$>$o E\+R\+R\+O\+R/\+OK} \begin{DoxyReturn}{Returns}
+Log string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{Code}.
+
+\index{None@{None}!run@{run}}
+\index{run@{run}!None@{None}}
+\subsubsection[{\texorpdfstring{run() override}{run() override}}]{\setlength{\rightskip}{0pt plus 5cm}bool None\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_none_aa8386e7d54637a7fd089bb84b5518c9d}{}\label{class_none_aa8386e7d54637a7fd089bb84b5518c9d}
+Function to simulate the transmission and get the result. To be defined in child classes. \begin{DoxyReturn}{Returns}
+Measured bit at Bob 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_code_a5621bbd050948ba1e41f69f451a05990}{Code}.
+
+
+
+\subsection{Member Data Documentation}
+\index{None@{None}!CS@{CS}}
+\index{CS@{CS}!None@{None}}
+\subsubsection[{\texorpdfstring{CS}{CS}}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned None\+::\+CS = 1\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_none_a7fdf95a5c18d00cc4e81e30f5b04a784}{}\label{class_none_a7fdf95a5c18d00cc4e81e30f5b04a784}
+\hyperlink{class_code}{Code} size for \hyperlink{class_none}{None} is 1 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_none_8h}{None.\+h}\item 
+/home/attila/src/qecc-\/netbeans/qecc/\hyperlink{_none_8cpp}{None.\+cpp}\end{DoxyCompactItemize}
