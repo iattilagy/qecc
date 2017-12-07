@@ -77,7 +77,7 @@ void Network::runAll() {
             currentPair[1] = (*i)->getId();
             currentPair[0] = (*j)->getId();
             run();
-            cout << (*i)->getName() << "->" << (*j)->getName() << "\t";
+            cout << (*j)->getName() << "->" << (*i)->getName() << "\t";
             cout << "BER\t";
             cout << runner->getBER() *100 << "%" << std::endl;
         }
