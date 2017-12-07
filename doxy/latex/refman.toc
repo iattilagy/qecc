@@ -1,250 +1,262 @@
-\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
-\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
-\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Aad4 Class Reference}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Constructor \& Destructor Documentation}{9}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}Aad4(bool b)}{9}{subsubsection.4.1.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{9}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}encode(bool b) override}{9}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{9}{subsubsection.4.1.2.2}
-\contentsline {subsubsection}{\numberline {4.1.2.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{9}{subsubsection.4.1.2.3}
-\contentsline {subsubsection}{\numberline {4.1.2.4}run() override}{10}{subsubsection.4.1.2.4}
-\contentsline {subsection}{\numberline {4.1.3}Member Data Documentation}{10}{subsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.3.1}CS}{10}{subsubsection.4.1.3.1}
-\contentsline {section}{\numberline {4.2}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip Class Reference}{10}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{12}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{12}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip(bool b)}{12}{subsubsection.4.2.2.1}
-\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{12}{subsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.3.1}encode(bool b) override}{12}{subsubsection.4.2.3.1}
-\contentsline {subsubsection}{\numberline {4.2.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{12}{subsubsection.4.2.3.2}
-\contentsline {subsubsection}{\numberline {4.2.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{13}{subsubsection.4.2.3.3}
-\contentsline {subsubsection}{\numberline {4.2.3.4}run() override}{13}{subsubsection.4.2.3.4}
-\contentsline {subsection}{\numberline {4.2.4}Member Data Documentation}{13}{subsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.4.1}CS}{13}{subsubsection.4.2.4.1}
-\contentsline {section}{\numberline {4.3}Channel Class Reference}{13}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{14}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{14}{subsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Channel(int nodeid0, int nodeid1, Error $\ast $e)}{14}{subsubsection.4.3.2.1}
-\contentsline {subsubsection}{\numberline {4.3.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel()}{15}{subsubsection.4.3.2.2}
-\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{15}{subsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.1}debug\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Print()}{15}{subsubsection.4.3.3.1}
-\contentsline {subsubsection}{\numberline {4.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{15}{subsubsection.4.3.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ids()}{15}{subsubsection.4.3.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.4}match\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Id(int nid0, int nid1)}{15}{subsubsection.4.3.3.4}
-\contentsline {subsubsection}{\numberline {4.3.3.5}match\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}One\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Other(int id)}{16}{subsubsection.4.3.3.5}
-\contentsline {section}{\numberline {4.4}Code Class Reference}{16}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{17}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{17}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Code(bool b)}{17}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code()}{18}{subsubsection.4.4.2.2}
-\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{18}{subsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.3.1}add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error $\ast $e)}{18}{subsubsection.4.4.3.1}
-\contentsline {subsubsection}{\numberline {4.4.3.2}apply\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T(const cmat gate, const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b)}{18}{subsubsection.4.4.3.2}
-\contentsline {subsubsection}{\numberline {4.4.3.3}apply\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T(const cmat gate, unsigned b)}{18}{subsubsection.4.4.3.3}
-\contentsline {subsubsection}{\numberline {4.4.3.4}convert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{18}{subsubsection.4.4.3.4}
-\contentsline {subsubsection}{\numberline {4.4.3.5}disable\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Deletion()}{19}{subsubsection.4.4.3.5}
-\contentsline {subsubsection}{\numberline {4.4.3.6}encode(bool b)=0}{19}{subsubsection.4.4.3.6}
-\contentsline {subsubsection}{\numberline {4.4.3.7}error()}{19}{subsubsection.4.4.3.7}
-\contentsline {subsubsection}{\numberline {4.4.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S()=0}{19}{subsubsection.4.4.3.8}
-\contentsline {subsubsection}{\numberline {4.4.3.9}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor()=0}{19}{subsubsection.4.4.3.9}
-\contentsline {subsubsection}{\numberline {4.4.3.10}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mes(unsigned i)}{19}{subsubsection.4.4.3.10}
-\contentsline {subsubsection}{\numberline {4.4.3.11}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K()}{20}{subsubsection.4.4.3.11}
-\contentsline {subsubsection}{\numberline {4.4.3.12}hadamard\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bits()}{20}{subsubsection.4.4.3.12}
-\contentsline {subsubsection}{\numberline {4.4.3.13}hadamard\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bits(const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b)}{20}{subsubsection.4.4.3.13}
-\contentsline {subsubsection}{\numberline {4.4.3.14}run()=0}{20}{subsubsection.4.4.3.14}
-\contentsline {subsubsection}{\numberline {4.4.3.15}setandmes\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Anc(const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b, unsigned C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S)}{20}{subsubsection.4.4.3.15}
-\contentsline {subsubsection}{\numberline {4.4.3.16}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{21}{subsubsection.4.4.3.16}
-\contentsline {subsection}{\numberline {4.4.4}Friends And Related Function Documentation}{21}{subsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.4.1}Error}{21}{subsubsection.4.4.4.1}
-\contentsline {subsection}{\numberline {4.4.5}Member Data Documentation}{21}{subsection.4.4.5}
-\contentsline {subsubsection}{\numberline {4.4.5.1}c}{21}{subsubsection.4.4.5.1}
-\contentsline {subsubsection}{\numberline {4.4.5.2}d}{21}{subsubsection.4.4.5.2}
-\contentsline {subsubsection}{\numberline {4.4.5.3}delete\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error}{21}{subsubsection.4.4.5.3}
-\contentsline {subsubsection}{\numberline {4.4.5.4}error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Counter}{21}{subsubsection.4.4.5.4}
-\contentsline {subsubsection}{\numberline {4.4.5.5}errorlist}{21}{subsubsection.4.4.5.5}
-\contentsline {subsubsection}{\numberline {4.4.5.6}input}{21}{subsubsection.4.4.5.6}
-\contentsline {subsubsection}{\numberline {4.4.5.7}mixed}{22}{subsubsection.4.4.5.7}
-\contentsline {subsubsection}{\numberline {4.4.5.8}ok}{22}{subsubsection.4.4.5.8}
-\contentsline {subsubsection}{\numberline {4.4.5.9}result}{22}{subsubsection.4.4.5.9}
-\contentsline {subsubsection}{\numberline {4.4.5.10}thread\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Counter}{22}{subsubsection.4.4.5.10}
-\contentsline {section}{\numberline {4.5}Code5 Class Reference}{22}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{24}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{24}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}Code5(bool b)}{24}{subsubsection.4.5.2.1}
-\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{24}{subsection.4.5.3}
-\contentsline {subsubsection}{\numberline {4.5.3.1}encode(bool b) override}{24}{subsubsection.4.5.3.1}
-\contentsline {subsubsection}{\numberline {4.5.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{24}{subsubsection.4.5.3.2}
-\contentsline {subsubsection}{\numberline {4.5.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{25}{subsubsection.4.5.3.3}
-\contentsline {subsubsection}{\numberline {4.5.3.4}run() override}{25}{subsubsection.4.5.3.4}
-\contentsline {subsubsection}{\numberline {4.5.3.5}test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{25}{subsubsection.4.5.3.5}
-\contentsline {subsection}{\numberline {4.5.4}Member Data Documentation}{25}{subsection.4.5.4}
-\contentsline {subsubsection}{\numberline {4.5.4.1}CS}{25}{subsubsection.4.5.4.1}
-\contentsline {section}{\numberline {4.6}Error Class Reference}{25}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{26}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{26}{subsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.2.1}Error(int errt)}{26}{subsubsection.4.6.2.1}
-\contentsline {subsubsection}{\numberline {4.6.2.2}Error(unsigned bit, int errt)}{26}{subsubsection.4.6.2.2}
-\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{26}{subsection.4.6.3}
-\contentsline {subsubsection}{\numberline {4.6.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{26}{subsubsection.4.6.3.1}
-\contentsline {subsubsection}{\numberline {4.6.3.2}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $code)}{26}{subsubsection.4.6.3.2}
-\contentsline {subsubsection}{\numberline {4.6.3.3}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}One\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $code, unsigned index)}{27}{subsubsection.4.6.3.3}
-\contentsline {subsubsection}{\numberline {4.6.3.4}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(unsigned x, unsigned y, unsigned z)}{27}{subsubsection.4.6.3.4}
-\contentsline {subsubsection}{\numberline {4.6.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(double adcg)}{27}{subsubsection.4.6.3.5}
-\contentsline {subsection}{\numberline {4.6.4}Member Data Documentation}{27}{subsection.4.6.4}
-\contentsline {subsubsection}{\numberline {4.6.4.1}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}DC}{27}{subsubsection.4.6.4.1}
-\contentsline {subsubsection}{\numberline {4.6.4.2}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ST}{27}{subsubsection.4.6.4.2}
-\contentsline {subsubsection}{\numberline {4.6.4.3}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ND}{28}{subsubsection.4.6.4.3}
-\contentsline {section}{\numberline {4.7}Network Class Reference}{28}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{29}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{29}{subsection.4.7.2}
-\contentsline {subsubsection}{\numberline {4.7.2.1}Network(int type, unsigned maxnumthreads, std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::string filename, int n)}{29}{subsubsection.4.7.2.1}
-\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network()}{29}{subsubsection.4.7.2.2}
-\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{29}{subsection.4.7.3}
-\contentsline {subsubsection}{\numberline {4.7.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{29}{subsubsection.4.7.3.1}
-\contentsline {subsubsection}{\numberline {4.7.3.2}initalize() override}{29}{subsubsection.4.7.3.2}
-\contentsline {subsubsection}{\numberline {4.7.3.3}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All()}{30}{subsubsection.4.7.3.3}
-\contentsline {section}{\numberline {4.8}Node Class Reference}{30}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{30}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{30}{subsection.4.8.2}
-\contentsline {subsubsection}{\numberline {4.8.2.1}Node(std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::string n)}{30}{subsubsection.4.8.2.1}
-\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{30}{subsection.4.8.3}
-\contentsline {subsubsection}{\numberline {4.8.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Id()}{30}{subsubsection.4.8.3.1}
-\contentsline {subsubsection}{\numberline {4.8.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{31}{subsubsection.4.8.3.2}
-\contentsline {section}{\numberline {4.9}None Class Reference}{31}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{33}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{33}{subsection.4.9.2}
-\contentsline {subsubsection}{\numberline {4.9.2.1}None(bool b)}{33}{subsubsection.4.9.2.1}
-\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{33}{subsection.4.9.3}
-\contentsline {subsubsection}{\numberline {4.9.3.1}encode(bool b) override}{33}{subsubsection.4.9.3.1}
-\contentsline {subsubsection}{\numberline {4.9.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{33}{subsubsection.4.9.3.2}
-\contentsline {subsubsection}{\numberline {4.9.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{34}{subsubsection.4.9.3.3}
-\contentsline {subsubsection}{\numberline {4.9.3.4}run() override}{34}{subsubsection.4.9.3.4}
-\contentsline {subsection}{\numberline {4.9.4}Member Data Documentation}{34}{subsection.4.9.4}
-\contentsline {subsubsection}{\numberline {4.9.4.1}CS}{34}{subsubsection.4.9.4.1}
-\contentsline {section}{\numberline {4.10}Runable Class Reference}{34}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{36}{subsection.4.10.1}
-\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{36}{subsection.4.10.2}
-\contentsline {subsubsection}{\numberline {4.10.2.1}Runable(int type, unsigned maxnumthreads)}{36}{subsubsection.4.10.2.1}
-\contentsline {subsubsection}{\numberline {4.10.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable()}{36}{subsubsection.4.10.2.2}
-\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{36}{subsection.4.10.3}
-\contentsline {subsubsection}{\numberline {4.10.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{36}{subsubsection.4.10.3.1}
-\contentsline {subsubsection}{\numberline {4.10.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result()=0}{36}{subsubsection.4.10.3.2}
-\contentsline {subsubsection}{\numberline {4.10.3.3}initalize()=0}{37}{subsubsection.4.10.3.3}
-\contentsline {subsubsection}{\numberline {4.10.3.4}run()}{37}{subsubsection.4.10.3.4}
-\contentsline {subsubsection}{\numberline {4.10.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type(int t)}{37}{subsubsection.4.10.3.5}
-\contentsline {subsection}{\numberline {4.10.4}Member Data Documentation}{37}{subsection.4.10.4}
-\contentsline {subsubsection}{\numberline {4.10.4.1}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D4}{37}{subsubsection.4.10.4.1}
-\contentsline {subsubsection}{\numberline {4.10.4.2}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IP}{37}{subsubsection.4.10.4.2}
-\contentsline {subsubsection}{\numberline {4.10.4.3}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E5}{37}{subsubsection.4.10.4.3}
-\contentsline {subsubsection}{\numberline {4.10.4.4}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}NE}{37}{subsubsection.4.10.4.4}
-\contentsline {subsubsection}{\numberline {4.10.4.5}runner}{37}{subsubsection.4.10.4.5}
-\contentsline {subsubsection}{\numberline {4.10.4.6}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}OR}{38}{subsubsection.4.10.4.6}
-\contentsline {subsubsection}{\numberline {4.10.4.7}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}NE}{38}{subsubsection.4.10.4.7}
-\contentsline {section}{\numberline {4.11}Runner Class Reference}{38}{section.4.11}
-\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{38}{subsection.4.11.1}
-\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{38}{subsection.4.11.2}
-\contentsline {subsubsection}{\numberline {4.11.2.1}Runner(unsigned maxnumthreads)}{38}{subsubsection.4.11.2.1}
-\contentsline {subsubsection}{\numberline {4.11.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner()}{38}{subsubsection.4.11.2.2}
-\contentsline {subsection}{\numberline {4.11.3}Member Function Documentation}{39}{subsection.4.11.3}
-\contentsline {subsubsection}{\numberline {4.11.3.1}add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $c)}{39}{subsubsection.4.11.3.1}
-\contentsline {subsubsection}{\numberline {4.11.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R()}{39}{subsubsection.4.11.3.2}
-\contentsline {subsubsection}{\numberline {4.11.3.3}reset()}{39}{subsubsection.4.11.3.3}
-\contentsline {subsubsection}{\numberline {4.11.3.4}run()}{39}{subsubsection.4.11.3.4}
-\contentsline {section}{\numberline {4.12}Shor Class Reference}{39}{section.4.12}
-\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{41}{subsection.4.12.1}
-\contentsline {subsection}{\numberline {4.12.2}Member Typedef Documentation}{41}{subsection.4.12.2}
-\contentsline {subsubsection}{\numberline {4.12.2.1}super}{41}{subsubsection.4.12.2.1}
-\contentsline {subsection}{\numberline {4.12.3}Constructor \& Destructor Documentation}{41}{subsection.4.12.3}
-\contentsline {subsubsection}{\numberline {4.12.3.1}Shor(bool b)}{41}{subsubsection.4.12.3.1}
-\contentsline {subsection}{\numberline {4.12.4}Member Function Documentation}{41}{subsection.4.12.4}
-\contentsline {subsubsection}{\numberline {4.12.4.1}encode(bool b) override}{41}{subsubsection.4.12.4.1}
-\contentsline {subsubsection}{\numberline {4.12.4.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{41}{subsubsection.4.12.4.2}
-\contentsline {subsubsection}{\numberline {4.12.4.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{42}{subsubsection.4.12.4.3}
-\contentsline {subsubsection}{\numberline {4.12.4.4}run() override}{42}{subsubsection.4.12.4.4}
-\contentsline {subsection}{\numberline {4.12.5}Member Data Documentation}{42}{subsection.4.12.5}
-\contentsline {subsubsection}{\numberline {4.12.5.1}CS}{42}{subsubsection.4.12.5.1}
-\contentsline {section}{\numberline {4.13}Single Class Reference}{43}{section.4.13}
-\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{43}{subsection.4.13.1}
-\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{44}{subsection.4.13.2}
-\contentsline {subsubsection}{\numberline {4.13.2.1}Single(int type, int maxnumthreads, Error $\ast $e, int n)}{44}{subsubsection.4.13.2.1}
-\contentsline {subsection}{\numberline {4.13.3}Member Function Documentation}{45}{subsection.4.13.3}
-\contentsline {subsubsection}{\numberline {4.13.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{45}{subsubsection.4.13.3.1}
-\contentsline {subsubsection}{\numberline {4.13.3.2}initalize() override}{45}{subsubsection.4.13.3.2}
-\contentsline {section}{\numberline {4.14}Steane Class Reference}{45}{section.4.14}
-\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{47}{subsection.4.14.1}
-\contentsline {subsection}{\numberline {4.14.2}Constructor \& Destructor Documentation}{47}{subsection.4.14.2}
-\contentsline {subsubsection}{\numberline {4.14.2.1}Steane(bool b)}{47}{subsubsection.4.14.2.1}
-\contentsline {subsection}{\numberline {4.14.3}Member Function Documentation}{47}{subsection.4.14.3}
-\contentsline {subsubsection}{\numberline {4.14.3.1}encode(bool b) override}{47}{subsubsection.4.14.3.1}
-\contentsline {subsubsection}{\numberline {4.14.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{47}{subsubsection.4.14.3.2}
-\contentsline {subsubsection}{\numberline {4.14.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{47}{subsubsection.4.14.3.3}
-\contentsline {subsubsection}{\numberline {4.14.3.4}run() override}{48}{subsubsection.4.14.3.4}
-\contentsline {subsection}{\numberline {4.14.4}Member Data Documentation}{48}{subsection.4.14.4}
-\contentsline {subsubsection}{\numberline {4.14.4.1}CS}{48}{subsubsection.4.14.4.1}
-\contentsline {section}{\numberline {4.15}Test Class Reference}{48}{section.4.15}
-\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{50}{subsection.4.15.1}
-\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{50}{subsection.4.15.2}
-\contentsline {subsubsection}{\numberline {4.15.2.1}Test(int type, int maxnumthreads)}{50}{subsubsection.4.15.2.1}
-\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{50}{subsection.4.15.3}
-\contentsline {subsubsection}{\numberline {4.15.3.1}bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{50}{subsubsection.4.15.3.1}
-\contentsline {subsubsection}{\numberline {4.15.3.2}code5\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{50}{subsubsection.4.15.3.2}
-\contentsline {subsubsection}{\numberline {4.15.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{50}{subsubsection.4.15.3.3}
-\contentsline {subsubsection}{\numberline {4.15.3.4}initalize() override}{51}{subsubsection.4.15.3.4}
-\contentsline {subsubsection}{\numberline {4.15.3.5}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tests()}{51}{subsubsection.4.15.3.5}
-\contentsline {subsubsection}{\numberline {4.15.3.6}shor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{51}{subsubsection.4.15.3.6}
-\contentsline {subsubsection}{\numberline {4.15.3.7}steane\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{51}{subsubsection.4.15.3.7}
-\contentsline {subsubsection}{\numberline {4.15.3.8}test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{51}{subsubsection.4.15.3.8}
-\contentsline {subsection}{\numberline {4.15.4}Member Data Documentation}{51}{subsection.4.15.4}
-\contentsline {subsubsection}{\numberline {4.15.4.1}bitflipruns}{51}{subsubsection.4.15.4.1}
-\contentsline {subsubsection}{\numberline {4.15.4.2}code5runs}{52}{subsubsection.4.15.4.2}
-\contentsline {subsubsection}{\numberline {4.15.4.3}shorruns}{52}{subsubsection.4.15.4.3}
-\contentsline {subsubsection}{\numberline {4.15.4.4}steaneruns}{52}{subsubsection.4.15.4.4}
-\contentsline {chapter}{\numberline {5}File Documentation}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}/home/attila/src/qecc-\/netbeans/qecc/.dep.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inc File Reference}{53}{section.5.1}
-\contentsline {section}{\numberline {5.2}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Aad4.cpp File Reference}{53}{section.5.2}
-\contentsline {section}{\numberline {5.3}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Aad4.h File Reference}{53}{section.5.3}
-\contentsline {section}{\numberline {5.4}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip.cpp File Reference}{53}{section.5.4}
-\contentsline {section}{\numberline {5.5}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip.h File Reference}{53}{section.5.5}
-\contentsline {section}{\numberline {5.6}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel.cpp File Reference}{54}{section.5.6}
-\contentsline {section}{\numberline {5.7}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel.h File Reference}{54}{section.5.7}
-\contentsline {section}{\numberline {5.8}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code.cpp File Reference}{54}{section.5.8}
-\contentsline {section}{\numberline {5.9}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code.h File Reference}{54}{section.5.9}
-\contentsline {section}{\numberline {5.10}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code5.cpp File Reference}{54}{section.5.10}
-\contentsline {section}{\numberline {5.11}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code5.h File Reference}{55}{section.5.11}
-\contentsline {section}{\numberline {5.12}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error.cpp File Reference}{55}{section.5.12}
-\contentsline {section}{\numberline {5.13}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error.h File Reference}{55}{section.5.13}
-\contentsline {section}{\numberline {5.14}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network.cpp File Reference}{55}{section.5.14}
-\contentsline {section}{\numberline {5.15}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network.h File Reference}{55}{section.5.15}
-\contentsline {section}{\numberline {5.16}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Node.cpp File Reference}{56}{section.5.16}
-\contentsline {section}{\numberline {5.17}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Node.h File Reference}{56}{section.5.17}
-\contentsline {section}{\numberline {5.18}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}None.cpp File Reference}{56}{section.5.18}
-\contentsline {section}{\numberline {5.19}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}None.h File Reference}{56}{section.5.19}
-\contentsline {section}{\numberline {5.20}/home/attila/src/qecc-\/netbeans/qecc/qecc.cpp File Reference}{56}{section.5.20}
-\contentsline {subsection}{\numberline {5.20.1}Function Documentation}{57}{subsection.5.20.1}
-\contentsline {subsubsection}{\numberline {5.20.1.1}main(int argc, char $\ast $$\ast $argv)}{57}{subsubsection.5.20.1.1}
-\contentsline {subsubsection}{\numberline {5.20.1.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Help()}{57}{subsubsection.5.20.1.2}
-\contentsline {subsection}{\numberline {5.20.2}Variable Documentation}{57}{subsection.5.20.2}
-\contentsline {subsubsection}{\numberline {5.20.2.1}err\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Run}{57}{subsubsection.5.20.2.1}
-\contentsline {subsubsection}{\numberline {5.20.2.2}numthreads}{57}{subsubsection.5.20.2.2}
-\contentsline {section}{\numberline {5.21}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable.cpp File Reference}{57}{section.5.21}
-\contentsline {section}{\numberline {5.22}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable.h File Reference}{57}{section.5.22}
-\contentsline {section}{\numberline {5.23}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner.cpp File Reference}{58}{section.5.23}
-\contentsline {subsection}{\numberline {5.23.1}Function Documentation}{58}{subsection.5.23.1}
-\contentsline {subsubsection}{\numberline {5.23.1.1}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(void $\ast $c)}{58}{subsubsection.5.23.1.1}
-\contentsline {section}{\numberline {5.24}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner.h File Reference}{58}{section.5.24}
-\contentsline {subsection}{\numberline {5.24.1}Function Documentation}{58}{subsection.5.24.1}
-\contentsline {subsubsection}{\numberline {5.24.1.1}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(void $\ast $c)}{58}{subsubsection.5.24.1.1}
-\contentsline {section}{\numberline {5.25}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Shor.cpp File Reference}{59}{section.5.25}
-\contentsline {section}{\numberline {5.26}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Shor.h File Reference}{59}{section.5.26}
-\contentsline {section}{\numberline {5.27}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Single.cpp File Reference}{59}{section.5.27}
-\contentsline {section}{\numberline {5.28}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Single.h File Reference}{59}{section.5.28}
-\contentsline {section}{\numberline {5.29}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Steane.cpp File Reference}{60}{section.5.29}
-\contentsline {section}{\numberline {5.30}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Steane.h File Reference}{60}{section.5.30}
-\contentsline {section}{\numberline {5.31}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test.cpp File Reference}{60}{section.5.31}
-\contentsline {section}{\numberline {5.32}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test.h File Reference}{60}{section.5.32}
-\contentsline {chapter}{Index}{61}{section*.78}
+\contentsline {chapter}{\numberline {1}qecc}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aad4 Class Reference}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Constructor \& Destructor Documentation}{11}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Aad4(bool b)}{11}{subsubsection.5.1.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Member Function Documentation}{11}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}decode()}{11}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}encode(bool b) override}{11}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Op(bool $\ast $f)}{11}{subsubsection.5.1.2.3}
+\contentsline {subsubsection}{\numberline {5.1.2.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{11}{subsubsection.5.1.2.4}
+\contentsline {subsubsection}{\numberline {5.1.2.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{12}{subsubsection.5.1.2.5}
+\contentsline {subsubsection}{\numberline {5.1.2.6}no\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Op()}{12}{subsubsection.5.1.2.6}
+\contentsline {subsubsection}{\numberline {5.1.2.7}run() override}{12}{subsubsection.5.1.2.7}
+\contentsline {subsubsection}{\numberline {5.1.2.8}setandmes2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Anc()}{12}{subsubsection.5.1.2.8}
+\contentsline {subsection}{\numberline {5.1.3}Member Data Documentation}{12}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3.1}CS}{12}{subsubsection.5.1.3.1}
+\contentsline {section}{\numberline {5.2}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip Class Reference}{13}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{14}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{14}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip(bool b)}{14}{subsubsection.5.2.2.1}
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{14}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}encode(bool b) override}{14}{subsubsection.5.2.3.1}
+\contentsline {subsubsection}{\numberline {5.2.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{14}{subsubsection.5.2.3.2}
+\contentsline {subsubsection}{\numberline {5.2.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{15}{subsubsection.5.2.3.3}
+\contentsline {subsubsection}{\numberline {5.2.3.4}run() override}{15}{subsubsection.5.2.3.4}
+\contentsline {subsection}{\numberline {5.2.4}Member Data Documentation}{15}{subsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.4.1}CS}{15}{subsubsection.5.2.4.1}
+\contentsline {section}{\numberline {5.3}Channel Class Reference}{15}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{16}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{16}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Channel(int nodeid0, int nodeid1, Error $\ast $e)}{16}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel()}{17}{subsubsection.5.3.2.2}
+\contentsline {subsection}{\numberline {5.3.3}Member Function Documentation}{17}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}debug\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Print()}{17}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{17}{subsubsection.5.3.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ids()}{17}{subsubsection.5.3.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.4}match\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Id(int nid0, int nid1)}{17}{subsubsection.5.3.3.4}
+\contentsline {subsubsection}{\numberline {5.3.3.5}match\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}One\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Other(int id)}{18}{subsubsection.5.3.3.5}
+\contentsline {section}{\numberline {5.4}Code Class Reference}{18}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{19}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{19}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Code(bool b)}{19}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code()}{20}{subsubsection.5.4.2.2}
+\contentsline {subsection}{\numberline {5.4.3}Member Function Documentation}{20}{subsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.3.1}add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error $\ast $e)}{20}{subsubsection.5.4.3.1}
+\contentsline {subsubsection}{\numberline {5.4.3.2}apply\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T(const cmat gate, const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b)}{20}{subsubsection.5.4.3.2}
+\contentsline {subsubsection}{\numberline {5.4.3.3}apply\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T(const cmat gate, unsigned b)}{20}{subsubsection.5.4.3.3}
+\contentsline {subsubsection}{\numberline {5.4.3.4}convert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{20}{subsubsection.5.4.3.4}
+\contentsline {subsubsection}{\numberline {5.4.3.5}disable\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Deletion()}{21}{subsubsection.5.4.3.5}
+\contentsline {subsubsection}{\numberline {5.4.3.6}encode(bool b)=0}{21}{subsubsection.5.4.3.6}
+\contentsline {subsubsection}{\numberline {5.4.3.7}error()}{21}{subsubsection.5.4.3.7}
+\contentsline {subsubsection}{\numberline {5.4.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S()=0}{21}{subsubsection.5.4.3.8}
+\contentsline {subsubsection}{\numberline {5.4.3.9}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor()=0}{21}{subsubsection.5.4.3.9}
+\contentsline {subsubsection}{\numberline {5.4.3.10}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mes(unsigned i)}{21}{subsubsection.5.4.3.10}
+\contentsline {subsubsection}{\numberline {5.4.3.11}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mes\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H(unsigned i)}{22}{subsubsection.5.4.3.11}
+\contentsline {subsubsection}{\numberline {5.4.3.12}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}K()}{22}{subsubsection.5.4.3.12}
+\contentsline {subsubsection}{\numberline {5.4.3.13}hadamard\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bits()}{22}{subsubsection.5.4.3.13}
+\contentsline {subsubsection}{\numberline {5.4.3.14}hadamard\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bits(const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b)}{22}{subsubsection.5.4.3.14}
+\contentsline {subsubsection}{\numberline {5.4.3.15}plus\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Minus()}{22}{subsubsection.5.4.3.15}
+\contentsline {subsubsection}{\numberline {5.4.3.16}run()=0}{22}{subsubsection.5.4.3.16}
+\contentsline {subsubsection}{\numberline {5.4.3.17}setandmes\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Anc(const std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::vector$<$ unsigned $>$ \&b, unsigned C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S)}{23}{subsubsection.5.4.3.17}
+\contentsline {subsubsection}{\numberline {5.4.3.18}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{23}{subsubsection.5.4.3.18}
+\contentsline {subsection}{\numberline {5.4.4}Friends And Related Function Documentation}{23}{subsection.5.4.4}
+\contentsline {subsubsection}{\numberline {5.4.4.1}Error}{23}{subsubsection.5.4.4.1}
+\contentsline {subsection}{\numberline {5.4.5}Member Data Documentation}{23}{subsection.5.4.5}
+\contentsline {subsubsection}{\numberline {5.4.5.1}c}{23}{subsubsection.5.4.5.1}
+\contentsline {subsubsection}{\numberline {5.4.5.2}d}{23}{subsubsection.5.4.5.2}
+\contentsline {subsubsection}{\numberline {5.4.5.3}delete\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error}{23}{subsubsection.5.4.5.3}
+\contentsline {subsubsection}{\numberline {5.4.5.4}error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Counter}{23}{subsubsection.5.4.5.4}
+\contentsline {subsubsection}{\numberline {5.4.5.5}errorlist}{23}{subsubsection.5.4.5.5}
+\contentsline {subsubsection}{\numberline {5.4.5.6}input}{24}{subsubsection.5.4.5.6}
+\contentsline {subsubsection}{\numberline {5.4.5.7}mixed}{24}{subsubsection.5.4.5.7}
+\contentsline {subsubsection}{\numberline {5.4.5.8}ok}{24}{subsubsection.5.4.5.8}
+\contentsline {subsubsection}{\numberline {5.4.5.9}plusminus}{24}{subsubsection.5.4.5.9}
+\contentsline {subsubsection}{\numberline {5.4.5.10}result}{24}{subsubsection.5.4.5.10}
+\contentsline {subsubsection}{\numberline {5.4.5.11}thread\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Counter}{24}{subsubsection.5.4.5.11}
+\contentsline {section}{\numberline {5.5}Code5 Class Reference}{24}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{26}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Constructor \& Destructor Documentation}{26}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Code5(bool b)}{26}{subsubsection.5.5.2.1}
+\contentsline {subsection}{\numberline {5.5.3}Member Function Documentation}{26}{subsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.3.1}encode(bool b) override}{26}{subsubsection.5.5.3.1}
+\contentsline {subsubsection}{\numberline {5.5.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{26}{subsubsection.5.5.3.2}
+\contentsline {subsubsection}{\numberline {5.5.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{27}{subsubsection.5.5.3.3}
+\contentsline {subsubsection}{\numberline {5.5.3.4}run() override}{27}{subsubsection.5.5.3.4}
+\contentsline {subsubsection}{\numberline {5.5.3.5}test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{27}{subsubsection.5.5.3.5}
+\contentsline {subsection}{\numberline {5.5.4}Member Data Documentation}{27}{subsection.5.5.4}
+\contentsline {subsubsection}{\numberline {5.5.4.1}CS}{27}{subsubsection.5.5.4.1}
+\contentsline {section}{\numberline {5.6}Error Class Reference}{27}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{28}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Constructor \& Destructor Documentation}{28}{subsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.2.1}Error(int errt)}{28}{subsubsection.5.6.2.1}
+\contentsline {subsubsection}{\numberline {5.6.2.2}Error(unsigned bit, int errt)}{28}{subsubsection.5.6.2.2}
+\contentsline {subsection}{\numberline {5.6.3}Member Function Documentation}{28}{subsection.5.6.3}
+\contentsline {subsubsection}{\numberline {5.6.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{28}{subsubsection.5.6.3.1}
+\contentsline {subsubsection}{\numberline {5.6.3.2}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $code)}{28}{subsubsection.5.6.3.2}
+\contentsline {subsubsection}{\numberline {5.6.3.3}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}One\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $code, unsigned index)}{29}{subsubsection.5.6.3.3}
+\contentsline {subsubsection}{\numberline {5.6.3.4}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(unsigned x, unsigned y, unsigned z)}{29}{subsubsection.5.6.3.4}
+\contentsline {subsubsection}{\numberline {5.6.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error(double adcg)}{29}{subsubsection.5.6.3.5}
+\contentsline {subsection}{\numberline {5.6.4}Member Data Documentation}{29}{subsection.5.6.4}
+\contentsline {subsubsection}{\numberline {5.6.4.1}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}DC}{29}{subsubsection.5.6.4.1}
+\contentsline {subsubsection}{\numberline {5.6.4.2}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ST}{29}{subsubsection.5.6.4.2}
+\contentsline {subsubsection}{\numberline {5.6.4.3}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ND}{30}{subsubsection.5.6.4.3}
+\contentsline {section}{\numberline {5.7}Network Class Reference}{30}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{31}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Constructor \& Destructor Documentation}{31}{subsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.2.1}Network(int type, unsigned maxnumthreads, std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::string filename, int n, std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::string x, bool p)}{31}{subsubsection.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network()}{31}{subsubsection.5.7.2.2}
+\contentsline {subsection}{\numberline {5.7.3}Member Function Documentation}{31}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{31}{subsubsection.5.7.3.1}
+\contentsline {subsubsection}{\numberline {5.7.3.2}initalize() override}{31}{subsubsection.5.7.3.2}
+\contentsline {subsubsection}{\numberline {5.7.3.3}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All()}{32}{subsubsection.5.7.3.3}
+\contentsline {section}{\numberline {5.8}Node Class Reference}{32}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{32}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Constructor \& Destructor Documentation}{32}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}Node(std\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::string n)}{32}{subsubsection.5.8.2.1}
+\contentsline {subsection}{\numberline {5.8.3}Member Function Documentation}{32}{subsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Id()}{32}{subsubsection.5.8.3.1}
+\contentsline {subsubsection}{\numberline {5.8.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{33}{subsubsection.5.8.3.2}
+\contentsline {subsubsection}{\numberline {5.8.3.3}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dummy()}{33}{subsubsection.5.8.3.3}
+\contentsline {subsubsection}{\numberline {5.8.3.4}make\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dummy()}{33}{subsubsection.5.8.3.4}
+\contentsline {section}{\numberline {5.9}None Class Reference}{33}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{35}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}Constructor \& Destructor Documentation}{35}{subsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.2.1}None(bool b)}{35}{subsubsection.5.9.2.1}
+\contentsline {subsection}{\numberline {5.9.3}Member Function Documentation}{35}{subsection.5.9.3}
+\contentsline {subsubsection}{\numberline {5.9.3.1}encode(bool b) override}{35}{subsubsection.5.9.3.1}
+\contentsline {subsubsection}{\numberline {5.9.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{35}{subsubsection.5.9.3.2}
+\contentsline {subsubsection}{\numberline {5.9.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{36}{subsubsection.5.9.3.3}
+\contentsline {subsubsection}{\numberline {5.9.3.4}run() override}{36}{subsubsection.5.9.3.4}
+\contentsline {subsection}{\numberline {5.9.4}Member Data Documentation}{36}{subsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.4.1}CS}{36}{subsubsection.5.9.4.1}
+\contentsline {section}{\numberline {5.10}Runable Class Reference}{36}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{38}{subsection.5.10.1}
+\contentsline {subsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{38}{subsection.5.10.2}
+\contentsline {subsubsection}{\numberline {5.10.2.1}Runable(int type, unsigned maxnumthreads, bool p)}{38}{subsubsection.5.10.2.1}
+\contentsline {subsubsection}{\numberline {5.10.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable()}{38}{subsubsection.5.10.2.2}
+\contentsline {subsection}{\numberline {5.10.3}Member Function Documentation}{38}{subsection.5.10.3}
+\contentsline {subsubsection}{\numberline {5.10.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{38}{subsubsection.5.10.3.1}
+\contentsline {subsubsection}{\numberline {5.10.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result()=0}{38}{subsubsection.5.10.3.2}
+\contentsline {subsubsection}{\numberline {5.10.3.3}initalize()=0}{39}{subsubsection.5.10.3.3}
+\contentsline {subsubsection}{\numberline {5.10.3.4}run()}{39}{subsubsection.5.10.3.4}
+\contentsline {subsubsection}{\numberline {5.10.3.5}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type(int t)}{39}{subsubsection.5.10.3.5}
+\contentsline {subsection}{\numberline {5.10.4}Member Data Documentation}{39}{subsection.5.10.4}
+\contentsline {subsubsection}{\numberline {5.10.4.1}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D4}{39}{subsubsection.5.10.4.1}
+\contentsline {subsubsection}{\numberline {5.10.4.2}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}IP}{39}{subsubsection.5.10.4.2}
+\contentsline {subsubsection}{\numberline {5.10.4.3}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E5}{39}{subsubsection.5.10.4.3}
+\contentsline {subsubsection}{\numberline {5.10.4.4}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}NE}{39}{subsubsection.5.10.4.4}
+\contentsline {subsubsection}{\numberline {5.10.4.5}runner}{39}{subsubsection.5.10.4.5}
+\contentsline {subsubsection}{\numberline {5.10.4.6}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}OR}{40}{subsubsection.5.10.4.6}
+\contentsline {subsubsection}{\numberline {5.10.4.7}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}NE}{40}{subsubsection.5.10.4.7}
+\contentsline {section}{\numberline {5.11}Runner Class Reference}{40}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{40}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}Constructor \& Destructor Documentation}{40}{subsection.5.11.2}
+\contentsline {subsubsection}{\numberline {5.11.2.1}Runner(unsigned maxnumthreads)}{40}{subsubsection.5.11.2.1}
+\contentsline {subsubsection}{\numberline {5.11.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner()}{40}{subsubsection.5.11.2.2}
+\contentsline {subsection}{\numberline {5.11.3}Member Function Documentation}{41}{subsection.5.11.3}
+\contentsline {subsubsection}{\numberline {5.11.3.1}add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code $\ast $c)}{41}{subsubsection.5.11.3.1}
+\contentsline {subsubsection}{\numberline {5.11.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R()}{41}{subsubsection.5.11.3.2}
+\contentsline {subsubsection}{\numberline {5.11.3.3}plus\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Minus()}{41}{subsubsection.5.11.3.3}
+\contentsline {subsubsection}{\numberline {5.11.3.4}reset()}{41}{subsubsection.5.11.3.4}
+\contentsline {subsubsection}{\numberline {5.11.3.5}run()}{41}{subsubsection.5.11.3.5}
+\contentsline {section}{\numberline {5.12}Shor Class Reference}{42}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{43}{subsection.5.12.1}
+\contentsline {subsection}{\numberline {5.12.2}Member Typedef Documentation}{43}{subsection.5.12.2}
+\contentsline {subsubsection}{\numberline {5.12.2.1}super}{43}{subsubsection.5.12.2.1}
+\contentsline {subsection}{\numberline {5.12.3}Constructor \& Destructor Documentation}{43}{subsection.5.12.3}
+\contentsline {subsubsection}{\numberline {5.12.3.1}Shor(bool b)}{43}{subsubsection.5.12.3.1}
+\contentsline {subsection}{\numberline {5.12.4}Member Function Documentation}{43}{subsection.5.12.4}
+\contentsline {subsubsection}{\numberline {5.12.4.1}encode(bool b) override}{43}{subsubsection.5.12.4.1}
+\contentsline {subsubsection}{\numberline {5.12.4.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{43}{subsubsection.5.12.4.2}
+\contentsline {subsubsection}{\numberline {5.12.4.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{44}{subsubsection.5.12.4.3}
+\contentsline {subsubsection}{\numberline {5.12.4.4}run() override}{44}{subsubsection.5.12.4.4}
+\contentsline {subsection}{\numberline {5.12.5}Member Data Documentation}{44}{subsection.5.12.5}
+\contentsline {subsubsection}{\numberline {5.12.5.1}CS}{44}{subsubsection.5.12.5.1}
+\contentsline {section}{\numberline {5.13}Single Class Reference}{45}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{45}{subsection.5.13.1}
+\contentsline {subsection}{\numberline {5.13.2}Constructor \& Destructor Documentation}{46}{subsection.5.13.2}
+\contentsline {subsubsection}{\numberline {5.13.2.1}Single(int type, int maxnumthreads, Error $\ast $e, int n, bool p)}{46}{subsubsection.5.13.2.1}
+\contentsline {subsection}{\numberline {5.13.3}Member Function Documentation}{47}{subsection.5.13.3}
+\contentsline {subsubsection}{\numberline {5.13.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{47}{subsubsection.5.13.3.1}
+\contentsline {subsubsection}{\numberline {5.13.3.2}initalize() override}{47}{subsubsection.5.13.3.2}
+\contentsline {section}{\numberline {5.14}Steane Class Reference}{47}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{49}{subsection.5.14.1}
+\contentsline {subsection}{\numberline {5.14.2}Constructor \& Destructor Documentation}{49}{subsection.5.14.2}
+\contentsline {subsubsection}{\numberline {5.14.2.1}Steane(bool b)}{49}{subsubsection.5.14.2.1}
+\contentsline {subsection}{\numberline {5.14.3}Member Function Documentation}{49}{subsection.5.14.3}
+\contentsline {subsubsection}{\numberline {5.14.3.1}encode(bool b) override}{49}{subsubsection.5.14.3.1}
+\contentsline {subsubsection}{\numberline {5.14.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S() override}{49}{subsubsection.5.14.3.2}
+\contentsline {subsubsection}{\numberline {5.14.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Descriptor() override}{49}{subsubsection.5.14.3.3}
+\contentsline {subsubsection}{\numberline {5.14.3.4}run() override}{50}{subsubsection.5.14.3.4}
+\contentsline {subsection}{\numberline {5.14.4}Member Data Documentation}{50}{subsection.5.14.4}
+\contentsline {subsubsection}{\numberline {5.14.4.1}CS}{50}{subsubsection.5.14.4.1}
+\contentsline {section}{\numberline {5.15}Test Class Reference}{50}{section.5.15}
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{52}{subsection.5.15.1}
+\contentsline {subsection}{\numberline {5.15.2}Constructor \& Destructor Documentation}{52}{subsection.5.15.2}
+\contentsline {subsubsection}{\numberline {5.15.2.1}Test(int type, int maxnumthreads, bool p)}{52}{subsubsection.5.15.2.1}
+\contentsline {subsection}{\numberline {5.15.3}Member Function Documentation}{52}{subsection.5.15.3}
+\contentsline {subsubsection}{\numberline {5.15.3.1}bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{52}{subsubsection.5.15.3.1}
+\contentsline {subsubsection}{\numberline {5.15.3.2}code5\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{52}{subsubsection.5.15.3.2}
+\contentsline {subsubsection}{\numberline {5.15.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Result() override}{52}{subsubsection.5.15.3.3}
+\contentsline {subsubsection}{\numberline {5.15.3.4}initalize() override}{53}{subsubsection.5.15.3.4}
+\contentsline {subsubsection}{\numberline {5.15.3.5}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tests()}{53}{subsubsection.5.15.3.5}
+\contentsline {subsubsection}{\numberline {5.15.3.6}shor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{53}{subsubsection.5.15.3.6}
+\contentsline {subsubsection}{\numberline {5.15.3.7}steane\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test(bool input)}{53}{subsubsection.5.15.3.7}
+\contentsline {subsubsection}{\numberline {5.15.3.8}test\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mixed()}{53}{subsubsection.5.15.3.8}
+\contentsline {subsection}{\numberline {5.15.4}Member Data Documentation}{53}{subsection.5.15.4}
+\contentsline {subsubsection}{\numberline {5.15.4.1}bitflipruns}{53}{subsubsection.5.15.4.1}
+\contentsline {subsubsection}{\numberline {5.15.4.2}code5runs}{54}{subsubsection.5.15.4.2}
+\contentsline {subsubsection}{\numberline {5.15.4.3}shorruns}{54}{subsubsection.5.15.4.3}
+\contentsline {subsubsection}{\numberline {5.15.4.4}steaneruns}{54}{subsubsection.5.15.4.4}
+\contentsline {chapter}{\numberline {6}File Documentation}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}/home/attila/src/qecc-\/netbeans/qecc/.dep.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inc File Reference}{55}{section.6.1}
+\contentsline {section}{\numberline {6.2}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Aad4.cpp File Reference}{55}{section.6.2}
+\contentsline {section}{\numberline {6.3}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Aad4.h File Reference}{55}{section.6.3}
+\contentsline {section}{\numberline {6.4}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip.cpp File Reference}{55}{section.6.4}
+\contentsline {section}{\numberline {6.5}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Flip.h File Reference}{55}{section.6.5}
+\contentsline {section}{\numberline {6.6}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel.cpp File Reference}{56}{section.6.6}
+\contentsline {section}{\numberline {6.7}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Channel.h File Reference}{56}{section.6.7}
+\contentsline {section}{\numberline {6.8}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code.cpp File Reference}{56}{section.6.8}
+\contentsline {section}{\numberline {6.9}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code.h File Reference}{56}{section.6.9}
+\contentsline {section}{\numberline {6.10}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code5.cpp File Reference}{56}{section.6.10}
+\contentsline {section}{\numberline {6.11}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code5.h File Reference}{57}{section.6.11}
+\contentsline {section}{\numberline {6.12}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error.cpp File Reference}{57}{section.6.12}
+\contentsline {section}{\numberline {6.13}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error.h File Reference}{57}{section.6.13}
+\contentsline {section}{\numberline {6.14}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network.cpp File Reference}{57}{section.6.14}
+\contentsline {section}{\numberline {6.15}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Network.h File Reference}{57}{section.6.15}
+\contentsline {section}{\numberline {6.16}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Node.cpp File Reference}{58}{section.6.16}
+\contentsline {section}{\numberline {6.17}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Node.h File Reference}{58}{section.6.17}
+\contentsline {section}{\numberline {6.18}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}None.cpp File Reference}{58}{section.6.18}
+\contentsline {section}{\numberline {6.19}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}None.h File Reference}{58}{section.6.19}
+\contentsline {section}{\numberline {6.20}/home/attila/src/qecc-\/netbeans/qecc/qecc.cpp File Reference}{58}{section.6.20}
+\contentsline {subsection}{\numberline {6.20.1}Function Documentation}{59}{subsection.6.20.1}
+\contentsline {subsubsection}{\numberline {6.20.1.1}main(int argc, char $\ast $$\ast $argv)}{59}{subsubsection.6.20.1.1}
+\contentsline {subsubsection}{\numberline {6.20.1.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Help()}{59}{subsubsection.6.20.1.2}
+\contentsline {subsection}{\numberline {6.20.2}Variable Documentation}{59}{subsection.6.20.2}
+\contentsline {subsubsection}{\numberline {6.20.2.1}err\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Run}{59}{subsubsection.6.20.2.1}
+\contentsline {subsubsection}{\numberline {6.20.2.2}numthreads}{59}{subsubsection.6.20.2.2}
+\contentsline {section}{\numberline {6.21}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ME.md File Reference}{59}{section.6.21}
+\contentsline {section}{\numberline {6.22}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable.cpp File Reference}{59}{section.6.22}
+\contentsline {section}{\numberline {6.23}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runable.h File Reference}{60}{section.6.23}
+\contentsline {section}{\numberline {6.24}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner.cpp File Reference}{60}{section.6.24}
+\contentsline {subsection}{\numberline {6.24.1}Function Documentation}{60}{subsection.6.24.1}
+\contentsline {subsubsection}{\numberline {6.24.1.1}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(void $\ast $c)}{60}{subsubsection.6.24.1.1}
+\contentsline {section}{\numberline {6.25}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Runner.h File Reference}{60}{section.6.25}
+\contentsline {subsection}{\numberline {6.25.1}Function Documentation}{61}{subsection.6.25.1}
+\contentsline {subsubsection}{\numberline {6.25.1.1}run\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code(void $\ast $c)}{61}{subsubsection.6.25.1.1}
+\contentsline {section}{\numberline {6.26}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Shor.cpp File Reference}{61}{section.6.26}
+\contentsline {section}{\numberline {6.27}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Shor.h File Reference}{61}{section.6.27}
+\contentsline {section}{\numberline {6.28}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Single.cpp File Reference}{61}{section.6.28}
+\contentsline {section}{\numberline {6.29}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Single.h File Reference}{62}{section.6.29}
+\contentsline {section}{\numberline {6.30}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Steane.cpp File Reference}{62}{section.6.30}
+\contentsline {section}{\numberline {6.31}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Steane.h File Reference}{62}{section.6.31}
+\contentsline {section}{\numberline {6.32}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test.cpp File Reference}{62}{section.6.32}
+\contentsline {section}{\numberline {6.33}/home/attila/src/qecc-\/netbeans/qecc/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Test.h File Reference}{62}{section.6.33}
+\contentsline {chapter}{Index}{63}{section*.78}

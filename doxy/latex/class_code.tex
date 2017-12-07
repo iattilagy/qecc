@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Code\+:\nopagebreak
+Inheritance diagram for Code\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,9 +31,9 @@ virtual std\+::string \hyperlink{class_code_a60db2f615a7cff76e3ece1c486b2fd16}{g
 \item 
 void \hyperlink{class_code_a58a0c6a1b046c6d20703d32c6a7fefbc}{disable\+Error\+Deletion} ()
 \item 
-void \hyperlink{class_code_ae26ecba630093dcac2b7c01946678cb0}{convert\+To\+Mixed} ()
-\item 
 void \hyperlink{class_code_a85f5a2e8133b68173334f24d66f4d5a9}{set\+Mixed} ()
+\item 
+void \hyperlink{class_code_ac4248e25a1ca509c128ec236be57c946}{plus\+Minus} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -52,6 +53,8 @@ void \hyperlink{class_code_ac67d0cdd389466240874cc124137b6ac}{hadamard\+Code\+Bi
 \item 
 bool \hyperlink{class_code_ac1116dcd1573b570cfee1a044f4526a9}{get\+Mes} (unsigned i)
 \item 
+bool \hyperlink{class_code_a080e5bd0105b1f02a5c3568b01a7758a}{get\+MesH} (unsigned i)
+\item 
 void \hyperlink{class_code_af87289ca8b76769d7a572a0d1b324155}{error} ()
 \item 
 virtual void \hyperlink{class_code_a5f90b0f96002c9b999d8ed7bab319906}{encode} (bool b)=0
@@ -61,6 +64,8 @@ virtual unsigned \hyperlink{class_code_a34f52b25d78aeaec3c1fd381f025ad00}{get\+C
 void \hyperlink{class_code_a63474ffa6825d0efcfa8a40cac225d4a}{apply\+GT} (const cmat gate, unsigned b)
 \item 
 void \hyperlink{class_code_a3fe9fc7acd3f4c9cc80d5fd39322ca04}{apply\+C\+GT} (const cmat gate, const std\+::vector$<$ unsigned $>$ \&b)
+\item 
+void \hyperlink{class_code_ae26ecba630093dcac2b7c01946678cb0}{convert\+To\+Mixed} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -80,6 +85,8 @@ bool \hyperlink{class_code_ae448fe74faf959e28ae7a17d13dd4790}{delete\+Error}
 bool \hyperlink{class_code_ac65cd5a89311ea1059ba7d3772d812f9}{result}
 \item 
 bool \hyperlink{class_code_a62ce9f737b915662364116664261969a}{ok}
+\item 
+bool \hyperlink{class_code_abd650233920e3b6778032b7d58282976}{plusminus}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -163,7 +170,7 @@ Applies a single qubit gate
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_ae26ecba630093dcac2b7c01946678cb0}{}\label{class_code_ae26ecba630093dcac2b7c01946678cb0}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_code_ae26ecba630093dcac2b7c01946678cb0}{}\label{class_code_ae26ecba630093dcac2b7c01946678cb0}
 Convert vector notation to density matrix. {\bfseries Must be called inside run!} From outside class stays the same but inside it will use density matrix. This has a performance drawback but needed for some errors for example amplitude damping. An amplitude damping \hyperlink{class_error}{Error} does this conversion automatically. \index{Code@{Code}!disable\+Error\+Deletion@{disable\+Error\+Deletion}}
 \index{disable\+Error\+Deletion@{disable\+Error\+Deletion}!Code@{Code}}
 \subsubsection[{\texorpdfstring{disable\+Error\+Deletion()}{disableErrorDeletion()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::disable\+Error\+Deletion (
@@ -241,6 +248,13 @@ Measures bit
 \begin{DoxyReturn}{Returns}
 Measured classical value 
 \end{DoxyReturn}
+\index{Code@{Code}!get\+MesH@{get\+MesH}}
+\index{get\+MesH@{get\+MesH}!Code@{Code}}
+\subsubsection[{\texorpdfstring{get\+Mes\+H(unsigned i)}{getMesH(unsigned i)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::get\+MesH (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a080e5bd0105b1f02a5c3568b01a7758a}{}\label{class_code_a080e5bd0105b1f02a5c3568b01a7758a}
 \index{Code@{Code}!get\+OK@{get\+OK}}
 \index{get\+OK@{get\+OK}!Code@{Code}}
 \subsubsection[{\texorpdfstring{get\+O\+K()}{getOK()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::get\+OK (
@@ -270,7 +284,14 @@ Hadamard transforms a set of codebits
 {\em b} & Bits to transform \\
 \hline
 \end{DoxyParams}
-\index{Code@{Code}!run@{run}}
+\index{Code@{Code}!plus\+Minus@{plus\+Minus}}
+\index{plus\+Minus@{plus\+Minus}!Code@{Code}}
+\subsubsection[{\texorpdfstring{plus\+Minus()}{plusMinus()}}]{\setlength{\rightskip}{0pt plus 5cm}void Code\+::plus\+Minus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_code_ac4248e25a1ca509c128ec236be57c946}{}\label{class_code_ac4248e25a1ca509c128ec236be57c946}
+Run code in ket+, ket-\/ basis \index{Code@{Code}!run@{run}}
 \index{run@{run}!Code@{Code}}
 \subsubsection[{\texorpdfstring{run()=0}{run()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Code\+::run (
 \begin{DoxyParamCaption}
@@ -342,7 +363,10 @@ Input bit, converted to $\vert$0$>$ or $\vert$1$>$ \index{Code@{Code}!mixed@{mix
 True if density matrix is used \index{Code@{Code}!ok@{ok}}
 \index{ok@{ok}!Code@{Code}}
 \subsubsection[{\texorpdfstring{ok}{ok}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::ok\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_a62ce9f737b915662364116664261969a}{}\label{class_code_a62ce9f737b915662364116664261969a}
-True if result is same as input, false otherwise \index{Code@{Code}!result@{result}}
+True if result is same as input, false otherwise \index{Code@{Code}!plusminus@{plusminus}}
+\index{plusminus@{plusminus}!Code@{Code}}
+\subsubsection[{\texorpdfstring{plusminus}{plusminus}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::plusminus\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_abd650233920e3b6778032b7d58282976}{}\label{class_code_abd650233920e3b6778032b7d58282976}
+Run code in ket+, ket-\/ basis \index{Code@{Code}!result@{result}}
 \index{result@{result}!Code@{Code}}
 \subsubsection[{\texorpdfstring{result}{result}}]{\setlength{\rightskip}{0pt plus 5cm}bool Code\+::result\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_code_ac65cd5a89311ea1059ba7d3772d812f9}{}\label{class_code_ac65cd5a89311ea1059ba7d3772d812f9}
 Measured bit, being set by run \index{Code@{Code}!thread\+Counter@{thread\+Counter}}
